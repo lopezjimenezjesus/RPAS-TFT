@@ -1,0 +1,342 @@
+
+\documentclass[11pt,]{article}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
+\usepackage[]{mathpazo}
+
+
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage[nottoc,notlof,notlot]{tocbibind} 
+  \renewcommand\refname{Referencias} % change original References title
+  \renewcommand{\contentsname}{Tabla de contenidos  }
+
+
+
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+
+\renewenvironment{abstract}
+ {{%
+    \setlength{\leftmargin}{0mm}
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \relax}
+ {\endlist}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+}
+%\fi
+\makeatother
+
+
+
+
+\setcounter{secnumdepth}{0}
+
+
+
+\title{Contribución de los RPAS en investigación y conservación en espacios
+protegidos: presente y futuro  }
+
+
+
+\author{\Large Jesús Jiménez López\vspace{0.05in} \newline\normalsize\emph{Experto Universitario en Vehículos Aéreos no Tripulados y sus
+Aplicaciones Civiles. Universidad de Cádiz}  }
+
+
+\date{}
+
+\usepackage{titlesec}
+
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\itshape}
+\titleformat*{\paragraph}{\normalsize\itshape}
+\titleformat*{\subparagraph}{\normalsize\itshape}
+
+
+\usepackage{natbib}
+\bibliographystyle{apsr}
+
+
+\newtheorem{hypothesis}{Hypothesis}
+\usepackage{setspace}
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+}
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={Jesús Jiménez López (Experto Universitario en Vehículos Aéreos no Tripulados y sus
+Aplicaciones Civiles. Universidad de Cádiz)},
+             pdfkeywords = {RPAs, espacios naturales, conservación},  
+            pdftitle={Contribución de los RPAS en investigación y conservación en espacios
+protegidos: presente y futuro},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+\begin{document}
+	
+% \pagenumbering{arabic}% resets `page` counter to 1 
+%
+% \maketitle
+
+{% \usefont{T1}{pnc}{m}{n}
+\setlength{\parindent}{0pt}
+\thispagestyle{plain}
+{\fontsize{18}{20}\selectfont\raggedright 
+\maketitle  % title \par  
+
+}
+
+{
+   \vskip 13.5pt\relax \normalsize\fontsize{11}{12} 
+\textbf{\authorfont Jesús Jiménez López} \hskip 15pt \vskip 8.5pt  \emph{\small Experto Universitario en Vehículos Aéreos no Tripulados y sus
+Aplicaciones Civiles. Universidad de Cádiz}   
+
+}
+
+}
+
+
+
+
+
+
+\begin{abstract}
+
+    \hbox{\vrule height .2pt width 39.14pc}
+
+    \vskip 8.5pt % \small 
+
+\noindent En este estudio se procedió a identificar y resumir el estado actual y
+las tendencias en el uso de los drones en proyectos científicos con
+fines de conservación en espacios naturales protegidos, mediante la
+recopilación y revisión de material bibliográfico en forma de artículos
+científicos, revistas, proyectos de conservación publicados en Internet
+y otras fuentes de información relevantes.
+
+
+\vskip 8.5pt \noindent \emph{Palabras claves}: RPAs, espacios naturales, conservación \par
+
+    \hbox{\vrule height .2pt width 39.14pc}
+
+
+
+\end{abstract}
+
+
+{
+\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+
+\vskip 6.5pt
+
+\noindent \doublespacing \section{Introducción}\label{introduccion}
+
+Introducción al uso de los RPAs en temas de conservación en espacios
+protegidos, agrupados en los principales campos de aplicación y líneas
+de investigación que conducen a nuevas metodologías de aplicación.
+
+Las aplicaciones de los vehículos aéreos no tripulados (RPAs o UAVs) en
+el campo de la conservación han sido directa o indirectamente planteadas
+en un número cada vez mayor de artículos científicos. Durante los
+últimos años ha habido un incremento significativo de las líneas de
+investigación sobre vida silvestre que hacen uso de RPAS
+\citep{Linchant2015}. En el campo de la biología de la conservación, el
+auge de estos equipos ha conducido a un mayor desarrollo de las
+metodologías que tratan de complementar o sustituir los medios más
+tradicionales con los que se ha venido llevando a cabo las diferentes
+actividades enfocadas hacia el manejo de los espacios naturales
+protegidos, en sus diversas facetas. Aunque el número de áreas
+protegidas ha experimentado un aumento sensible a nivel mundial, con un
+12 \% de la superficie terrestre bajo alguna figura de protección,
+algunos autores resaltan la necesidad de mejorar las herramientas para
+asegurar la efectividad de la conservación de la biodiversidad en áreas
+protegidas \citep{Chape2005}.
+
+Existen actualmente algunas iniciativas que tratan de recoger el estado
+actual de los RPAS en las áreas de ecología y conservación. Con fecha
+reciente de finalización , la revista \emph{Remote Sensing in Ecology
+and Conservation} hizo una llamada a la comunidad científica para el
+envío de propuestas dentro de la temática mencionada, con objeto de
+sensibilizar a estudiantes y profesionales y demostrar el uso
+responsable de RPAS. Por otro lado, es remarcable la mayor presencia de
+portales en internet que centran su actividad en torno a las
+aplicaciones con RPAS. En el campo de la investigación aplicada en
+conservación, el sitio referencia es
+\url{http://conservationdrones.org/}, cuya misión se resumen en
+facilitar el uso y desarrollo de RPAs con tal propósito y en el cual se
+pueden consultar casos de usos de RPAS, los cuales no siempre aparecen
+reflejados en artículos científicos. Dentro de las aplicaciones de los
+RPAS con caracter general destaca la comunidad online
+\url{http://diydrones.com/}, en la que tiene gran acogida el uso de
+plataformas abiertas, de gran popularidad frente a los tradicionales
+sistemas cerrados promovidos por compañias comerciales del sector. Esto
+ha dado como resultado la reducción de los costes de estos equipos,
+junto con el software asociado, permitiendo acercar la tecnología
+disponible a un mayor número de usuarios y organizaciones. Estas
+plataformas abiertas tienen la ventaja adicional de tener un mayor grado
+de personalización de los equipos. El incremento en la flexibilidad en
+el montaje de diferentes sensores y sistemas de control permite cubrir
+las necesidades específicas de cada proyecto \citep{Koh2012}.
+
+Por otra parte, este estudio se analiza el grado en el que los RPAS
+están llamados a sustituir herramientas tradicionales de apoyo a la
+conservación, tanto en su vertiente científica como conservacionista. En
+este sentido, las limitaciones desde el punto de vista financiero y
+tecnológico de la teledetección, por la cual se obtienen imágenes de la
+superficie terrestre a partir de sensores instalados en plataformas
+aéreas o espaciales, son descritas por diversos autores \citep{Koh2012}.
+Si bien es posible adquirir imágenes satelitales a coste cero (LandSat,
+MODIS, Sentinel, etc.) en ocasiones la resolución espacial y temporal
+necesaria para este tipo de estudios, junto con los problemas de
+presencia de nubes especialmente acusados en zonas tropicales, reduce la
+efectividad de la teledetección como herramienta de apoyo a la
+conservación. En paises en vías de desarrollo, especialmente sensibles
+en cuanto a dotaciones presupuestarias, se han desarrollado con gran
+éxito programas de monitoreo y vigilancia a partir del uso del RPAS,
+eliminando los inconvenientes descritos con anterioridad. Además, el
+gran tamaño de estas áreas protegidas reducen en muchos casos la
+efectividad de los trabajos de campo, por lo que los RPAS se han
+posicionado como un complemento perfecto para las actividades de
+conservación \citep{Zahawi2015}.
+
+Junto con la mejora en los costes y la reducción de la logística
+necesaria mediante el empleo de los RPAS en el diseño y planificación de
+los proyectos de investigación frente a los levantamientos aéreos
+convencionales, existe una sensibilización cada vez mayor en relación a
+la mejora de la seguridad de los biólogos en las operaciones de campo.
+Algunos estudios señalan que los accidentes aéreos se situan como
+primera causa de mortandad en especialistas en vida silvestre en los
+Estados Unidos \citep{Sasse2003}.
+
+Finalmente, algunos autores señalan la necesidad de mejorar el marco
+regulatorio respecto al uso civil de los RPAS \citep{Nugraha2016}.. En
+la mayoría de los paises consultados, se han adoptado leyes
+provisionales que en cierta medida equiparan el manejo de los RPAS con
+el de aeronaves tradicionales. Este tipo de restricciones podría limitar
+las posibilidades de uso de los RPAS en el ámbito de la conservación,
+por lo que se hace patente la necesidad urgente de armonizar la
+legislación en relación a este tipo de actividades. La incertidumbre de
+los usuarios ha promovido el desarrollo de asociaciones de usuarios de
+drones con objeto de asesorados sobre los aspectos legales a tener en
+cuenta en las operaciones con drones. En España, la Asociación Española
+de Drones y Afines \url{https://www.aedron.com} promueve un uso
+consciente y responsable de los RPAS y organiza seminarios para informar
+a los socios sobre temas de interés. En su web se puede consultar el
+borrador de la nueva normativa que regula la utilización civil de las
+aeronaves pilotadas por control remoto en España.
+
+\section{Métodos}\label{metodos}
+
+Descripción de la metodología para la identificación de las referencias
+bibliográficas más emblemáticas, clasificación según temática (líneas de
+investigación), criterios de selección de artículos relevantes.
+
+Para alcanzar los objetivos propuestos se procedió a la revisión
+bibliográfica de artículos, tesis de postgrado, sitios web y revistas
+especializadas, siguiendo una línea similar a otros estudios realizados
+con anterioridad \citet{Linchant2015}. Mediante artículos seleccionados
+para el curso de Experto Universitario en Vehículos Aéreos no Tripulados
+y sus Aplicaciones Civiles organizado por la Universidad de Cádiz en su
+edición de 2016-2017, junto con herramientas como Google Schoolar y
+Mendeley Desktop se obtuvo la mayor parte de la bibliografía
+seleccionada, mientras que el uso de los motores de búsqueda por
+internet incluyeron el resto de materiales mencionados. Dicha actividad
+tuvo lugar hasta el mes de Abril, 2017.
+
+La información recolectada se clasificó en tres categorías principales
+que son objeto de la conservación en espacios protegidos: 1. Estudios de
+vida silvestre, 2. Monitoreo y mapeo de ecosistemas terrestres y
+acuáticos y 3. Apoyo para el cumplimiento de las leyes en áreas
+protegidas. Otros estudios que no entraron dentro de alguna de las tres
+categorías propuestas se clasificaron en un solo grupo. Dentro de cada
+categoría se identificó el propósito principal del estudio, junto con
+las técnicas y materiales empleados.
+
+\section{Discusión y Resultados}\label{discusion-y-resultados}
+
+\subsection{Estudios de vida
+silvestre}\label{estudios-de-vida-silvestre}
+
+\subsubsection{Estudios de poblaciones}\label{estudios-de-poblaciones}
+
+Actualmente se experimenta un incremento de los trabajos de
+investigación que pretenden realizar un análisis comparativo entre la
+detectabilidad de especies silvestres mediante la observación directa
+realizada por especialistas frente al uso de RPAS. En la mayoría de los
+casos se persigue validar y armonizar ambas metodologías,
+complementándolas. Fuera de la literatura científica, existen proyectos
+para el estudio de la fauna tanto en ecosistemas marinos como
+terrestres. A partir de la información recopilada en la comunidad online
+\url{https://conservationdrones.org} se han obtenido un total de X
+estudios relacionados con el registro de individuos en poblaciones
+situadas en áreas protegidas o frecuentemente visitadas por estas
+especies.
+
+\subsubsection{Evaluación de
+infraestructuras}\label{evaluacion-de-infraestructuras}
+
+Otros trabajos resaltan la utilidad de los RPAS en la caracterización de
+infraestructuras humanas en zonas sensibles y su impacto sobre especies
+vulnerables a sufrir accidentes.
+
+\subsubsection{Ecología espacial}\label{ecologia-espacial}
+
+Mapa de zonas
+
+\subsection{Monitoreo y mapeo de ecosistemas terrestres y
+acuáticos}\label{monitoreo-y-mapeo-de-ecosistemas-terrestres-y-acuaticos}
+
+\subsubsection{Ecosistemas acuáticos}\label{ecosistemas-acuaticos}
+
+\subsubsection{Ecosistemas terrestres}\label{ecosistemas-terrestres}
+
+\subsection{Apoyo para el cumplimiento de las leyes en áreas
+protegidas}\label{apoyo-para-el-cumplimiento-de-las-leyes-en-areas-protegidas}
+
+\subsubsection{Caza ilegal}\label{caza-ilegal}
+
+\section{Conclusión}\label{conclusion}
+
+Elaborar conclusiones basadas en los resultados obtenidos, destacando
+los campos con mayor interés.
+
+\newpage
+\singlespacing 
+\bibliography{/home/jesus/Documents/CURSOS/drones/RTF/project/master.bib}
+
+\end{document}
