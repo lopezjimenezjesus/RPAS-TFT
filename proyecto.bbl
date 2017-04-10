@@ -1,23 +1,30 @@
 \begin{thebibliography}{xx}
 
-\harvarditem[Abd-Elrahman, Pearlstine \harvardand\ Percival]{Abd-Elrahman,
-  Pearlstine \harvardand\ Percival}{2005}{Abd-Elrahman2005a}
-Abd-Elrahman, Amr, Leonard Pearlstine \harvardand\ Franklin Percival. 2005.
-\newblock ``{Development of Pattern Recognition Algorithm for Automatic Bird
-  ...}'' {\em Surveying and Land Information Science} 65(1):37.
+\harvarditem{AEDRON}{2017}{Aedron2017}
+AEDRON, Asociación Española de Drones y~Afines. 2017.
+\newblock ``\emph{Borrador de la nueva normativa (pendiente aprobación y
+  publicación)}.''.
+\newblock \url{https://www.aedron.com/borrador-nueva-normativa} [Accessed: 07
+  de Abril, 2017].
 
-\harvarditem[Chape et~al.]{Chape, Harrison, Spalding \harvardand\
-  Lysenko}{2005}{Chape2005}
-Chape, S, J Harrison, M Spalding \harvardand\ I Lysenko. 2005.
-\newblock ``{Measuring the extent and effectiveness of protected areas as an
-  indicator for meeting global biodiversity targets.}'' {\em Philosophical
-  transactions of the Royal Society of London. Series B, Biological sciences}
-  360(February 2005):443--455.
+\harvarditem{Agencia~EFE}{2013}{Nacion2013}
+Agencia~EFE, La~Nación. 2013.
+\newblock ``\emph{CIDH alerta del creciente uso de 'drones' en América
+  Latina}.''.
+\newblock
+  \url{http://www.nacion.com/mundo/latinoamerica/Comision_Interamericana_de_Derechos_Humanos-drones-regulacion-Costa_Rica_0_1375662598.html}
+  [Accessed: 07 de Abril, 2017].
 
-\harvarditem{Koh \harvardand\ Wich}{2012}{Koh2012}
-Koh, Lian~Pin \harvardand\ Serge~A. Wich. 2012.
-\newblock ``{Dawn of drone ecology: low-cost autonomous aerial vehicles for
-  conservation}.'' {\em Tropical Conservation Science} 5(2):121--132.
+\harvarditem{Andrews}{2014}{Andrews2014}
+Andrews, C. 2014.
+\newblock ``\emph{Wildlife monitoring: should UAV drones be banned?}''.
+\newblock
+  \url{https://prod-eandt.theiet.org/content/articles/2014/07/wildlife-monitoring-should-uav-drones-be-banned/}
+  [Accessed: 07 de Abril, 2017].
+
+\harvarditem{Jain}{2013}{Vermeulen2013}
+Jain, Mukesh. 2013.
+\newblock ``{Unmanned Aerial Survey of Elephants}.'' {\em PLoS ONE} .
 
 \harvarditem[Lhoest et~al.]{Lhoest, Linchant, Quevauvillers, Vermeulen
   \harvardand\ Lejeune}{2015}{Lhoest2015}
@@ -28,41 +35,9 @@ Lhoest, S., J. Linchant, S. Quevauvillers, C. Vermeulen \harvardand\ P.
   Archives of the Photogrammetry, Remote Sensing and Spatial Information
   Sciences - ISPRS Archives} 40(3W3):355--362.
 
-\harvarditem[Linchant et~al.]{Linchant, Lisein, Semeki, Lejeune \harvardand\
-  Vermeulen}{2015}{Linchant2015}
-Linchant, Julie, Jonathan Lisein, Jean Semeki, Philippe Lejeune \harvardand\
-  C{\'{e}}dric Vermeulen. 2015.
-\newblock ``{Are unmanned aircraft systems (UASs) the future of wildlife
-  monitoring? A review of accomplishments and challenges}.'' {\em Mammal
-  Review} 45(4):239--252.
-
-\harvarditem[Mulero-P{\'{a}}zm{\'{a}}ny et~al.]{Mulero-P{\'{a}}zm{\'{a}}ny,
-  Barasona, Acevedo, Vicente \harvardand\ Negro}{2015}{Mulero-Pazmany2015}
-Mulero-P{\'{a}}zm{\'{a}}ny, Margarita, Jose~{\'{A}}ngel Barasona, Pelayo
-  Acevedo, Joaqu{\'{i}}n Vicente \harvardand\ Juan~Jos{\'{e}} Negro. 2015.
-\newblock ``{Unmanned Aircraft Systems complement biologging in spatial ecology
-  studies}.'' {\em Ecology and Evolution} 5(21):4808--4818.
-
-\harvarditem[Nugraha, Jeyakodi \harvardand\ Mahem]{Nugraha, Jeyakodi
-  \harvardand\ Mahem}{2016}{Nugraha2016}
-Nugraha, Ridha~Aditya, Deepika Jeyakodi \harvardand\ Thitipon Mahem. 2016.
-\newblock ``{Urgency for Legal Framework on Drones : Lessons for Indonesia ,
-  India , and Thailand}.'' {\em Indonesian Law Review} 6(2):137--157.
-
 \harvarditem{{P{\'{a}}zm{\'{a}}ny Mulero}}{2015}{PazmanyMulero2015}
 {P{\'{a}}zm{\'{a}}ny Mulero}, Margarita. 2015.
 \newblock ``{Unmanned Aerial Systems in Conservation Biology}.''.
-
-\harvarditem{Sasse}{2003}{Sasse2003}
-Sasse, D.~Blake. 2003.
-\newblock ``{Job-related mortality of wildlife workers in the United States,
-  1937-2000}.'' {\em Wildlife Society Bulletin} 31(4):1000--1003.
-
-\harvarditem{Schiffman}{2014}{Schiffman2014}
-Schiffman, R. 2014.
-\newblock ``{Drones Flying High as New Tool for Field Biologists}.'' {\em
-  Science} 344(May):459--459.
-\newline\harvardurl{http://www.sciencemag.org/cgi/doi/10.1126/science.344.6183.459}
 
 \harvarditem[van Andel et~al.]{van Andel, Wich, Boesch, Koh, Robbins, Kelly
   \harvardand\ Kuehl}{2015}{VanAndel2015}
@@ -72,12 +47,18 @@ van Andel, Alexander~C., Serge~A. Wich, Christophe Boesch, Lian~Pin Koh,
   unmanned aerial vehicle}.'' {\em American Journal of Primatology}
   77(10):1122--1134.
 
-\harvarditem[Zahawi et~al.]{Zahawi, Dandois, Holl, Nadwodny, Reid \harvardand\
-  Ellis}{2015}{Zahawi2015}
-Zahawi, Rakan~A., Jonathan~P. Dandois, Karen~D. Holl, Dana Nadwodny,
-  J.~Leighton Reid \harvardand\ Erle~C. Ellis. 2015.
-\newblock ``{Using lightweight unmanned aerial vehicles to monitor tropical
-  forest recovery}.'' {\em Biological Conservation} 186(June):287--295.
-\newline\harvardurl{http://dx.doi.org/10.1016/j.biocon.2015.03.031}
+\harvarditem[Weissensteiner, Poelstra \harvardand\ Wolf]{Weissensteiner,
+  Poelstra \harvardand\ Wolf}{2015}{Weissensteiner2015}
+Weissensteiner, M~H, J~W Poelstra \harvardand\ J~B~W Wolf. 2015.
+\newblock ``{Low-budget ready-to-fly unmanned aerial vehicles: An effective
+  tool for evaluating the nesting status of canopy-breeding bird species}.''
+  {\em Journal of Avian Biology} 46(4):425--430.
+
+\harvarditem{Wich}{2017}{WichS2017}
+Wich, S. 2017.
+\newblock ``\emph{Amazon river dolphin project}.''.
+\newblock
+  \url{https://conservationdrones.org/2017/04/05/amazon-river-dolphin-project/}
+  [Accessed: 07 de Abril, 2017].
 
 \end{thebibliography}
