@@ -170,13 +170,13 @@ $if(title)$
 {% \usefont{T1}{pnc}{m}{n}
 \setlength{\parindent}{0pt}
 \thispagestyle{plain}
-{\fontsize{18}{20}\selectfont\raggedright 
+{\fontsize{16}{20}\selectfont\raggedright 
 \maketitle  % title \par  
 
 }
 
 {
-   \vskip 13.5pt\relax \normalsize\fontsize{11}{12} 
+   \vskip 13.5pt\relax \normalsize\fontsize{10}{12} 
 $if(anonymous)$\hfill $else$$for(author)$\textbf{\authorfont $author.name$} \hskip 15pt \vskip 8.5pt  \emph{\small $author.affiliation$}  $sep$ \par $endfor$ $endif$
 
 }

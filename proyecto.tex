@@ -118,13 +118,13 @@ protegidos: presente y futuro},
 {% \usefont{T1}{pnc}{m}{n}
 \setlength{\parindent}{0pt}
 \thispagestyle{plain}
-{\fontsize{18}{20}\selectfont\raggedright 
+{\fontsize{16}{20}\selectfont\raggedright 
 \maketitle  % title \par  
 
 }
 
 {
-   \vskip 13.5pt\relax \normalsize\fontsize{11}{12} 
+   \vskip 13.5pt\relax \normalsize\fontsize{10}{12} 
 \textbf{\authorfont Jesús Jiménez López} \hskip 15pt \vskip 8.5pt  \emph{\small Experto Universitario en Vehículos Aéreos no Tripulados y sus
 Aplicaciones Civiles. Universidad de Cádiz}   
 
@@ -147,8 +147,8 @@ Aplicaciones Civiles. Universidad de Cádiz}
 las tendencias en el uso de los drones en proyectos científicos con
 fines de conservación en espacios naturales protegidos, mediante la
 recopilación y revisión de material bibliográfico en forma de artículos
-científicos, revistas, proyectos de conservación publicados en Internet
-y otras fuentes de información relevantes.
+científicos, revistas, proyectos de conservación y otras fuentes de
+información relevantes.
 
 
 \vskip 8.5pt \noindent \emph{Palabras claves}: RPAs, UAVs, drones, espacios naturales, conservación, biodiversidad,
@@ -172,25 +172,27 @@ investigación, innovación \par
 
 \noindent \doublespacing \section{Introducción}\label{introduccion}
 
-La declaración de áreas protegidas son múltiples y variados. Desde
-entonces el
-
 Las aplicaciones de los vehículos aéreos no tripulados (RPAs, UAVs,
 drones) en el campo de la conservación han sido directa o indirectamente
 planteadas en un número cada vez mayor de artículos científicos. Durante
 los últimos años ha habido un incremento significativo de las líneas de
 investigación sobre vida silvestre que hacen uso de RPAS
-\citep{Linchant2015}. En el campo de la biología de la conservación, el
-auge de estos equipos ha conducido a un mayor desarrollo de las
-metodologías que tratan de complementar o sustituir los medios más
-tradicionales con los que se ha venido llevando a cabo las diferentes
-actividades enfocadas hacia el manejo de los espacios naturales
-protegidos, en sus diversas facetas. Aunque el número de áreas
+\citep{Linchant2015}. El auge de estos equipos ha conducido a un mayor
+desarrollo de las metodologías que tratan de complementar o sustituir
+las técnicas tradicionales enfocadas hacia el manejo de los espacios
+naturales protegidos, en sus diversas facetas. Aunque el número de áreas
 protegidas ha experimentado un aumento sensible a nivel mundial, con un
 12 \% de la superficie terrestre bajo alguna figura de protección, hay
 autores que resaltan la necesidad de mejorar las herramientas para
 asegurar la efectividad de la conservación de la biodiversidad en áreas
-protegidas \citep{Chape2005}.
+protegidas \citep{Chape2005}. A pesar de esta tendencia positiva, la
+creación de estas áreas ha estado motivada en muchos casos por criterios
+oportunistas que no reflejan necesariamente el valor ecológico de los
+ecosistemas a preservar \citep{Knight2007}. Aunque aún lejos de
+consolidarse como una herramienta de trabajo esencial en la gestión de
+áreas protegidas, en este estudio se argumenta el importante rol de los
+RPAS en conservación, en la medida en que se superen las barreras
+técnicas y legales que limitan su efectividad.
 
 Existen actualmente algunas iniciativas que tratan de recoger el estado
 actual de los RPAS en las áreas de la ecología y conservación. Con fecha
@@ -202,12 +204,13 @@ responsable de RPAS. Es de esperar que del resultado de este llamamiento
 se produzca un aumento significativo de la literatura científica en este
 ámbito. Por otro lado, es remarcable la mayor presencia de portales en
 internet que centran su actividad en torno a las aplicaciones con RPAS.
-En el campo de la investigación aplicada en conservación, el sitio
-referencia es \url{http://conservationdrones.org/}, cuyos objetivos se
-enmarcan en la facilitación del uso y desarrollo de RPAs con tal
-propósito y en el cual se pueden consultar casos de usos de RPAS, los
-cuales no siempre aparecen reflejados en artículos científicos. Dentro
-de las aplicaciones de los RPAS con caracter general destaca la
+En el campo de la investigación aplicada en conservación
+\url{http://conservationdrones.org/} es uno de los sitios de referencia.
+Sus objetivos se enmarcan en la facilitación del uso y desarrollo de
+RPAs en actividades conservacionistas. En su web se pueden consultar
+casos de usos de RPAS cuyos resultados, dado el caracter pionero de
+estos estudios, no siempre aparecen reflejados en artículos científicos.
+Dentro de las aplicaciones de los RPAS con caracter general destaca la
 comunidad online \url{http://diydrones.com/}, en la que tiene gran
 acogida el uso de plataformas abiertas, de gran popularidad frente a los
 tradicionales sistemas cerrados promovidos por compañias comerciales del
@@ -221,35 +224,37 @@ permite cubrir las necesidades específicas de cada proyecto
 \citep{Koh2012}.
 
 Por otra parte, este estudio se analiza el grado en el que los RPAS
-están llamados a sustituir herramientas tradicionales de apoyo a la
-conservación en espacios naturales protegidos, tanto en su vertiente
-científica como conservacionista. En este sentido, las limitaciones
-desde el punto de vista financiero y tecnológico de la teledetección,
-por la cual se obtienen imágenes de la superficie terrestre a partir de
-sensores instalados en plataformas aéreas o espaciales, son descritas
-por diversos autores \citep{Koh2012}. Si bien es posible adquirir
-imágenes satelitales a coste cero (LandSat, MODIS, Sentinel, etc.) en
-ocasiones la resolución espacial y temporal necesaria para este tipo de
-estudios, junto con los problemas de presencia de nubes especialmente
-acusados en zonas tropicales, reduce la efectividad de la teledetección
-como herramienta de apoyo a la conservación. En paises en vías de
-desarrollo, especialmente sensibles en cuanto a dotaciones
-presupuestarias, se han desarrollado con gran éxito programas de
-monitoreo y vigilancia a partir del uso del RPAS, eliminando los
+están llamados a complementar o sustituir herramientas tradicionales de
+apoyo a la conservación en espacios naturales protegidos, tanto en su
+vertiente científica como conservacionista. En este sentido, las
+limitaciones desde el punto de vista financiero y tecnológico de la
+teledetección, por la cual se obtienen imágenes de la superficie
+terrestre a partir de sensores instalados en plataformas aéreas o
+espaciales, son descritas por diversos autores \citep{Koh2012}. Si bien
+es posible adquirir imágenes satelitales a coste cero (LandSat, MODIS,
+Sentinel, etc.) en ocasiones la resolución espacial y temporal necesaria
+para este tipo de estudios, junto con los problemas de presencia de
+nubes especialmente acusados en zonas tropicales, reduce la efectividad
+de la teledetección como herramienta de apoyo a la conservación. En
+paises en vías de desarrollo, especialmente sensibles en cuanto a
+dotaciones presupuestarias, se han desarrollado con gran éxito programas
+de monitoreo y vigilancia a partir del uso del RPAS, eliminando los
 inconvenientes descritos con anterioridad. Además, el gran tamaño de
 estas áreas protegidas reducen en muchos casos la efectividad de los
 trabajos de campo, por lo que los RPAS se han posicionado como un
 complemento adecuado para las actividades de conservación
 \citep{Zahawi2015}.
 
-Junto con la mejora en los costes y la reducción de la logística
-necesaria mediante el empleo de los RPAS en el diseño y planificación de
-los proyectos de investigación frente a los levantamientos aéreos
-convencionales, existe una sensibilización cada vez mayor en relación a
-la mejora de la seguridad de los biólogos en las operaciones de campo.
-Algunos estudios señalan que los accidentes aéreos se situan como
-primera causa de mortandad en especialistas en vida silvestre en los
-Estados Unidos \citep{Sasse2003}.
+Junto con las oportunidades de reducir los costes y la carga logística,
+existe una sensibilización cada vez mayor en relación a la mejora de la
+seguridad de los biólogos en las operaciones de campo. Algunos estudios
+señalan que los accidentes aéreos se situan como primera causa de
+mortandad en especialistas en vida silvestre en los Estados Unidos
+\citep{Sasse2003}. Desde el punto de vista de las especies de fauna
+observadas, algunos estudios analizan la respuesta de las especies
+frente a los RPAS y consideran la aplicación de buenas prácticas con
+objeto de reducir el impacto negativo en su bienestar y evitar
+perturbaciones en los patrones de comportamiento.
 
 Finalmente, algunos autores señalan la necesidad de mejorar el marco
 regulatorio respecto al uso civil de los RPAS \citep{Nugraha2016}. En
@@ -266,9 +271,9 @@ civil como militar \citep{Nacion2013}. Africa es uno de los continentes
 donde el impacto de los drones en conservación ha tenido mayor
 repercusión. Sin embargo, según la opinión de algunos conservacionistas,
 su uso no ha estado exento de problemas, dando como resultado gobiernos
-que han prohibido total o parcialmente su uso, anteponiendo la seguridad
-frente a la protección de los espacios naturales protegidos
-\citep{Andrews2014}.
+que han prohibido total o parcialmente su uso, argumentando problemas de
+seguridad nacional en detrimento de la protección de los espacios
+naturales protegidos \citep{Andrews2014}.
 
 La incertidumbre de los usuarios ha promovido el desarrollo de
 asociaciones con objeto de asesorar sobre los aspectos legales a tener
@@ -282,167 +287,50 @@ pilotadas por control remoto en España \citep{Aedron2017}.
 \section{Métodos}\label{metodos}
 
 Para alcanzar los objetivos propuestos se procedió a la revisión
-bibliográfica de artículos, tesis de postgrado, sitios web y revistas
-especializadas, siguiendo una línea similar a otros estudios realizados
-con anterioridad \citet{Linchant2015}. Mediante artículos seleccionados
-para el curso de Experto Universitario en Vehículos Aéreos no Tripulados
-y sus Aplicaciones Civiles organizado por la Universidad de Cádiz en su
-edición de 2016-2017, junto con herramientas como Google Schoolar,
-ResearchGate y Mendeley Desktop se obtuvo la mayor parte de la
-bibliografía seleccionada, mientras que el uso de los motores de
-búsqueda por internet incluyeron el resto de materiales mencionados. Los
-principales criterios de búsqueda por palabras claves incluyeron los
-vehículos aéreos no tripulados en sus diversas acepciones, incluyendo
-acrónimos (RPAS, UAV, drones, etc.), junto con términos que hacen
-referencia a áreas naturales, fundamentalmente en inglés. Dicha
-actividad tuvo lugar hasta el mes de Abril, 2017.
+bibliográfica de artículos, literatura gris, tesis de postgrado, sitios
+web y revistas especializadas, siguiendo una línea similar a otros
+estudios realizados con anterioridad \citet{Linchant2015}. Mediante
+artículos seleccionados para el curso de Experto Universitario en
+Vehículos Aéreos no Tripulados y sus Aplicaciones Civiles organizado por
+la Universidad de Cádiz en su edición de 2016-2017, junto con
+herramientas como Google Schoolar, ResearchGate y Mendeley Desktop se
+obtuvo la mayor parte de la bibliografía seleccionada, mientras que el
+uso de los motores de búsqueda por internet incluyeron el resto de
+materiales mencionados. Los principales criterios de búsqueda por
+palabras claves incluyeron los vehículos aéreos no tripulados en sus
+diversas acepciones, incluyendo acrónimos (RPAS, UAV, drones, etc.),
+junto con términos que hacen referencia a áreas naturales,
+fundamentalmente en inglés. Dicha actividad tuvo lugar hasta el mes de
+Abril, 2017.
 
-La información recolectada se clasificó en tres categorías generales que
-son objeto de la conservación en espacios protegidos: 1. Estudios de
-vida silvestre, 2. Monitoreo y mapeo de ecosistemas terrestres y
-acuáticos y 3. Apoyo para el cumplimiento de las leyes en áreas
-protegidas, existiendo cierto lógico solape entre categorías dado el
-carácter multidisciplinar de estos estudios. Otros proyectos que no
-entraron dentro de alguna de las tres categorías propuestas se
-clasificaron en un solo grupo. La información recogida se presenta en
-formato tabular, identificando los paises implicados, el propósito
-principal de cada estudio, junto con las técnicas y materiales
-empleados, haciendo referencia explicita al tipo de aplicación y
-plataformas de vuelo, tanto de ala fija como de pala rotatoria.
-Adicionalmente se revisan algunos aspectos de índole social recogidos en
-los materiales seleccionados y que son motivo de controversia en las
-partes interesadas, haciendo especialmente referencia a la privacidad de
-las personas y el bienestar de las especies estudiadas, las
-implicaciones éticas y legales y su repercusión en la efectividad de
-estas técnicas en la conservación a largo plazo. Finalmente se discute
-los posibles escenarios de uso de drones en espacios protegidos,
-destacando las oportunidades que presentan y que aún no han sido
-convenientemente explotadas.
+La información recolectada se categorizó según los propósitos de
+aplicación de los RPAS en la conservación en espacios protegidos. La
+mayoría de los estudios analizados se centran en la viabilidad de los
+RPAS la conservación a gran escala, junto con la caracterización de
+poblaciones y comunidades de vida silvestre, especialmente en estudios
+de distribución y abundancia. Las aplicaciones en actividades de
+monitoreo y mapeo en ecosistemas terrestres y acuáticos también ocupan
+un lugar destacado, en estrecha relación con las mejoras en la
+resolución espacio-temporal de las imágenes adquiridas. Adicionalmente
+se revisan algunos aspectos de índole social recogidos en los materiales
+seleccionados y que son motivo de controversia, con especial referencia
+a la privacidad de las personas y el bienestar de las especies
+estudiadas, las implicaciones éticas y legales y su repercusión en la
+efectividad de estas técnicas en la conservación a largo plazo. En
+cualquier caso, dado el carácter multidisciplinar y multipropósito de
+estos estudios existe cierto solape entre los objetivos marcados dentro
+de cada proyecto, por lo que se ha tenido en cuenta aquellos objetivos
+que mayor peso tienen en el contexto de la investigación.
 
-\section{Discusión}\label{discusion}
-
-En discusión comenta el resultado de esa tabla y los porqués (ej se usan
-más multicópteros que fixed por\ldots{}) y las limitaciones que señalan
-los usuarios o conflictos que hayan podido encontrar (con el parque,
-técnicos etc).
-
-\subsection{Estudios de vida
-silvestre}\label{estudios-de-vida-silvestre}
-
-\subsubsection{Estudios de poblaciones}\label{estudios-de-poblaciones}
-
-Actualmente se experimenta un incremento de los trabajos de
-investigación que incorporan el uso de RPAS en la disciplina de ecología
-de poblaciones. Algunos estudios comparan el uso de drones para el
-desarrollo de modelos de distribución de especie y caracterización del
-habitat de las especies objetivos frente a los sistemas de seguimiento
-por satélite o radiocontrol, que permiten registrar el movimiento del
-animal para su análisis posterior \citep{PazmanyMulero2015},
-\citep{Mulero-Pazmany2015}. En determinados casos, frente a las
-dificultades para detectar directamente a la especie de interés, los
-estudios se enfocan en la localización y caracterización de sus áreas de
-cría y nidificación \citep{VanAndel2015}. En áreas protegidas de gran
-extensión se han ensayado con éxito el conteo de grandes mamíferos
-terrestres , no habiéndose registrado reacciones adversas en vuelos
-realizados a cierta altura \citep{Vermeulen2013}. El conteo de
-poblaciones de mamíferos en ecosistemas marinos también ha sido
-documentado con resultados positivos \citep{Hodgson2013}. El uso de RPAS
-también ha encontrado su nicho de actuación en el monitoreo de aves,
-especialmente en estudios de dinámica poblacional en colonias
-\citep{Sarda-Palomera2012}. La utilidad de estos sistemas también queda
-manifiesta en la inspección y caracterización de nidos de aves en zonas
-de dificil acceso \citep{Weissensteiner2015}, permitiendo evaluar el
-estado en el que se encuentran de forma menos intrusiva.
-
-Dada la masiva cantidad de información que el uso de RPAS puede generar,
-no es de extrañar que se hayan concentrado esfuerzos dirigidos al
-desarrollo de algoritmos que permitan detectar con exactitud el número
-de individuos capturados por los dispositivos fotográficos
-\citep{Lhoest2015},\citep{Abd-Elrahman2005a}. Esto conlleva una
-reducción de los costes respecto al conteo manual de las escenas
-adquiridas, con la desventaja adicional de estar sujetos en mayor o
-menor medida a la interpretación del especialista. En este sentido, los
-métodos de observación directa desde vehículos aéreos tripulados también
-representan desventajas con respecto al uso de imágenes, puesto que
-necesitan un mayor número de observadores que garantizen un conteo
-exahustivo de las poblaciones.
-
-Fuera de la literatura científica, existen proyectos para el monitoreo
-de la fauna tanto en ecosistemas marinos como terrestres. A partir de la
-información recopilada en la comunidad online
-\url{https://conservationdrones.org} se han identificado varios estudios
-relacionados con el registro de individuos en poblaciones situadas en
-áreas protegidas o frecuentemente visitadas por especies sujetas a
-alguna figura de amenaza, siendo la mayoría de estos proyectos
-respaldados por organizaciones no gubernamentales y centros de
-investigación. Por ejemplo, un estudio realizado en la cuenca del
-Amazonas en Brasil está experimentando el uso de drones para mejorar la
-estimación de la densidad y abundancia de diferentes especies de
-delfines, comparándolo con la observación directa realizada por
-especialistas \citep{WichS2017}. Dentro de los objetivos de la
-investigación se contempla la validación y armonización de ambas
-metodologías y de forma indirecta evaluar la viabilidad para su
-aplicación regular en proyectos de monitoreo con similar propósito,
-teniendo en cuenta el coste-beneficio de la ejecución.
-
-\subsubsection{Evaluación de
-infraestructuras}\label{evaluacion-de-infraestructuras}
-
-Otros trabajos resaltan la utilidad de los RPAS en la caracterización y
-evaluación del riesgo de infraestructuras humanas, fundamentalmente
-dirigidos a especies de aves que nidifican en postes de líneas
-eléctricas de alta tensión, haciéndolas especialmente vulnerables a la
-electrocución \citep{Mulero-Pazmany2014a}. Si bien esto estudios no
-están dirigidos exclusivamente a áreas protegidas, resultan de especial
-interés en zonas de amortiguamiento, donde el desarrollo antrópico es
-más acusado.
-
-\subsubsection{Ecología espacial}\label{ecologia-espacial}
-
-\citep{PazmanyMulero2015} blah blah distribution patterns within a
-protected area, which is critical for ecosystem management (Bailey
-.Complementan a otros sistemas que permiten Mapa de zonas
-
-\subsection{Monitoreo y mapeo de ecosistemas terrestres y
-acuáticos}\label{monitoreo-y-mapeo-de-ecosistemas-terrestres-y-acuaticos}
-
-\subsubsection{Ecosistemas acuáticos}\label{ecosistemas-acuaticos}
-
-\subsubsection{Ecosistemas terrestres}\label{ecosistemas-terrestres}
-
-\subsection{Apoyo para el cumplimiento de las leyes en áreas
-protegidas}\label{apoyo-para-el-cumplimiento-de-las-leyes-en-areas-protegidas}
-
-\subsubsection{Caza ilegal}\label{caza-ilegal}
-
-\subsubsection{Otras actividades
-ilegales}\label{otras-actividades-ilegales}
-
-\section{Resultados}\label{resultados}
-
-Una de las mayores limitaciones en el desarrollo y aplicación de los
-RPAS en estudios de conservación se debe a las restricciones impuestas
-por la legislación actual, que prohiben o reducen en gran medida el
-desarrollo de actividades de conservación\ldots{}\ldots{} En algunos
-paises los. El marco regulatorio debería favorecer las actividades de
-conservación, estableciendo mecanismos ágiles que autoricen su uso
-fundamentado mediante permisos de investigación . En la medida en que
-las leyes que regulan el uso civil de las aeronaves pilotadas por
-control remoto sean favorables para su uso en conservación, es probable
-que las oportunidades en el sector vayan en aumento, permitiendo
-desarrollar nuevas técnicas que .. Sin embargo conflictos sociales,
-ética animal, pilotos experimentados y conscientes. Hay drones que
-permiten seguir el objetivo\ldots{} limitación batería
-
-Riesgos de los vehiculos aereos tripulados, costes,
-
-La creación de reservas naturales no siempre han estado motivadas por
-razones conservacionistas \citep{Knight2007}. En algunos casos estas
-áreas han sido declaradas sin establecer criterios ecológicos objetivos
-que prioricen su protección, bien por razones oportunísticas o por
-carecer de los medios suficientes para su delimitación. En este sentido
-los RPAS podrían jugar un papel importante en la selección y
-redefinición de áreas prioritarias para la conservación.
+La información seleccionada se presenta en formato tabular,
+identificando los paises implicados, el propósito principal de cada
+estudio, junto con las técnicas y materiales empleados, haciendo
+referencia explicita al tipo de aplicación y plataformas de vuelo, tanto
+de ala fija como de pala rotatoria. Finalmente se discuten los posibles
+escenarios que presentan los RPAS como herramientas fundamentales para
+contribuir a la consecución de los objetivos de conservación en espacios
+protegidos, destacando algunas tendencias y oportunidades que aún no han
+sido convenientemente explotadas.
 
 \begin{sidewaystable}
 \centering
@@ -459,19 +347,166 @@ Estudio & Tipo de Estudio & Objetivo/s & País & Lugar & Especie & Tipo RPAS & M
 
 \citealt{Hodgson2013} & Tipo estudio & Determinar la eficacia para detectar e identificar dugongs.  Comprobar la actitud de los RPAS en diferentes condiciones ambientales. Determinar la resolución ideal  & Australia & Shark Bay Marine Park & Dugong & Ala fija &  ScanEagle & Nikon® D90 12 megapixel digital SLR camera  & Si & Costo  \\ 
 
-\cite{Ivosevic2015}  & Monitoreo de ecosistemas terrestres & Monitoreo de habitats en zonas restringidas; Modelos; Comprobar la actitud de los RPAS en diferentes condiciones ambientales. & South Korea & Chiaksan National Park;Taeanhaean National Park & Multicóptero & Phantom 2 Vision+ & istema de captura & Especie & Si & Costo \\ 
+\cite{Ivosevic2015}  & Monitoreo de ecosistemas terrestres & Monitoreo de habitats en zonas restringidas; Modelos; Comprobar la actitud de los RPAS en diferentes condiciones ambientales. & South Korea & Chiaksan National Park;Taeanhaean National Park & Multicóptero & DJI Phantom 2 Vision+ & full HD videos  1080p/30fps and 720p/60fps & Especie & Si & Costo \\ 
 
 \cite{Vermeulen2013}  & Estudio de poblaciones & Estudio &  Burkina Faso & Nazinga Game Ranch & Ala fija  &  Gatewing 6100 UAS & Ricoh GR3 still camera (10 megapixels, 28 mm Charged Coupled Device) & Loxodonta africana & Si & 426 / day \\ 
-
+\cite{Chabot2014}  & Tipo estudio & Calidad del habitat & Canada & South shore of the St. Lawrence River, Lake Saint Pierre Biosphere Reserve  & Ala fija  &  AI-Multi UAS & 10-megapixel Canon S90 & Ixobrychus exilis & Si & 20,000  \\ 
 \cite{PazmanyMulero2015}  & Tipo estudio & Estudio & España & Parque Nacional de Doñana & Modelo RPAS  & istema de captura & Especie & Si & Costo  \\ 
 
-\cite{PazmanyMulero2015}  & Tipo estudio & Estudio & España & Parque Nacional de Doñana & Modelo RPAS & istema de captura & Especie & Si & Costo  \\ 
-\cite{PazmanyMulero2015}  & Tipo estudio & Estudio & España & Parque Nacional de Doñana & Modelo RPAS  & istema de captura & Especie & Si & Costo  \\ 
 \cite{PazmanyMulero2015}  & Tipo estudio & Estudio & España & Parque Nacional de Doñana & Modelo RPAS & istema de captura & Especie & Si & Costo  \\ 
 \cite{PazmanyMulero2015}  & Tipo estudio & Estudio & España & Parque Nacional de Doñana & Modelo RPAS  & istema de captura & Especie & Si & Costo  \\ 
 \cite{PazmanyMulero2015}  & Tipo estudio & Estudio & España & Parque Nacional de Doñana & Modelo RPAS  & istema de captura & Especie & Si & Costo  \\ \\ \cmidrule(r){1-11}
 \end{tabular}
 \end{sidewaystable}
+
+\section{Discusión}\label{discusion}
+
+En discusión comenta el resultado de esa tabla y los porqués (ej se usan
+más multicópteros que fixed por\ldots{}) y las limitaciones que señalan
+los usuarios o conflictos que hayan podido encontrar (con el parque,
+técnicos etc).
+
+\subsection{Estudios de vida
+silvestre}\label{estudios-de-vida-silvestre}
+
+\subsubsection{Estudios de poblaciones}\label{estudios-de-poblaciones}
+
+Actualmente se experimenta un incremento de los trabajos de
+investigación que incorporan el uso de RPAS en diversas disciplinas
+relacionadas con la ecología de poblaciones y comunidades. A partir de
+la información obtenida, algunos estudios comparan el desarrollo de
+modelos de distribución de especie y caracterización del habitat frente
+a sistemas de seguimiento por satélite o radiotelemetría, que permiten
+registrar el movimiento del animal para su análisis posterior
+\citep{PazmanyMulero2015}, \citep{Mulero-Pazmany2015}. Otros estudios
+recientes combinan el uso de radiolocalizadores en RPAS y
+radiomarcadores VHF en estudios de seguimiento de fauna
+\citep{Bayram2016}.
+
+En determinados casos, frente a las dificultades para detectar
+directamente a la especie de interés, los estudios se enfocan en la
+localización y caracterización de sus áreas de cría y nidificación
+\citep{VanAndel2015}. En áreas protegidas de gran extensión se han
+ensayado con éxito el conteo de grandes mamíferos terrestres , no
+habiéndose registrado reacciones adversas en vuelos realizados a cierta
+altura \citep{Vermeulen2013}. La estimación de poblaciones de mamíferos
+en ecosistemas marinos también ha sido documentado con resultados
+positivos \citep{Hodgson2013}. El uso de RPAS también ha encontrado su
+nicho de actuación en el monitoreo de aves, especialmente en estudios de
+dinámica poblacional en colonias \citep{Sarda-Palomera2012}. La utilidad
+de estos sistemas también queda manifiesta en la inspección y
+caracterización de nidos de aves en zonas de dificil acceso
+\citep{Weissensteiner2015}, permitiendo evaluar el estado en el que se
+encuentran de forma menos intrusiva.
+
+Dada la masiva cantidad de información que generada, no es de extrañar
+que se hayan aplicado métodos desarrollados en el campo de la visión
+computerizada, dirigidos al conteo automático de individuos capturados
+en las escenas adquiridas por los sensores fotográficos
+\citep{Lhoest2015},\citep{Abd-Elrahman2005a}, \citep{VanGemert2015}.
+Esto conlleva una reducción de los costes respecto al conteo manual de
+las escenas adquiridas, con la ventaja adicional de no estar sujetos en
+mayor o menor medida a la interpretación del especialista. En este
+sentido, los métodos de observación directa desde vehículos aéreos
+tripulados también representan desventajas con respecto a la toma de
+imágenes aéreas, puesto que necesitan un mayor número de observadores
+que garantizen un conteo exahustivo de las poblaciones para evitar
+errores en la estimación.
+
+Fuera de la literatura científica, existen proyectos para el monitoreo
+de la fauna tanto en ecosistemas marinos como terrestres. A partir de la
+información recopilada en la comunidad online
+\url{https://conservationdrones.org} se han identificado varios estudios
+relacionados con el registro de individuos en poblaciones situadas en
+áreas protegidas o frecuentemente visitadas por especies sujetas a
+alguna figura de amenaza, siendo la mayoría de estos proyectos
+respaldados por organizaciones no gubernamentales y centros de
+investigación. Por ejemplo, un estudio realizado en la cuenca del
+Amazonas en Brasil está experimentando el uso de drones para mejorar la
+estimación de la densidad y abundancia de diferentes especies de
+delfines, comparándolo con la observación directa realizada por
+especialistas \citep{WichS2017}. Dentro de los objetivos de la
+investigación se contempla la validación y armonización de ambas
+metodologías y de forma indirecta, evaluar la viabilidad para su
+aplicación regular en proyectos de monitoreo con similar propósito,
+teniendo en cuenta el coste-beneficio de la ejecución.
+
+\citep{PazmanyMulero2015} blah blah distribution patterns within a
+protected area, which is critical for ecosystem management (Bailey
+.Complementan a otros sistemas que permiten Mapa de zonas
+
+\subsubsection{Evaluación de
+infraestructuras}\label{evaluacion-de-infraestructuras}
+
+Otros trabajos resaltan la utilidad de los RPAS en la caracterización y
+evaluación del riesgo de infraestructuras humanas, fundamentalmente
+dirigidos a especies de aves que nidifican en postes de líneas
+eléctricas de alta tensión, haciéndolas especialmente vulnerables a la
+electrocución \citep{Mulero-Pazmany2014a}. Si bien esto estudios no
+están dirigidos exclusivamente a áreas protegidas, podrían resultan de
+especial interés en zonas de amortiguamiento, donde el desarrollo
+antrópico es más acusado.
+
+\subsection{Monitoreo y mapeo de ecosistemas terrestres y
+acuáticos}\label{monitoreo-y-mapeo-de-ecosistemas-terrestres-y-acuaticos}
+
+\subsubsection{Ecosistemas acuáticos}\label{ecosistemas-acuaticos}
+
+\subsubsection{Ecosistemas terrestres}\label{ecosistemas-terrestres}
+
+\subsection{Apoyo para el cumplimiento de las leyes en áreas
+protegidas}\label{apoyo-para-el-cumplimiento-de-las-leyes-en-areas-protegidas}
+
+\subsubsection{Caza ilegal}\label{caza-ilegal}
+
+Los RPAS también tienen especial proyección en el control y vigilancia
+de áreas protegidas. Así lo demuestran diferentes estudios, enfocados
+principalmente en el control de la caza furtiva. En áreas marinas
+protegidas, los RPAS de ala fija podrían permitir una vigilancia más
+eficaz contra la pesca furtiva. L
+
+En estos casos el desarrollo de sistemas autónomos de mayor FPV
+
+\subsubsection{Otras actividades
+ilegales}\label{otras-actividades-ilegales}
+
+\subsubsection{Etica animal}\label{etica-animal}
+
+\citep{Ditmer2015}
+
+\section{Resultados y conclusiones}\label{resultados-y-conclusiones}
+
+Una de las mayores limitaciones en el desarrollo y aplicación de los
+RPAS en estudios de conservación se debe a las restricciones impuestas
+por la legislación actual. Diversos autores mencionan los problemas
+burocráticos para obtener permisos de investigación que hagan uso de
+esta tecnología emergente \citep{FEE:FEE201513274}. Consideramos que una
+regulación favorable permitiría aumentar las oportunidades en el sector,
+estimulando la innovación técnológica.
+
+Los conflictos sociales también ocupan un capítulo importante en el
+futuro de los drones en conservación. Comunidades implicadas
+
+Hasta ahora no ha habido un desarrollo especifico de drones que
+
+En cuanto a ética animal, pilotos experimentados y conscientes.
+
+En la mayoría de los estudios analizados se remarca el bajo coste
+operacional de los drones frente a otras herramientas de conservación.
+En estudios de caracter multitemporal o con necesidades de alta
+resolución espacial las ventajas son especialmente patentes. Hay drones
+que permiten seguir el objetivo\ldots{} limitación batería
+
+Riesgos de los vehiculos aereos tripulados, costes,
+
+Explicar que estudios usan multirotores y ala fija Mejoras en la
+autonomia de vuelo, junto con el desarrollo de sensores de mayor
+resolución. En al medida en la que aumente el desarrollo de sensores con
+mayor resolución espectral, el abanico de posibilidades de
+
+Mejoras en los algoritmos para la detección de fauna junto al desarrollo
+de sensores fotográficos de mayor resolución en un formato más reducido,
+permitiendo una menor carga y por tanto un mayor tiempo de vuelo.
 
 Elaborar conclusiones basadas en los resultados obtenidos, destacando
 los campos con mayor interés.
