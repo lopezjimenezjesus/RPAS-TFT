@@ -28,6 +28,16 @@ Andrews, C. 2014.
   \url{https://prod-eandt.theiet.org/content/articles/2014/07/wildlife-monitoring-should-uav-drones-be-banned/}
   [Accessed: 07 de Abril, 2017].
 
+\harvarditem[Barnosky et~al.]{Barnosky, Matzke, Tomiya, Wogan, Swartz, Quental,
+  Marshall, Mcguire, Lindsey, Maguire, Mersey \harvardand\
+  Ferrer}{2011}{Barnosky2011}
+Barnosky, Anthony~D, Nicholas Matzke, Susumu Tomiya, Guinevere O~U Wogan, Brian
+  Swartz, Tiago~B Quental, Charles Marshall, Jenny~L Mcguire, Emily~L Lindsey,
+  Kaitlin~C Maguire, Ben Mersey \harvardand\ Elizabeth~A Ferrer. 2011.
+\newblock ``{Has the Earth's sixth mass extinction already arrived?}'' {\em
+  Nature} 470(7336):51--57.
+\newline\harvardurl{http://dx.doi.org/10.1038/nature09678}
+
 \harvarditem[Bayram et~al.]{Bayram, Doddapaneni, Stefas \harvardand\
   Isler}{2016}{Bayram2016}
 Bayram, Haluk, Krishna Doddapaneni, Nikolaos Stefas \harvardand\ Volkan Isler.
@@ -58,6 +68,19 @@ Ditmer, Mark~A., John~B. Vincent, Leland~K. Werden, Jessie~C. Tanner,
   Unmanned Aerial Vehicles}.'' {\em Current Biology} 25(17):2278--2283.
 \newline\harvardurl{http://dx.doi.org/10.1016/j.cub.2015.07.024}
 
+\harvarditem{Forum}{2008}{Forum2008}
+Forum, Policy. 2008.
+\newblock ``{Toward a Global Biodiversity Observing System}.''  (April).
+
+\harvarditem[Frederick et~al.]{Frederick, Simon, Perry, Watts, Smith, Percival,
+  Ifju \harvardand\ Burgess}{2009}{Frederick2009}
+Frederick, Peter~C, John Simon, John Perry, Adam Watts, Scot Smith, Franklin
+  Percival, Peter Ifju \harvardand\ Matthew Burgess. 2009.
+\newblock ``{Use of an Unmanned Aircraft System for Monitoring Nesting
+  Responses of Wading Birds ( Ciconiiformes ) to Restoration of the Florida
+  Everglades , USA}.'' {\em National Conference on Ecosystem Restoration,}
+  p.~110430.
+
 \harvarditem[Hodgson, Kelly \harvardand\ Peel]{Hodgson, Kelly \harvardand\
   Peel}{2013}{Hodgson2013}
 Hodgson, Amanda, Natalie Kelly \harvardand\ David Peel. 2013.
@@ -74,6 +97,14 @@ Ivo{\v{s}}evi{\'{c}}, Bojana, Yong~Gu Han, Youngho Cho \harvardand\ Ohseok
 \harvarditem{Jain}{2013}{Vermeulen2013}
 Jain, Mukesh. 2013.
 \newblock ``{Unmanned Aerial Survey of Elephants}.'' {\em PLoS ONE} .
+
+\harvarditem[Juffe-Bignoli et~al.]{Juffe-Bignoli, Burgess, Bingham, Belle, {De
+  Lima}, Deguignet, Bertzky, Milam, Martinez-Lopez, Lewis \harvardand\
+  Others}{2014}{juffe2014protected}
+Juffe-Bignoli, Diego, Neil~David Burgess, H Bingham, E~M~S Belle, M~G {De
+  Lima}, M Deguignet, B Bertzky, A~N Milam, J Martinez-Lopez, E Lewis
+  \harvardand\ Others. 2014.
+\newblock ``{Protected planet report 2014}.'' {\em Cambridge, UK: UNEP-WCMC} .
 
 \harvarditem{Knight \harvardand\ Cowling}{2007}{Knight2007}
 Knight, Andrew~T. \harvardand\ Richard~M. Cowling. 2007.
@@ -102,9 +133,10 @@ Linchant, Julie, Jonathan Lisein, Jean Semeki, Philippe Lejeune \harvardand\
   monitoring? A review of accomplishments and challenges}.'' {\em Mammal
   Review} 45(4):239--252.
 
-\harvarditem{Living \harvardand\ Index}{2016}{Living2016}
-Living, The \harvardand\ Planet Index. 2016.
-\newblock {\em {Living Planet Report 2016. Risk and resilience in a new era.}}
+\harvarditem{Mascia \harvardand\ Pailler}{2011}{Mascia2011}
+Mascia, Michael~B \harvardand\ Sharon Pailler. 2011.
+\newblock ``{Protected area downgrading, downsizing, and degazettement (PADDD)
+  and its conservation implications}.''  4(Dowie 2009):9--20.
 
 \harvarditem[Mulero-P{\'{a}}zm{\'{a}}ny et~al.]{Mulero-P{\'{a}}zm{\'{a}}ny,
   Barasona, Acevedo, Vicente \harvardand\ Negro}{2015}{Mulero-Pazmany2015}
@@ -140,6 +172,23 @@ Nugraha, Ridha~Aditya, Deepika Jeyakodi \harvardand\ Thitipon Mahem. 2016.
 {P{\'{a}}zm{\'{a}}ny Mulero}, Margarita. 2015.
 \newblock ``{Unmanned Aerial Systems in Conservation Biology}.''.
 
+\harvarditem[Pereira et~al.]{Pereira, Ferrier, Walters, Geller, Jongman,
+  Scholes, Bruford, Brummitt, Butchart, Cardoso, Coops, Dulloo, Faith, Freyhof,
+  Gregory, Heip, H{\"{o}}ft, Hurtt, Jetz, Karp, McGeoch, Obura, Onoda,
+  Pettorelli, Reyers, Sayre, Scharlemann, Stuart, Turak, Walpole \harvardand\
+  Wegmann}{2013}{Pereira2013}
+Pereira, Henrique~Miguel, Simon Ferrier, Michele Walters, Gary~N Geller, Rob
+  H~G Jongman, Robert~J Scholes, Michael~W Bruford, Neil Brummitt, Stuart H~M
+  Butchart, A~C Cardoso, Nicholas~Coops Coops, Ehsan Dulloo, Daniel~P Faith,
+  J{\"{o}}rg Freyhof, R~D Gregory, Carlo Heip, R H{\"{o}}ft, George Hurtt,
+  Walter Jetz, Daniel~S Karp, M{\'{e}}lodie~A McGeoch, David Obura, Yusuke
+  Onoda, Nathalie Pettorelli, Belinda Reyers, R Sayre, J{\"{o}}rn P~W
+  Scharlemann, Simon~N Stuart, Eren Turak, Matt Walpole \harvardand\ Martin
+  Wegmann. 2013.
+\newblock ``{Essential biodiversity variables}.'' {\em Science}
+  339(6117):277--278.
+\newline\harvardurl{http://www.sciencemag.org/content/339/6117/277.short}
+
 \harvarditem[Sard{\`{a}}-Palomera et~al.]{Sard{\`{a}}-Palomera, Bota,
   Vi{\~{n}}olo, Pallar{\'{e}}s, Sazatornil, Brotons, Gom{\'{a}}riz \harvardand\
   Sard{\`{a}}}{2012}{Sarda-Palomera2012}
@@ -171,6 +220,14 @@ van Gemert, Jan~C., Camiel~R. Verschoor, Pascal Mettes, Kitso Epema, Lian~Pin
   Lecture Notes in Artificial Intelligence and Lecture Notes in
   Bioinformatics)} 8925:255--270.
 
+\harvarditem[Vas et~al.]{Vas, Lescroel, Duriez, Boguszewski \harvardand\
+  Gremillet}{2015}{Vas2015}
+Vas, E., A. Lescroel, O. Duriez, G. Boguszewski \harvardand\ D. Gremillet.
+  2015.
+\newblock ``{Approaching birds with drones: first experiments and ethical
+  guidelines}.'' {\em Biology Letters} 11(2):20140754--20140754.
+\newline\harvardurl{http://rsbl.royalsocietypublishing.org/cgi/doi/10.1098/rsbl.2014.0754}
+
 \harvarditem[Vincent, Werden \harvardand\ Ditmer]{Vincent, Werden \harvardand\
   Ditmer}{2015}{FEE:FEE201513274}
 Vincent, John~B, Leland~K Werden \harvardand\ Mark~A Ditmer. 2015.
@@ -191,6 +248,10 @@ Wich, S. 2017.
 \newblock
   \url{https://conservationdrones.org/2017/04/05/amazon-river-dolphin-project/}
   [Accessed: 07 de Abril, 2017].
+
+\harvarditem{WWF}{2016}{Living2016}
+WWF. 2016.
+\newblock {\em {Living Planet Report 2016. Risk and resilience in a new era.}}
 
 \harvarditem[Zahawi et~al.]{Zahawi, Dandois, Holl, Nadwodny, Reid \harvardand\
   Ellis}{2015}{Zahawi2015}
