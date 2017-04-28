@@ -4,6 +4,11 @@
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage{graphicx}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
 \usepackage{caption}
 \newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
 $if(fontfamily)$
@@ -40,7 +45,9 @@ $endif$
 %  \vskip 2em%
 %  \begin{center}%
   \let \footnote \thanks
-    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+    {\pandoc_args: [
+      "-V", "classoption=twocolumn"
+    ]{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
 }
 %\fi
 \makeatother
