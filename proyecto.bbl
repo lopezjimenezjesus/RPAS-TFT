@@ -1,396 +1,553 @@
-\begin{thebibliography}{xx}
+\begin{thebibliography}{60}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\harvarditem[Abd-Elrahman, Pearlstine \harvardand\ Percival]{Abd-Elrahman,
-  Pearlstine \harvardand\ Percival}{2005}{Abd-Elrahman2005a}
-Abd-Elrahman, Amr, Leonard Pearlstine \harvardand\ Franklin Percival. 2005.
-\newblock ``{Development of Pattern Recognition Algorithm for Automatic Bird
-  ...}'' {\em Surveying and Land Information Science} 65(1):37.
+\bibitem[Abd-Elrahman et~al.(2005)Abd-Elrahman, Pearlstine, and
+  Percival]{Abd-Elrahman2005a}
+Amr Abd-Elrahman, Leonard Pearlstine, and Franklin Percival.
+\newblock {Development of Pattern Recognition Algorithm for Automatic Bird ...}
+\newblock \emph{Surveying and Land Information Science}, 65\penalty0
+  (1):\penalty0 37, 2005.
 
-\harvarditem{AEDRON}{2017}{Aedron2017}
-AEDRON, Asociación Española de Drones y~Afines. 2017.
-\newblock ``\emph{Borrador de la nueva normativa (pendiente aprobación y
-  publicación)}.''.
+\bibitem[AEDRON(2017)]{Aedron2017}
+Asociación Española de Drones y~Afines AEDRON.
+\newblock \emph{Borrador de la nueva normativa (pendiente aprobación y
+  publicación)}, 2017.
 \newblock \url{https://www.aedron.com/borrador-nueva-normativa} [Accessed: 07
   de Abril, 2017].
 
-\harvarditem{Agencia~EFE}{2013}{Nacion2013}
-Agencia~EFE, La~Nación. 2013.
-\newblock ``\emph{CIDH alerta del creciente uso de 'drones' en América
-  Latina}.''.
+\bibitem[Agencia~EFE(2013)]{Nacion2013}
+La~Nación. Agencia~EFE.
+\newblock \emph{CIDH alerta del creciente uso de 'drones' en América Latina},
+  2013.
 \newblock
   \url{http://www.nacion.com/mundo/latinoamerica/Comision_Interamericana_de_Derechos_Humanos-drones-regulacion-Costa_Rica_0_1375662598.html}
   [Accessed: 07 de Abril, 2017].
 
-\harvarditem{Andrews}{2014}{Andrews2014}
-Andrews, C. 2014.
-\newblock ``\emph{Wildlife monitoring: should UAV drones be banned?}''.
+\bibitem[Andrews(2014)]{Andrews2014}
+C.~Andrews.
+\newblock \emph{Wildlife monitoring: should UAV drones be banned?}, 2014.
 \newblock
   \url{https://prod-eandt.theiet.org/content/articles/2014/07/wildlife-monitoring-should-uav-drones-be-banned/}
   [Accessed: 07 de Abril, 2017].
 
-\harvarditem[Barnosky et~al.]{Barnosky, Matzke, Tomiya, Wogan, Swartz, Quental,
-  Marshall, Mcguire, Lindsey, Maguire, Mersey \harvardand\
-  Ferrer}{2011}{Barnosky2011}
-Barnosky, Anthony~D, Nicholas Matzke, Susumu Tomiya, Guinevere O~U Wogan, Brian
+\bibitem[Barnosky et~al.(2011)Barnosky, Matzke, Tomiya, Wogan, Swartz, Quental,
+  Marshall, Mcguire, Lindsey, Maguire, Mersey, and Ferrer]{Barnosky2011}
+Anthony~D Barnosky, Nicholas Matzke, Susumu Tomiya, Guinevere O~U Wogan, Brian
   Swartz, Tiago~B Quental, Charles Marshall, Jenny~L Mcguire, Emily~L Lindsey,
-  Kaitlin~C Maguire, Ben Mersey \harvardand\ Elizabeth~A Ferrer. 2011.
-\newblock ``{Has the Earth's sixth mass extinction already arrived?}'' {\em
-  Nature} 470(7336):51--57.
-\newline\harvardurl{http://dx.doi.org/10.1038/nature09678}
+  Kaitlin~C Maguire, Ben Mersey, and Elizabeth~A Ferrer.
+\newblock {Has the Earth's sixth mass extinction already arrived?}
+\newblock \emph{Nature}, 470\penalty0 (7336):\penalty0 51--57, 2011.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/nature09678}.
+\newblock URL \url{http://dx.doi.org/10.1038/nature09678}.
 
-\harvarditem[Bayram et~al.]{Bayram, Doddapaneni, Stefas \harvardand\
-  Isler}{2016}{Bayram2016}
-Bayram, Haluk, Krishna Doddapaneni, Nikolaos Stefas \harvardand\ Volkan Isler.
-  2016.
-\newblock ``{Active Localization of VHF Collared Animals with Aerial Robots}.''
-   (13):74--75.
+\bibitem[Bayram et~al.(2016)Bayram, Doddapaneni, Stefas, and Isler]{Bayram2016}
+Haluk Bayram, Krishna Doddapaneni, Nikolaos Stefas, and Volkan Isler.
+\newblock {Active Localization of VHF Collared Animals with Aerial Robots}.
+\newblock \penalty0 (13):\penalty0 74--75, 2016.
+\newblock ISSN 21618089.
+\newblock \doi{10.1109/COASE.2016.7743503}.
 
-\harvarditem{Bravo}{2008}{Bravo2008}
-Bravo, Xavier~Lastra. 2008.
-\newblock ``{LOS ESPACIOS NATURALES PROTEGIDOS. Concepto, evoluci{\'{o}}n y
-  situaci{\'{o}}n actual en Espa{\~{n}}a.}''  pp.~1--25.
+\bibitem[Bravo(2008)]{Bravo2008}
+Xavier~Lastra Bravo.
+\newblock {LOS ESPACIOS NATURALES PROTEGIDOS. Concepto, evoluci{\'{o}}n y
+  situaci{\'{o}}n actual en Espa{\~{n}}a.}
+\newblock pages 1--25, 2008.
 
-\harvarditem{Bustamante}{2015}{Bustamante2015}
-Bustamante, Luis Antonio~Esquivel. 2015.
-\newblock ``{Forest Monitoring with Drones : Application Strategies for
-  Protected Riverine Forest Ecosystems in the Atlantic Forest of Rio de}.''
-  p.~96.
+\bibitem[Bustamante(2015)]{Bustamante2015}
+Luis Antonio~Esquivel Bustamante.
+\newblock {Forest Monitoring with Drones : Application Strategies for Protected
+  Riverine Forest Ecosystems in the Atlantic Forest of Rio de}.
+\newblock page~96, 2015.
 
-\harvarditem[Chape et~al.]{Chape, Harrison, Spalding \harvardand\
-  Lysenko}{2005}{Chape2005}
-Chape, S, J Harrison, M Spalding \harvardand\ I Lysenko. 2005.
-\newblock ``{Measuring the extent and effectiveness of protected areas as an
-  indicator for meeting global biodiversity targets.}'' {\em Philosophical
-  transactions of the Royal Society of London. Series B, Biological sciences}
-  360(February 2005):443--455.
+\bibitem[Chape et~al.(2005)Chape, Harrison, Spalding, and Lysenko]{Chape2005}
+S~Chape, J~Harrison, M~Spalding, and I~Lysenko.
+\newblock {Measuring the extent and effectiveness of protected areas as an
+  indicator for meeting global biodiversity targets.}
+\newblock \emph{Philosophical transactions of the Royal Society of London.
+  Series B, Biological sciences}, 360\penalty0 (February 2005):\penalty0
+  443--455, 2005.
+\newblock ISSN 0962-8436.
+\newblock \doi{10.1098/rstb.2004.1592}.
 
-\harvarditem[Christie et~al.]{Christie, Gilbert, Brown, Hatfield \harvardand\
-  Hanson}{2016}{Christie2016}
-Christie, Katherine~S., Sophie~L. Gilbert, Casey~L. Brown, Michael Hatfield
-  \harvardand\ Leanne Hanson. 2016.
-\newblock ``{Unmanned aircraft systems in wildlife research: Current and future
-  applications of a transformative technology}.'' {\em Frontiers in Ecology and
-  the Environment} 14(5):241--251.
+\bibitem[Christie et~al.(2016)Christie, Gilbert, Brown, Hatfield, and
+  Hanson]{Christie2016}
+Katherine~S. Christie, Sophie~L. Gilbert, Casey~L. Brown, Michael Hatfield, and
+  Leanne Hanson.
+\newblock {Unmanned aircraft systems in wildlife research: Current and future
+  applications of a transformative technology}.
+\newblock \emph{Frontiers in Ecology and the Environment}, 14\penalty0
+  (5):\penalty0 241--251, 2016.
+\newblock ISSN 15409309.
+\newblock \doi{10.1002/fee.1281}.
 
-\harvarditem[Cliff et~al.]{Cliff, Fitch, Sukkarieh, Saunders \harvardand\
-  Heinsohn}{2015}{Cliff2015}
-Cliff, Oliver~M, Robert Fitch, Salah Sukkarieh, Debra~L Saunders \harvardand\
-  Robert Heinsohn. 2015.
-\newblock ``{Online Localization of Radio-Tagged Wildlife with an Autonomous
-  Aerial Robot System}.'' {\em Robotics Science and Systems} (November
-  2016):1--9.
+\bibitem[Cliff et~al.(2015)Cliff, Fitch, Sukkarieh, Saunders, and
+  Heinsohn]{Cliff2015}
+Oliver~M Cliff, Robert Fitch, Salah Sukkarieh, Debra~L Saunders, and Robert
+  Heinsohn.
+\newblock {Online Localization of Radio-Tagged Wildlife with an Autonomous
+  Aerial Robot System}.
+\newblock \emph{Robotics Science and Systems}, \penalty0 (November
+  2016):\penalty0 1--9, 2015.
+\newblock ISSN 2330765X.
+\newblock \doi{10.15607/RSS.2015.XI.042}.
 
-\harvarditem[Ditmer et~al.]{Ditmer, Vincent, Werden, Tanner, Laske, Iaizzo,
-  Garshelis \harvardand\ Fieberg}{2015}{Ditmer2015}
-Ditmer, Mark~A., John~B. Vincent, Leland~K. Werden, Jessie~C. Tanner,
-  Timothy~G. Laske, Paul~A. Iaizzo, David~L. Garshelis \harvardand\ John~R.
-  Fieberg. 2015.
-\newblock ``{Bears Show a Physiological but Limited Behavioral Response to
-  Unmanned Aerial Vehicles}.'' {\em Current Biology} 25(17):2278--2283.
-\newline\harvardurl{http://dx.doi.org/10.1016/j.cub.2015.07.024}
+\bibitem[Conabio(2017)]{Conabio2017}
+Conabio.
+\newblock \emph{Canarias usará drones para controlar la pesca furtiva y
+  mejorar su inspección}, 2017.
+\newblock \url{http://www.biodiversidad.gob.mx/biodiversidad/porque.html }
+  [Accessed: 7 de Mayo, 2017].
 
-\harvarditem{EFE}{2017}{Canarias2017}
-EFE. 2017.
-\newblock ``\emph{Canarias usará drones para controlar la pesca furtiva y
-  mejorar su inspección}.''.
+\bibitem[Ditmer et~al.(2015)Ditmer, Vincent, Werden, Tanner, Laske, Iaizzo,
+  Garshelis, and Fieberg]{Ditmer2015}
+Mark~A. Ditmer, John~B. Vincent, Leland~K. Werden, Jessie~C. Tanner, Timothy~G.
+  Laske, Paul~A. Iaizzo, David~L. Garshelis, and John~R. Fieberg.
+\newblock {Bears Show a Physiological but Limited Behavioral Response to
+  Unmanned Aerial Vehicles}.
+\newblock \emph{Current Biology}, 25\penalty0 (17):\penalty0 2278--2283, 2015.
+\newblock ISSN 09609822.
+\newblock \doi{10.1016/j.cub.2015.07.024}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.cub.2015.07.024}.
+
+\bibitem[Duffy(2014)]{Duffy2014}
+Rosaleen Duffy.
+\newblock {Waging a war to save biodiversity: The rise of militarized
+  conservation}.
+\newblock \emph{International Affairs}, 90\penalty0 (4):\penalty0 819--834,
+  2014.
+\newblock ISSN 14682346.
+\newblock \doi{10.1111/1468-2346.12142}.
+
+\bibitem[EFE(2017)]{Canarias2017}
+EFE.
+\newblock \emph{Canarias usará drones para controlar la pesca furtiva y
+  mejorar su inspección}, 2017.
 \newblock
   \url{https://www.canarias7.es/hemeroteca/canarias_usara_drones_para_controlar_la_pesca_furtiva_y_mejorar_su_inspeccion_-JDCSN451293
   } [Accessed: 28 de Abril, 2017].
 
-\harvarditem{Forum}{2008}{Forum2008}
-Forum, Policy. 2008.
-\newblock ``{Toward a Global Biodiversity Observing System}.''  (April).
+\bibitem[Forum(2008)]{Forum2008}
+Policy Forum.
+\newblock {Toward a Global Biodiversity Observing System}.
+\newblock \penalty0 (April), 2008.
 
-\harvarditem[Gini et~al.]{Gini, Passoni, Pinto \harvardand\
-  Sona}{2012}{Gini2012}
-Gini, R., D. Passoni, L. Pinto \harvardand\ G. Sona. 2012.
-\newblock ``{Aerial Images From an Uav System: 3D Modeling and Tree Species
-  Classification in a Park Area}.'' {\em ISPRS - International Archives of the
-  Photogrammetry, Remote Sensing and Spatial Information Sciences}
-  XXXIX-B1(September):361--366.
+\bibitem[Gerster/Panos(2017)]{Georg2016}
+Georg Gerster/Panos.
+\newblock \emph{Project uses drones to monitor coastal erosion in Ghana}, 2017.
+\newblock
+  \url{http://www.scidev.net/sub-saharan-africa/environment/news/project-drones-monitor-coastal-erosion-ghana.html
+  } [Accessed: 7 de Mayo, 2017].
 
-\harvarditem{Hansen}{2016}{Hansen2016}
-Hansen, Andreas~Skriver. 2016.
-\newblock ``{Applying visitor monitoring methods in coastal and marine areas
-  – some learnings and critical reflections from Sweden}.'' {\em Scandinavian
-  Journal of Hospitality and Tourism} 2250(June):1--18.
-\newline\harvardurl{http://www.tandfonline.com/doi/abs/10.1080/15022250.2016.1155481}
+\bibitem[Gini et~al.(2012)Gini, Passoni, Pinto, and Sona]{Gini2012}
+R.~Gini, D.~Passoni, L.~Pinto, and G.~Sona.
+\newblock {Aerial Images From an Uav System: 3D Modeling and Tree Species
+  Classification in a Park Area}.
+\newblock \emph{ISPRS - International Archives of the Photogrammetry, Remote
+  Sensing and Spatial Information Sciences}, XXXIX-B1\penalty0
+  (September):\penalty0 361--366, 2012.
+\newblock ISSN 1682-1777.
+\newblock \doi{10.5194/isprsarchives-XXXIX-B1-361-2012}.
 
-\harvarditem[Hodgson, Kelly \harvardand\ Peel]{Hodgson, Kelly \harvardand\
-  Peel}{2013}{Hodgson2013}
-Hodgson, Amanda, Natalie Kelly \harvardand\ David Peel. 2013.
-\newblock ``{Unmanned aerial vehicles (UAVs) for surveying Marine Fauna: A
-  dugong case study}.'' {\em PLoS ONE} 8(11):1--15.
+\bibitem[Hansen(2016)]{Hansen2016}
+Andreas~Skriver Hansen.
+\newblock {Applying visitor monitoring methods in coastal and marine areas –
+  some learnings and critical reflections from Sweden}.
+\newblock \emph{Scandinavian Journal of Hospitality and Tourism}, 2250\penalty0
+  (June):\penalty0 1--18, 2016.
+\newblock ISSN 1502-2250.
+\newblock \doi{10.1080/15022250.2016.1155481}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/15022250.2016.1155481}.
 
-\harvarditem[Ivo{\v{s}}evi{\'{c}} et~al.]{Ivo{\v{s}}evi{\'{c}}, Han, Cho
-  \harvardand\ Kwon}{2015}{Ivosevic2015}
-Ivo{\v{s}}evi{\'{c}}, Bojana, Yong~Gu Han, Youngho Cho \harvardand\ Ohseok
-  Kwon. 2015.
-\newblock ``{The use of conservation drones in ecology and wildlife
-  research}.'' {\em Journal of Ecology and Environment} 38(1):113--118.
+\bibitem[Hardin and Jensen(2011)]{Hardin2011}
+Perry~J. Hardin and Ryan~R. Jensen.
+\newblock {Small-Scale Unmanned Aerial Vehicles in Environmental Remote
+  Sensing: Challenges and Opportunities}.
+\newblock \emph{GIScience {\&} Remote Sensing}, 48\penalty0 (1):\penalty0
+  99--111, jan 2011.
+\newblock ISSN 1548-1603.
+\newblock \doi{10.2747/1548-1603.48.1.99}.
+\newblock URL
+  \url{http://bellwether.metapress.com/openurl.asp?genre=article{\&}id=doi:10.2747/1548-1603.48.1.99}.
 
-\harvarditem{Jain}{2013}{Vermeulen2013}
-Jain, Mukesh. 2013.
-\newblock ``{Unmanned Aerial Survey of Elephants}.'' {\em PLoS ONE} .
+\bibitem[Hodgson et~al.(2013)Hodgson, Kelly, and Peel]{Hodgson2013}
+Amanda Hodgson, Natalie Kelly, and David Peel.
+\newblock {Unmanned aerial vehicles (UAVs) for surveying Marine Fauna: A dugong
+  case study}.
+\newblock \emph{PLoS ONE}, 8\penalty0 (11):\penalty0 1--15, 2013.
+\newblock ISSN 19326203.
+\newblock \doi{10.1371/journal.pone.0079556}.
 
-\harvarditem[Juffe-Bignoli et~al.]{Juffe-Bignoli, Burgess, Bingham, Belle, {De
-  Lima}, Deguignet, Bertzky, Milam, Martinez-Lopez, Lewis \harvardand\
-  Others}{2014}{juffe2014protected}
-Juffe-Bignoli, Diego, Neil~David Burgess, H Bingham, E~M~S Belle, M~G {De
-  Lima}, M Deguignet, B Bertzky, A~N Milam, J Martinez-Lopez, E Lewis
-  \harvardand\ Others. 2014.
-\newblock ``{Protected planet report 2014}.'' {\em Cambridge, UK: UNEP-WCMC} .
+\bibitem[Hodgson and Koh(2016)]{Hodgson2016a}
+Jarrod~C. Hodgson and Lian~Pin Koh.
+\newblock {Best practice for minimising unmanned aerial vehicle disturbance to
+  wildlife in biological field research}.
+\newblock \emph{Current Biology}, 26\penalty0 (10), 2016.
+\newblock ISSN 09609822.
+\newblock \doi{10.1016/j.cub.2016.04.001}.
 
-\harvarditem{King}{2014}{King2014}
-King, Lisa~M. 2014.
-\newblock ``{Will drones revolutionise ecotourism?}'' {\em Journal of
-  Ecotourism} 13(1):85--92.
-\newline\harvardurl{http://www.tandfonline.com/doi/abs/10.1080/14724049.2014.948448}
+\bibitem[Ivo{\v{s}}evi{\'{c}} et~al.(2015)Ivo{\v{s}}evi{\'{c}}, Han, Cho, and
+  Kwon]{Ivosevic2015}
+Bojana Ivo{\v{s}}evi{\'{c}}, Yong~Gu Han, Youngho Cho, and Ohseok Kwon.
+\newblock {The use of conservation drones in ecology and wildlife research}.
+\newblock \emph{Journal of Ecology and Environment}, 38\penalty0 (1):\penalty0
+  113--118, 2015.
+\newblock ISSN 22881220.
+\newblock \doi{10.5141/ecoenv.2015.012}.
 
-\harvarditem{Knight \harvardand\ Cowling}{2007}{Knight2007}
-Knight, Andrew~T. \harvardand\ Richard~M. Cowling. 2007.
-\newblock ``{Embracing opportunism in the selection of priority conservation
-  areas}.'' {\em Conservation Biology} 21(4):1124--1126.
+\bibitem[Jain(2013)]{Vermeulen2013}
+Mukesh Jain.
+\newblock {Unmanned Aerial Survey of Elephants}.
+\newblock \emph{PLoS ONE}, 2013.
+\newblock \doi{10.1371/ journal.pone.0054700}.
 
-\harvarditem{Koh \harvardand\ Wich}{2012}{Koh2012}
-Koh, Lian~Pin \harvardand\ Serge~A. Wich. 2012.
-\newblock ``{Dawn of drone ecology: low-cost autonomous aerial vehicles for
-  conservation}.'' {\em Tropical Conservation Science} 5(2):121--132.
+\bibitem[Juffe-Bignoli et~al.(2014)Juffe-Bignoli, Burgess, Bingham, Belle, {De
+  Lima}, Deguignet, Bertzky, Milam, Martinez-Lopez, Lewis, and
+  Others]{juffe2014protected}
+Diego Juffe-Bignoli, Neil~David Burgess, H~Bingham, E~M~S Belle, M~G {De Lima},
+  M~Deguignet, B~Bertzky, A~N Milam, J~Martinez-Lopez, E~Lewis, and Others.
+\newblock {Protected planet report 2014}.
+\newblock \emph{Cambridge, UK: UNEP-WCMC}, 2014.
 
-\harvarditem[K{\"{o}}rner et~al.]{K{\"{o}}rner, Speck, Haydar \harvardand\
-  Sukkarieh}{2010}{Korner2010}
-K{\"{o}}rner, Fabian, Raphael Speck, Ali Haydar \harvardand\ Salah Sukkarieh.
-  2010.
-\newblock ``{Autonomous Airborne Wildlife Tracking Using Radio Signal
-  Strength}.''  pp.~107--112.
+\bibitem[King(2014)]{King2014}
+Lisa~M. King.
+\newblock {Will drones revolutionise ecotourism?}
+\newblock \emph{Journal of Ecotourism}, 13\penalty0 (1):\penalty0 85--92, 2014.
+\newblock ISSN 1472-4049.
+\newblock \doi{10.1080/14724049.2014.948448}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/14724049.2014.948448}.
 
-\harvarditem[Leonardo et~al.]{Leonardo, Jensen, Coopmans, McKee \harvardand\
-  Chen}{2013}{Leonardo2013}
-Leonardo, Miguel, Austin Jensen, Calvin Coopmans, Mac McKee \harvardand\
-  YangQuan Chen. 2013.
-\newblock ``{A Miniature Wildlife Tracking UAV Payload System using Acoustic
-  Biotelemetry}.'' {\em Proc. of the ASME International Design Engineering
-  Technical Conferences {\&} Computers and Information in Engineering
-  Conference} (July 2015).
+\bibitem[Knight and Cowling(2007)]{Knight2007}
+Andrew~T. Knight and Richard~M. Cowling.
+\newblock {Embracing opportunism in the selection of priority conservation
+  areas}.
+\newblock \emph{Conservation Biology}, 21\penalty0 (4):\penalty0 1124--1126,
+  2007.
+\newblock ISSN 08888892.
+\newblock \doi{10.1111/j.1523-1739.2007.00690.x}.
 
-\harvarditem[Lhoest et~al.]{Lhoest, Linchant, Quevauvillers, Vermeulen
-  \harvardand\ Lejeune}{2015}{Lhoest2015}
-Lhoest, S., J. Linchant, S. Quevauvillers, C. Vermeulen \harvardand\ P.
-  Lejeune. 2015.
-\newblock ``{How many hippos (Homhip): Algorithm for automatic counts of
-  animals with infra-red thermal imagery from UAV}.'' {\em International
-  Archives of the Photogrammetry, Remote Sensing and Spatial Information
-  Sciences - ISPRS Archives} 40(3W3):355--362.
+\bibitem[Koh and Wich(2012)]{Koh2012}
+Lian~Pin Koh and Serge~A. Wich.
+\newblock {Dawn of drone ecology: low-cost autonomous aerial vehicles for
+  conservation}.
+\newblock \emph{Tropical Conservation Science}, 5\penalty0 (2):\penalty0
+  121--132, 2012.
+\newblock ISSN 1940-0829.
+\newblock \doi{WOS:000310846600002}.
 
-\harvarditem[Linchant et~al.]{Linchant, Lisein, Semeki, Lejeune \harvardand\
-  Vermeulen}{2015}{Linchant2015}
-Linchant, Julie, Jonathan Lisein, Jean Semeki, Philippe Lejeune \harvardand\
-  C{\'{e}}dric Vermeulen. 2015.
-\newblock ``{Are unmanned aircraft systems (UASs) the future of wildlife
-  monitoring? A review of accomplishments and challenges}.'' {\em Mammal
-  Review} 45(4):239--252.
+\bibitem[K{\"{o}}rner et~al.(2010)K{\"{o}}rner, Speck, Haydar, and
+  Sukkarieh]{Korner2010}
+Fabian K{\"{o}}rner, Raphael Speck, Ali Haydar, and Salah Sukkarieh.
+\newblock {Autonomous Airborne Wildlife Tracking Using Radio Signal Strength}.
+\newblock pages 107--112, 2010.
 
-\harvarditem[Lisein et~al.]{Lisein, Michez, Claessens \harvardand\
-  Lejeune}{2015}{Lisein2015}
-Lisein, Jonathan, Adrien Michez, Hugues Claessens \harvardand\ Philippe
-  Lejeune. 2015.
-\newblock ``{Discrimination of deciduous tree species from time series of
-  unmanned aerial system imagery}.'' {\em PLoS ONE} 10(11).
+\bibitem[Leonardo et~al.(2013)Leonardo, Jensen, Coopmans, McKee, and
+  Chen]{Leonardo2013}
+Miguel Leonardo, Austin Jensen, Calvin Coopmans, Mac McKee, and YangQuan Chen.
+\newblock {A Miniature Wildlife Tracking UAV Payload System using Acoustic
+  Biotelemetry}.
+\newblock \emph{Proc. of the ASME International Design Engineering Technical
+  Conferences {\&} Computers and Information in Engineering Conference},
+  \penalty0 (July 2015), 2013.
+\newblock \doi{10.1115/DETC2013-13267}.
 
-\harvarditem[Lobermeier et~al.]{Lobermeier, Moldenhauer, Peter, Slominski,
-  Tedesco, Meer, Dwyer, Harness \harvardand\ Stewart}{2015}{Lobermeier2015}
-Lobermeier, Scott, Matthew Moldenhauer, Christopher Peter, Luke Slominski,
-  Richard Tedesco, Marcus Meer, James Dwyer, Richard Harness \harvardand\
-  Andrew Stewart. 2015.
-\newblock ``{Mitigating avian collision with power lines: a proof of concept
-  for installation of line markers via unmanned aerial vehicle}.'' {\em Journal
-  of Unmanned Vehicle Systems} 3(4):252--258.
+\bibitem[Lhoest et~al.(2015)Lhoest, Linchant, Quevauvillers, Vermeulen, and
+  Lejeune]{Lhoest2015}
+S.~Lhoest, J.~Linchant, S.~Quevauvillers, C.~Vermeulen, and P.~Lejeune.
+\newblock {How many hippos (Homhip): Algorithm for automatic counts of animals
+  with infra-red thermal imagery from UAV}.
+\newblock \emph{International Archives of the Photogrammetry, Remote Sensing
+  and Spatial Information Sciences - ISPRS Archives}, 40\penalty0
+  (3W3):\penalty0 355--362, 2015.
+\newblock ISSN 16821750.
+\newblock \doi{10.5194/isprsarchives-XL-3-W3-355-2015}.
 
-\harvarditem{Mascia \harvardand\ Pailler}{2011}{Mascia2011}
-Mascia, Michael~B \harvardand\ Sharon Pailler. 2011.
-\newblock ``{Protected area downgrading, downsizing, and degazettement (PADDD)
-  and its conservation implications}.''  4(Dowie 2009):9--20.
+\bibitem[Linchant et~al.(2015)Linchant, Lisein, Semeki, Lejeune, and
+  Vermeulen]{Linchant2015}
+Julie Linchant, Jonathan Lisein, Jean Semeki, Philippe Lejeune, and
+  C{\'{e}}dric Vermeulen.
+\newblock {Are unmanned aircraft systems (UASs) the future of wildlife
+  monitoring? A review of accomplishments and challenges}.
+\newblock \emph{Mammal Review}, 45\penalty0 (4):\penalty0 239--252, 2015.
+\newblock ISSN 13652907.
+\newblock \doi{10.1111/mam.12046}.
 
-\harvarditem[Mateo, Felic{\'{i}}simo \harvardand\ Mu{\~{n}}oz]{Mateo,
-  Felic{\'{i}}simo \harvardand\ Mu{\~{n}}oz}{2011}{Mateo2011}
-Mateo, Rub{\'{e}}n~G., {\'{A}}ngel~M. Felic{\'{i}}simo \harvardand\ Jes{\'{u}}s
-  Mu{\~{n}}oz. 2011.
-\newblock ``{Modelos de distribuci{\'{o}}n de especies: Una revisi{\'{o}}n
-  sint{\'{e}}tica}.'' {\em Revista Chilena de Historia Natural} pp.~217--240.
+\bibitem[Lisein et~al.(2015)Lisein, Michez, Claessens, and Lejeune]{Lisein2015}
+Jonathan Lisein, Adrien Michez, Hugues Claessens, and Philippe Lejeune.
+\newblock {Discrimination of deciduous tree species from time series of
+  unmanned aerial system imagery}.
+\newblock \emph{PLoS ONE}, 10\penalty0 (11), 2015.
+\newblock ISSN 19326203.
+\newblock \doi{10.1371/journal.pone.0141006}.
 
-\harvarditem[Mulero-P{\'{a}}zm{\'{a}}ny et~al.]{Mulero-P{\'{a}}zm{\'{a}}ny,
-  Barasona, Acevedo, Vicente \harvardand\ Negro}{2015}{Mulero-Pazmany2015}
-Mulero-P{\'{a}}zm{\'{a}}ny, Margarita, Jose~{\'{A}}ngel Barasona, Pelayo
-  Acevedo, Joaqu{\'{i}}n Vicente \harvardand\ Juan~Jos{\'{e}} Negro. 2015.
-\newblock ``{Unmanned Aircraft Systems complement biologging in spatial ecology
-  studies}.'' {\em Ecology and Evolution} 5(21):4808--4818.
+\bibitem[Lobermeier et~al.(2015)Lobermeier, Moldenhauer, Peter, Slominski,
+  Tedesco, Meer, Dwyer, Harness, and Stewart]{Lobermeier2015}
+Scott Lobermeier, Matthew Moldenhauer, Christopher Peter, Luke Slominski,
+  Richard Tedesco, Marcus Meer, James Dwyer, Richard Harness, and Andrew
+  Stewart.
+\newblock {Mitigating avian collision with power lines: a proof of concept for
+  installation of line markers via unmanned aerial vehicle}.
+\newblock \emph{Journal of Unmanned Vehicle Systems}, 3\penalty0 (4):\penalty0
+  252--258, 2015.
+\newblock ISSN 2291-3467.
+\newblock \doi{10.1139/juvs-2015-0009}.
 
-\harvarditem[Mulero-P{\'{a}}zm{\'{a}}ny, Negro \harvardand\
-  Ferrer]{Mulero-P{\'{a}}zm{\'{a}}ny, Negro \harvardand\
-  Ferrer}{2014}{Mulero-Pazmany2014a}
-Mulero-P{\'{a}}zm{\'{a}}ny, Margarita, Juan~Jos{\'{e}} Negro \harvardand\
-  Miguel Ferrer. 2014.
-\newblock ``{A low cost way for assessing bird risk hazards in power lines:
-  Fixed-wing small unmanned aircraft systems}.'' {\em Journal of Unmanned
-  Vehicle Systems} 02(01):5--15.
-\newline\harvardurl{http://www.nrcresearchpress.com/doi/abs/10.1139/juvs-2013-0012}
+\bibitem[Mascia and Pailler(2011)]{Mascia2011}
+Michael~B Mascia and Sharon Pailler.
+\newblock {Protected area downgrading, downsizing, and degazettement (PADDD)
+  and its conservation implications}.
+\newblock 4\penalty0 (Dowie 2009):\penalty0 9--20, 2011.
+\newblock \doi{10.1111/j.1755-263X.2010.00147.x}.
 
-\harvarditem[Mulero-P{\'{a}}zm{\'{a}}ny et~al.]{Mulero-P{\'{a}}zm{\'{a}}ny,
-  Stolper, {Van Essen}, Negro \harvardand\ Sassen}{2014}{Mulero-Pazmany2014}
-Mulero-P{\'{a}}zm{\'{a}}ny, Margarita, Roel Stolper, L.~D. {Van Essen}, Juan~J.
-  Negro \harvardand\ Tyrell Sassen. 2014.
-\newblock ``{Remotely piloted aircraft systems as a rhinoceros anti-poaching
-  tool in Africa}.'' {\em PLoS ONE} 9(1):1--10.
+\bibitem[Mateo et~al.(2011)Mateo, Felic{\'{i}}simo, and Mu{\~{n}}oz]{Mateo2011}
+Rub{\'{e}}n~G. Mateo, {\'{A}}ngel~M. Felic{\'{i}}simo, and Jes{\'{u}}s
+  Mu{\~{n}}oz.
+\newblock {Modelos de distribuci{\'{o}}n de especies: Una revisi{\'{o}}n
+  sint{\'{e}}tica}.
+\newblock \emph{Revista Chilena de Historia Natural}, pages 217--240, 2011.
+\newblock ISSN 0716078X.
+\newblock \doi{10.4067/S0716-078X2011000200008}.
 
-\harvarditem[Nugraha, Jeyakodi \harvardand\ Mahem]{Nugraha, Jeyakodi
-  \harvardand\ Mahem}{2016}{Nugraha2016}
-Nugraha, Ridha~Aditya, Deepika Jeyakodi \harvardand\ Thitipon Mahem. 2016.
-\newblock ``{Urgency for Legal Framework on Drones : Lessons for Indonesia ,
-  India , and Thailand}.'' {\em Indonesian Law Review} 6(2):137--157.
+\bibitem[Mulero-P{\'{a}}zm{\'{a}}ny
+  et~al.(2014{\natexlab{a}})Mulero-P{\'{a}}zm{\'{a}}ny, Negro, and
+  Ferrer]{Mulero-Pazmany2014a}
+Margarita Mulero-P{\'{a}}zm{\'{a}}ny, Juan~Jos{\'{e}} Negro, and Miguel Ferrer.
+\newblock {A low cost way for assessing bird risk hazards in power lines:
+  Fixed-wing small unmanned aircraft systems}.
+\newblock \emph{Journal of Unmanned Vehicle Systems}, 02\penalty0
+  (01):\penalty0 5--15, mar 2014{\natexlab{a}}.
+\newblock ISSN 2291-3467.
+\newblock \doi{10.1139/juvs-2013-0012}.
+\newblock URL
+  \url{http://www.nrcresearchpress.com/doi/abs/10.1139/juvs-2013-0012}.
 
-\harvarditem{{P{\'{a}}zm{\'{a}}ny Mulero}}{2015}{PazmanyMulero2015}
-{P{\'{a}}zm{\'{a}}ny Mulero}, Margarita. 2015.
-\newblock ``{Unmanned Aerial Systems in Conservation Biology}.''.
+\bibitem[Mulero-P{\'{a}}zm{\'{a}}ny
+  et~al.(2014{\natexlab{b}})Mulero-P{\'{a}}zm{\'{a}}ny, Stolper, {Van Essen},
+  Negro, and Sassen]{Mulero-Pazmany2014}
+Margarita Mulero-P{\'{a}}zm{\'{a}}ny, Roel Stolper, L.~D. {Van Essen}, Juan~J.
+  Negro, and Tyrell Sassen.
+\newblock {Remotely piloted aircraft systems as a rhinoceros anti-poaching tool
+  in Africa}.
+\newblock \emph{PLoS ONE}, 9\penalty0 (1):\penalty0 1--10, 2014{\natexlab{b}}.
+\newblock ISSN 19326203.
+\newblock \doi{10.1371/journal.pone.0083873}.
 
-\harvarditem[Pereira et~al.]{Pereira, Ferrier, Walters, Geller, Jongman,
+\bibitem[Mulero-P{\'{a}}zm{\'{a}}ny et~al.(2015)Mulero-P{\'{a}}zm{\'{a}}ny,
+  Barasona, Acevedo, Vicente, and Negro]{Mulero-Pazmany2015}
+Margarita Mulero-P{\'{a}}zm{\'{a}}ny, Jose~{\'{A}}ngel Barasona, Pelayo
+  Acevedo, Joaqu{\'{i}}n Vicente, and Juan~Jos{\'{e}} Negro.
+\newblock {Unmanned Aircraft Systems complement biologging in spatial ecology
+  studies}.
+\newblock \emph{Ecology and Evolution}, 5\penalty0 (21):\penalty0 4808--4818,
+  2015.
+\newblock ISSN 20457758.
+\newblock \doi{10.1002/ece3.1744}.
+
+\bibitem[Nugraha et~al.(2016)Nugraha, Jeyakodi, and Mahem]{Nugraha2016}
+Ridha~Aditya Nugraha, Deepika Jeyakodi, and Thitipon Mahem.
+\newblock {Urgency for Legal Framework on Drones : Lessons for Indonesia ,
+  India , and Thailand}.
+\newblock \emph{Indonesian Law Review}, 6\penalty0 (2):\penalty0 137--157,
+  2016.
+
+\bibitem[{P{\'{a}}zm{\'{a}}ny Mulero}(2015)]{PazmanyMulero2015}
+Margarita {P{\'{a}}zm{\'{a}}ny Mulero}.
+\newblock {Unmanned Aerial Systems in Conservation Biology}.
+\newblock 2015.
+
+\bibitem[Pereira et~al.(2013)Pereira, Ferrier, Walters, Geller, Jongman,
   Scholes, Bruford, Brummitt, Butchart, Cardoso, Coops, Dulloo, Faith, Freyhof,
   Gregory, Heip, H{\"{o}}ft, Hurtt, Jetz, Karp, McGeoch, Obura, Onoda,
-  Pettorelli, Reyers, Sayre, Scharlemann, Stuart, Turak, Walpole \harvardand\
-  Wegmann}{2013}{Pereira2013}
-Pereira, Henrique~Miguel, Simon Ferrier, Michele Walters, Gary~N Geller, Rob
-  H~G Jongman, Robert~J Scholes, Michael~W Bruford, Neil Brummitt, Stuart H~M
+  Pettorelli, Reyers, Sayre, Scharlemann, Stuart, Turak, Walpole, and
+  Wegmann]{Pereira2013}
+Henrique~Miguel Pereira, Simon Ferrier, Michele Walters, Gary~N Geller, Rob H~G
+  Jongman, Robert~J Scholes, Michael~W Bruford, Neil Brummitt, Stuart H~M
   Butchart, A~C Cardoso, Nicholas~Coops Coops, Ehsan Dulloo, Daniel~P Faith,
-  J{\"{o}}rg Freyhof, R~D Gregory, Carlo Heip, R H{\"{o}}ft, George Hurtt,
+  J{\"{o}}rg Freyhof, R~D Gregory, Carlo Heip, R~H{\"{o}}ft, George Hurtt,
   Walter Jetz, Daniel~S Karp, M{\'{e}}lodie~A McGeoch, David Obura, Yusuke
-  Onoda, Nathalie Pettorelli, Belinda Reyers, R Sayre, J{\"{o}}rn P~W
-  Scharlemann, Simon~N Stuart, Eren Turak, Matt Walpole \harvardand\ Martin
-  Wegmann. 2013.
-\newblock ``{Essential biodiversity variables}.'' {\em Science}
-  339(6117):277--278.
-\newline\harvardurl{http://www.sciencemag.org/content/339/6117/277.short}
+  Onoda, Nathalie Pettorelli, Belinda Reyers, R~Sayre, J{\"{o}}rn P~W
+  Scharlemann, Simon~N Stuart, Eren Turak, Matt Walpole, and Martin Wegmann.
+\newblock {Essential biodiversity variables}.
+\newblock \emph{Science}, 339\penalty0 (6117):\penalty0 277--278, 2013.
+\newblock ISSN 1095-9203.
+\newblock \doi{10.1126/science.1229931}.
+\newblock URL \url{http://www.sciencemag.org/content/339/6117/277.short}.
 
-\harvarditem[Perroy, Sullivan \harvardand\ Stephenson]{Perroy, Sullivan
-  \harvardand\ Stephenson}{2017}{Perroy2017}
-Perroy, Ryan~L., Timo Sullivan \harvardand\ Nathan Stephenson. 2017.
-\newblock ``{Assessing the impacts of canopy openness and flight parameters on
+\bibitem[Perroy et~al.(2017)Perroy, Sullivan, and Stephenson]{Perroy2017}
+Ryan~L. Perroy, Timo Sullivan, and Nathan Stephenson.
+\newblock {Assessing the impacts of canopy openness and flight parameters on
   detecting a sub-canopy tropical invasive plant using a small unmanned aerial
-  system}.'' {\em ISPRS Journal of Photogrammetry and Remote Sensing}
-  125:174--183.
-\newline\harvardurl{http://linkinghub.elsevier.com/retrieve/pii/S0924271616303082}
+  system}.
+\newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
+  125:\penalty0 174--183, 2017.
+\newblock ISSN 09242716.
+\newblock \doi{10.1016/j.isprsjprs.2017.01.018}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0924271616303082}.
 
-\harvarditem[Puttock et~al.]{Puttock, Cunliffe, Anderson \harvardand\
-  Brazier}{2015}{Puttock2015}
-Puttock, A.K., A.M. Cunliffe, K. Anderson \harvardand\ R.E. Brazier. 2015.
-\newblock ``{Aerial photography collected with a multirotor drone reveals
-  impact of Eurasian beaver reintroduction on ecosystem structure 1}.'' {\em
-  Journal of Unmanned Vehicle Systems} 3(3):123--130.
-\newline\harvardurl{http://www.nrcresearchpress.com/doi/10.1139/juvs-2015-0005{\#}.VsR9-HWLSLo}
+\bibitem[Puttock et~al.(2015)Puttock, Cunliffe, Anderson, and
+  Brazier]{Puttock2015}
+A.K. Puttock, A.M. Cunliffe, K.~Anderson, and R.E. Brazier.
+\newblock {Aerial photography collected with a multirotor drone reveals impact
+  of Eurasian beaver reintroduction on ecosystem structure 1}.
+\newblock \emph{Journal of Unmanned Vehicle Systems}, 3\penalty0 (3):\penalty0
+  123--130, 2015.
+\newblock ISSN 2291-3467.
+\newblock \doi{10.1139/juvs-2015-0005}.
+\newblock URL
+  \url{http://www.nrcresearchpress.com/doi/10.1139/juvs-2015-0005{\#}.VsR9-HWLSLo}.
 
-\harvarditem[Sard{\`{a}}-Palomera et~al.]{Sard{\`{a}}-Palomera, Bota,
-  Vi{\~{n}}olo, Pallar{\'{e}}s, Sazatornil, Brotons, Gom{\'{a}}riz \harvardand\
-  Sard{\`{a}}}{2012}{Sarda-Palomera2012}
-Sard{\`{a}}-Palomera, Francesc, Gerard Bota, Carlos Vi{\~{n}}olo, Oriol
+\bibitem[Quilter(1997)]{quilter1997vegetation}
+Mark~Charles Quilter.
+\newblock \emph{Vegetation monitoring using low-altitude, large-scale imagery
+  from radio-controlled drones}.
+\newblock 1997.
+
+\bibitem[Sard{\`{a}}-Palomera et~al.(2012)Sard{\`{a}}-Palomera, Bota,
+  Vi{\~{n}}olo, Pallar{\'{e}}s, Sazatornil, Brotons, Gom{\'{a}}riz, and
+  Sard{\`{a}}]{Sarda-Palomera2012}
+Francesc Sard{\`{a}}-Palomera, Gerard Bota, Carlos Vi{\~{n}}olo, Oriol
   Pallar{\'{e}}s, V{\'{i}}ctor Sazatornil, Llu{\'{i}}s Brotons, Spartacus
-  Gom{\'{a}}riz \harvardand\ Francesc Sard{\`{a}}. 2012.
-\newblock ``{Fine-scale bird monitoring from light unmanned aircraft
-  systems}.'' {\em Ibis} 154(1):177--183.
+  Gom{\'{a}}riz, and Francesc Sard{\`{a}}.
+\newblock {Fine-scale bird monitoring from light unmanned aircraft systems}.
+\newblock \emph{Ibis}, 154\penalty0 (1):\penalty0 177--183, 2012.
+\newblock ISSN 00191019.
+\newblock \doi{10.1111/j.1474-919X.2011.01177.x}.
 
-\harvarditem{Sasse}{2003}{Sasse2003}
-Sasse, D.~Blake. 2003.
-\newblock ``{Job-related mortality of wildlife workers in the United States,
-  1937-2000}.'' {\em Wildlife Society Bulletin} 31(4):1000--1003.
+\bibitem[Sasse(2003)]{Sasse2003}
+D.~Blake Sasse.
+\newblock {Job-related mortality of wildlife workers in the United States,
+  1937-2000}.
+\newblock \emph{Wildlife Society Bulletin}, 31\penalty0 (4):\penalty0
+  1000--1003, 2003.
+\newblock ISSN 00917648.
 
-\harvarditem[Szantoi et~al.]{Szantoi, Smith, Strona, Koh \harvardand\
-  Wich}{2017}{Szantoi2017}
-Szantoi, Zoltan, Scot~E. Smith, Giovanni Strona, Lian~Pin Koh \harvardand\
-  Serge~A. Wich. 2017.
-\newblock ``{Mapping orangutan habitat and agricultural areas using Landsat OLI
-  imagery augmented with unmanned aircraft system aerial photography}.'' {\em
-  International Journal of Remote Sensing} 38(8-10):1--15.
-\newline\harvardurl{https://www.tandfonline.com/doi/full/10.1080/01431161.2017.1280638}
+\bibitem[Szantoi et~al.(2017)Szantoi, Smith, Strona, Koh, and
+  Wich]{Szantoi2017}
+Zoltan Szantoi, Scot~E. Smith, Giovanni Strona, Lian~Pin Koh, and Serge~A.
+  Wich.
+\newblock {Mapping orangutan habitat and agricultural areas using Landsat OLI
+  imagery augmented with unmanned aircraft system aerial photography}.
+\newblock \emph{International Journal of Remote Sensing}, 38\penalty0
+  (8-10):\penalty0 1--15, 2017.
+\newblock ISSN 0143-1161.
+\newblock \doi{10.1080/01431161.2017.1280638}.
+\newblock URL
+  \url{https://www.tandfonline.com/doi/full/10.1080/01431161.2017.1280638}.
 
-\harvarditem{USGS}{2014}{USGS2014}
-USGS. 2014.
-\newblock ``\emph{US Geological Survey National Unmanned Aircraft Systems
-  Project}.''.
+\bibitem[Tomlins and Lee(1983)]{Tomlins1983}
+G.F. Tomlins and Y.J. Lee.
+\newblock {Remotely Piloted Aircraft — an Inexpensive Option for Large-Scale
+  Aerial Photography in Forestry Applications}.
+\newblock \emph{Canadian Journal of Remote Sensing}, 9\penalty0 (2):\penalty0
+  76--85, 1983.
+\newblock ISSN 0703-8992.
+\newblock \doi{10.1080/07038992.1983.10855042}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/07038992.1983.10855042}.
+
+\bibitem[USGS(2014)]{USGS2014}
+USGS.
+\newblock \emph{US Geological Survey National Unmanned Aircraft Systems
+  Project}, 2014.
 \newblock \url{http:// rmgsc.cr.usgs.gov/UAS} [Accessed: 13 de Abril, 2017].
 
-\harvarditem[van Andel et~al.]{van Andel, Wich, Boesch, Koh, Robbins, Kelly
-  \harvardand\ Kuehl}{2015}{VanAndel2015}
-van Andel, Alexander~C., Serge~A. Wich, Christophe Boesch, Lian~Pin Koh,
-  Martha~M. Robbins, Joseph Kelly \harvardand\ Hjalmar~S. Kuehl. 2015.
-\newblock ``{Locating chimpanzee nests and identifying fruiting trees with an
-  unmanned aerial vehicle}.'' {\em American Journal of Primatology}
-  77(10):1122--1134.
+\bibitem[van Andel et~al.(2015)van Andel, Wich, Boesch, Koh, Robbins, Kelly,
+  and Kuehl]{VanAndel2015}
+Alexander~C. van Andel, Serge~A. Wich, Christophe Boesch, Lian~Pin Koh,
+  Martha~M. Robbins, Joseph Kelly, and Hjalmar~S. Kuehl.
+\newblock {Locating chimpanzee nests and identifying fruiting trees with an
+  unmanned aerial vehicle}.
+\newblock \emph{American Journal of Primatology}, 77\penalty0 (10):\penalty0
+  1122--1134, 2015.
+\newblock ISSN 10982345.
+\newblock \doi{10.1002/ajp.22446}.
 
-\harvarditem[van Gemert et~al.]{van Gemert, Verschoor, Mettes, Epema, Koh
-  \harvardand\ Wich}{2015}{VanGemert2015}
-van Gemert, Jan~C., Camiel~R. Verschoor, Pascal Mettes, Kitso Epema, Lian~Pin
-  Koh \harvardand\ Serge Wich. 2015.
-\newblock ``{Nature conservation drones for automatic localization and counting
-  of animals}.'' {\em Lecture Notes in Computer Science (including subseries
-  Lecture Notes in Artificial Intelligence and Lecture Notes in
-  Bioinformatics)} 8925:255--270.
+\bibitem[van Gemert et~al.(2015)van Gemert, Verschoor, Mettes, Epema, Koh, and
+  Wich]{VanGemert2015}
+Jan~C. van Gemert, Camiel~R. Verschoor, Pascal Mettes, Kitso Epema, Lian~Pin
+  Koh, and Serge Wich.
+\newblock {Nature conservation drones for automatic localization and counting
+  of animals}.
+\newblock \emph{Lecture Notes in Computer Science (including subseries Lecture
+  Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+  8925:\penalty0 255--270, 2015.
+\newblock ISSN 16113349.
+\newblock \doi{10.1007/978-3-319-16178-5_17}.
 
-\harvarditem[Vas et~al.]{Vas, Lescroel, Duriez, Boguszewski \harvardand\
-  Gremillet}{2015}{Vas2015}
-Vas, E., A. Lescroel, O. Duriez, G. Boguszewski \harvardand\ D. Gremillet.
+\bibitem[Vas et~al.(2015)Vas, Lescroel, Duriez, Boguszewski, and
+  Gremillet]{Vas2015}
+E.~Vas, A.~Lescroel, O.~Duriez, G.~Boguszewski, and D.~Gremillet.
+\newblock {Approaching birds with drones: first experiments and ethical
+  guidelines}.
+\newblock \emph{Biology Letters}, 11\penalty0 (2):\penalty0 20140754--20140754,
+  feb 2015.
+\newblock ISSN 1744-9561.
+\newblock \doi{10.1098/rsbl.2014.0754}.
+\newblock URL
+  \url{http://rsbl.royalsocietypublishing.org/cgi/doi/10.1098/rsbl.2014.0754}.
+
+\bibitem[Weissensteiner et~al.(2015)Weissensteiner, Poelstra, and
+  Wolf]{Weissensteiner2015}
+M~H Weissensteiner, J~W Poelstra, and J~B~W Wolf.
+\newblock {Low-budget ready-to-fly unmanned aerial vehicles: An effective tool
+  for evaluating the nesting status of canopy-breeding bird species}.
+\newblock \emph{Journal of Avian Biology}, 46\penalty0 (4):\penalty0 425--430,
   2015.
-\newblock ``{Approaching birds with drones: first experiments and ethical
-  guidelines}.'' {\em Biology Letters} 11(2):20140754--20140754.
-\newline\harvardurl{http://rsbl.royalsocietypublishing.org/cgi/doi/10.1098/rsbl.2014.0754}
+\newblock ISSN 1600048X.
+\newblock \doi{10.1111/jav.00619}.
 
-\harvarditem[Vincent, Werden \harvardand\ Ditmer]{Vincent, Werden \harvardand\
-  Ditmer}{2015}{FEE:FEE201513274}
-Vincent, John~B, Leland~K Werden \harvardand\ Mark~A Ditmer. 2015.
-\newblock ``{Barriers to adding UAVs to the ecologist's toolbox}.'' {\em
-  Frontiers in Ecology and the Environment} 13(2):74--75.
-\newline\harvardurl{http://dx.doi.org/10.1890/15.WB.002}
-
-\harvarditem[Weissensteiner, Poelstra \harvardand\ Wolf]{Weissensteiner,
-  Poelstra \harvardand\ Wolf}{2015}{Weissensteiner2015}
-Weissensteiner, M~H, J~W Poelstra \harvardand\ J~B~W Wolf. 2015.
-\newblock ``{Low-budget ready-to-fly unmanned aerial vehicles: An effective
-  tool for evaluating the nesting status of canopy-breeding bird species}.''
-  {\em Journal of Avian Biology} 46(4):425--430.
-
-\harvarditem{Wich}{2017}{WichS2017}
-Wich, S. 2017.
-\newblock ``\emph{Amazon river dolphin project}.''.
+\bibitem[Wich(2017)]{WichS2017}
+S.~Wich.
+\newblock \emph{Amazon river dolphin project}, 2017.
 \newblock
   \url{https://conservationdrones.org/2017/04/05/amazon-river-dolphin-project/}
   [Accessed: 07 de Abril, 2017].
 
-\harvarditem[Wilson, Barr \harvardand\ Zagorski]{Wilson, Barr \harvardand\
-  Zagorski}{2017}{Wilson2017}
-Wilson, Andrew~M, Janine Barr \harvardand\ Megan Zagorski. 2017.
-\newblock ``{The feasibility of counting songbirds using unmanned aerial
-  vehicles}.'' {\em The Auk} 134(2):350--362.
-\newline\harvardurl{http://dx.doi.org/10.1642/AUK-16-216.1}
+\bibitem[Wilson et~al.(2017)Wilson, Barr, and Zagorski]{Wilson2017}
+Andrew~M Wilson, Janine Barr, and Megan Zagorski.
+\newblock {The feasibility of counting songbirds using unmanned aerial
+  vehicles}.
+\newblock \emph{The Auk}, 134\penalty0 (2):\penalty0 350--362, 2017.
+\newblock \doi{10.1642/AUK-16-216.1}.
+\newblock URL \url{http://dx.doi.org/10.1642/AUK-16-216.1}.
 
-\harvarditem[Wulder et~al.]{Wulder, Hall, Coops \harvardand\
-  Franklin}{2004}{Wulder2004}
-Wulder, Michael~A, Ronald~J Hall, Nicholas~C Coops \harvardand\ Steven~E
-  Franklin. 2004.
-\newblock ``{High Spatial Resolution Remotely Sensed Data for Ecosystem
-  Characterization}.''  54(6):511--521.
+\bibitem[Wulder et~al.(2004)Wulder, Hall, Coops, and Franklin]{Wulder2004}
+Michael~A Wulder, Ronald~J Hall, Nicholas~C Coops, and Steven~E Franklin.
+\newblock {High Spatial Resolution Remotely Sensed Data for Ecosystem
+  Characterization}.
+\newblock 54\penalty0 (6):\penalty0 511--521, 2004.
+\newblock \doi{10.1641/0006-3568(2004)054}.
 
-\harvarditem{WWF}{2016}{Living2016}
-WWF. 2016.
-\newblock {\em {Living Planet Report 2016. Risk and resilience in a new era.}}
+\bibitem[WWF(2016)]{Living2016}
+WWF.
+\newblock \emph{{Living Planet Report 2016. Risk and resilience in a new era.}}
+\newblock 2016.
+\newblock ISBN 9782940529407.
 
-\harvarditem[Zahawi et~al.]{Zahawi, Dandois, Holl, Nadwodny, Reid \harvardand\
-  Ellis}{2015}{Zahawi2015}
-Zahawi, Rakan~A., Jonathan~P. Dandois, Karen~D. Holl, Dana Nadwodny,
-  J.~Leighton Reid \harvardand\ Erle~C. Ellis. 2015.
-\newblock ``{Using lightweight unmanned aerial vehicles to monitor tropical
-  forest recovery}.'' {\em Biological Conservation} 186(June):287--295.
-\newline\harvardurl{http://dx.doi.org/10.1016/j.biocon.2015.03.031}
+\bibitem[Zahawi et~al.(2015)Zahawi, Dandois, Holl, Nadwodny, Reid, and
+  Ellis]{Zahawi2015}
+Rakan~A. Zahawi, Jonathan~P. Dandois, Karen~D. Holl, Dana Nadwodny, J.~Leighton
+  Reid, and Erle~C. Ellis.
+\newblock {Using lightweight unmanned aerial vehicles to monitor tropical
+  forest recovery}.
+\newblock \emph{Biological Conservation}, 186\penalty0 (June):\penalty0
+  287--295, 2015.
+\newblock ISSN 00063207.
+\newblock \doi{10.1016/j.biocon.2015.03.031}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.biocon.2015.03.031}.
 
-\harvarditem[Zhang et~al.]{Zhang, Yuan, Fang \harvardand\
-  Chen}{2016}{Zhang2016}
-Zhang, Yong, Xiuxiao Yuan, Yi Fang \harvardand\ Shiyu Chen. 2016.
-\newblock ``{UAV Low Altitude Photogrammetry for Power Line Inspection}.''
-  (August).
+\bibitem[Zhang et~al.(2016)Zhang, Yuan, Fang, and Chen]{Zhang2016}
+Yong Zhang, Xiuxiao Yuan, Yi~Fang, and Shiyu Chen.
+\newblock {UAV Low Altitude Photogrammetry for Power Line Inspection}.
+\newblock \penalty0 (August), 2016.
+\newblock ISSN 2220-9964.
+\newblock \doi{10.20944/preprints201608.0048.v1}.
 
 \end{thebibliography}

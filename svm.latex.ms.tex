@@ -1,6 +1,9 @@
 
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{article}
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{extarticle}
+%\documentclass[a4paper]{article}
+\usepackage{layout}
 \usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\setlength{\headsep}{15pt}
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage{graphicx}
@@ -8,7 +11,6 @@
 \onehalfspacing
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
-
 \usepackage{caption}
 \newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
 $if(fontfamily)$
@@ -18,11 +20,11 @@ $else$
 $endif$
 
 
-  \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage[nottoc,notlof,notlot]{tocbibind} 
-  \renewcommand\refname{Referencias} % change original References title
-  \renewcommand{\contentsname}{Tabla de contenidos  }
+\usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[nottoc,notlof,notlot]{tocbibind} 
+\renewcommand\refname{Literatura citada} % change original References title
+\renewcommand{\contentsname}{Tabla de contenidos  }
 
 
 
@@ -45,9 +47,7 @@ $endif$
 %  \vskip 2em%
 %  \begin{center}%
   \let \footnote \thanks
-    {\pandoc_args: [
-      "-V", "classoption=twocolumn"
-    ]{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
 }
 %\fi
 \makeatother
@@ -90,11 +90,11 @@ $if(graphics)$
 \let\Oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
 $endif$
-
+% notice vspace after title
 $if(title)$
-\title{$title$$if(subtitle)$: $subtitle$$endif$ $if(anonymous)$$else$$if(thanks)$\thanks{$thanks$} $endif$$endif$ }
-$endif$ 
+\title{$title$\vspace{0.25in}$if(subtitle)$: $subtitle$$endif$ $if(anonymous)$$else$$if(thanks)$\thanks{$thanks$} $endif$$endif$ }
 
+$endif$ 
 
 
 $if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$}  $sep$ \and $endfor$}$endif$
@@ -104,22 +104,32 @@ $if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \n
 
 \usepackage{titlesec}
 
-\titleformat*{\section}{\LARGE\bfseries}
+
+\titleformat*{\section}{\large\bfseries}
+\titlespacing{\section}{0em}{\parskip}{-\parskip}
 \titleformat*{\subsection}{\normalsize\bfseries}
 \titleformat*{\subsubsection}{\normalsize\itshape}
 \titleformat*{\paragraph}{\normalsize\itshape}
 \titleformat*{\subparagraph}{\normalsize\itshape}
 
 
+
 $if(natbib)$
-\usepackage{natbib}
+\usepackage[round]{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
 $endif$
 
 $if(biblatex)$
 \usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
+\renewcommand*{\bibfont}{\small}
 $if(biblatexoptions)$\ExecuteBibliographyOptions{$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$}$endif$
 $for(bibliography)$
+% Set low penalties for breaks at numbers, uppercase letters and lowercase letters
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburlucpenalty}{9000}
+\setcounter{biburllcpenalty}{9000}
+\raggedright
+
 \addbibresource{$bibliography$}
 $endfor$
 $endif$
@@ -175,16 +185,19 @@ $if(title)$
 % \maketitle
 
 {% \usefont{T1}{pnc}{m}{n}
+
 \setlength{\parindent}{0pt}
 \thispagestyle{plain}
+
 {\fontsize{16}{20}\selectfont\raggedright 
 \maketitle  % title \par  
 
 }
 
+ 
 {
-   \vskip 13.5pt\relax \normalsize\fontsize{10}{12} 
-$if(anonymous)$\hfill $else$$for(author)$\textbf{\authorfont $author.name$} \hskip 15pt \vskip 8.5pt  \emph{\small $author.affiliation$}  $sep$ \par $endfor$ $endif$
+   \vskip 13.5pt\relax \normalsize\fontsize{8}{10} 
+$if(anonymous)$\hfill $else$$for(author)$ \textbf{\authorfont $author.name$} \hskip 10pt \vskip 5pt  \bf\emph{\small $author.affiliation$}  $sep$ \par $endfor$ $endif$
 
 }
 
@@ -193,28 +206,29 @@ $if(anonymous)$\hfill $else$$for(author)$\textbf{\authorfont $author.name$} \hsk
 
 $endif$
 
+
 $if(abstract)$
 
 
 
 \begin{abstract}
 
-    \hbox{\vrule height .2pt width 39.14pc}
+    \hbox{\vrule height .2pt width 19.10pc}
 
-    \vskip 8.5pt % \small 
+    \vskip 6pt % \small 
 
 \noindent $abstract$
 
 $if(keywords)$
 
-\vskip 8.5pt \noindent \emph{Palabras claves}: $keywords$ \par
+\vskip 8pt \noindent \textbf{Palabras claves}: \emph{$keywords$} \par
 
-    \hbox{\vrule height .2pt width 39.14pc}
+    \hbox{\vrule height .2pt width 19.10pc}
 
 
 $else$
 
-    \hbox{\vrule height .2pt width 39.14pc}
+    \hbox{\vrule height .2pt width 19.10pc}
 
 $endif$
 
@@ -224,6 +238,7 @@ $endif$
 
 $if(toc)$
 {
+\fontsize{8}{10} 
 \hypersetup{linkcolor=black}
 \setcounter{tocdepth}{$toc-depth$}
 \tableofcontents
@@ -240,6 +255,7 @@ $endif$
 $if(natbib)$
 $if(bibliography)$
 $if(biblio-title)$
+\vspace{0.25in}
 $if(book-class)$
 \renewcommand\bibname{$biblio-title$}
 $else$
