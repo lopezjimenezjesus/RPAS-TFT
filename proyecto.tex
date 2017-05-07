@@ -1,5 +1,5 @@
 
-\documentclass[twocolumn]{extarticle}
+\documentclass[onecolumn]{extarticle}
 %\documentclass[a4paper]{article}
 \usepackage{layout}
 \usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
@@ -8,6 +8,8 @@
 \usepackage{rotating}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage{geometry}
+\usepackage{pdflscape}
 \onehalfspacing
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
@@ -194,8 +196,8 @@ UAS, drones) han sido planteadas en un número cada vez mayor de
 artículos científicos. Durante los últimos años se ha producido un
 incremento significativo de las líneas de investigación sobre vida
 silvestre en espacios protegidos que hacen uso de RPAS
-\citep{Linchant2015} \citep{Christie2016}. En la mayoría de los casos
-son estudios pilotos que evalúan estos sistemas frente a instrumentos
+\citep{Linchant2015, Christie2016}. En la mayoría de los casos son
+estudios pilotos que evalúan estos sistemas frente a instrumentos
 tradicionales de apoyo a la conservación, delimitando sus ventajas e
 inconvenientes, estableciendo pautas y recomendaciones de uso y abriendo
 nuevas perspetivas de aplicación.
@@ -375,20 +377,19 @@ aéreos no tripulados.
 Para alcanzar los objetivos propuestos se procedió a la revisión
 bibliográfica de artículos, literatura gris, tesis de postgrado, sitios
 web y revistas especializadas, siguiendo una línea similar a otros
-estudios realizados con anterioridad
-\citep[\citet{Christie2016}]{Linchant2015} Mediante artículos
-seleccionados para el curso de Experto Universitario en Vehículos Aéreos
-no Tripulados y sus Aplicaciones Civiles organizado por la Universidad
-de Cádiz en su edición de 2016-2017, junto con herramientas como Google
-Schoolar, ResearchGate y Mendeley Desktop se obtuvo la mayor parte de la
-bibliografía seleccionada, mientras que el uso de los motores de
-búsqueda por internet incluyeron el resto de materiales mencionados. Los
-principales criterios de búsqueda por palabras claves incluyeron los
-vehículos aéreos no tripulados en sus diversas acepciones y acrónimos
-(RPAS, UAV, drones, etc.), junto con una variedad de términos que hacen
-referencia a áreas naturales protegidas, fundamentalmente en inglés.
-Dicha actividad tuvo lugar desde el 4 de Abril de 2017 hasta el 12 de
-Mayo del mismo año.
+estudios realizados con anterioridad \citep{Linchant2015, Christie2016}
+Mediante artículos seleccionados para el curso de Experto Universitario
+en Vehículos Aéreos no Tripulados y sus Aplicaciones Civiles organizado
+por la Universidad de Cádiz en su edición de 2016-2017, junto con
+herramientas como Google Schoolar, ResearchGate y Mendeley Desktop se
+obtuvo la mayor parte de la bibliografía seleccionada, mientras que el
+uso de los motores de búsqueda por internet incluyeron el resto de
+materiales mencionados. Los principales criterios de búsqueda por
+palabras claves incluyeron los vehículos aéreos no tripulados en sus
+diversas acepciones y acrónimos (RPAS, UAV, drones, etc.), junto con una
+variedad de términos que hacen referencia a áreas naturales protegidas,
+fundamentalmente en inglés. Dicha actividad tuvo lugar desde el 4 de
+Abril de 2017 hasta el 12 de Mayo del mismo año.
 
 La información obtenida se categorizó según el propósito de aplicación
 de los RPAS en relación directa o indirecta con la conservación en
@@ -423,6 +424,82 @@ escenarios que presentan los RPAS como herramientas fundamentales para
 contribuir a la consecución de los planes de conservación en espacios
 protegidos, destacando algunas tendencias y oportunidades que
 aparentemente aún no han sido convenientemente explotadas.
+
+\newgeometry{margin=1cm}
+
+\begin{landscape}
+\begin{table}
+ \caption{A normal caption}
+\tiny
+\begin{tabular}{p{3cm}p{1.2cm}p{3cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}}
+
+\cmidrule(r){1-11}
+
+Estudio & Área protegida & Objetivo/s & País & Lugar & Especie & Tipo RPAS & Modelo RPAS & Sensor & Georref. & Costo \\ \cmidrule(r){1-11}
+
+\multicolumn{11}{c}{ESTUDIOS DE FAUNA Y VIDA SILVESTRE } \\
+
+
+\cite{PazmanyMulero2015}  & Si & Estudio comparativo modelos distribución de especies & España & Parque Nacional de Doñana & Bos taurus  & Ala fija & Easy Fly plane, Ikarus autopilot, Eagletree GPS logger & Panasonic Lumix LX-3 11MP & Si & 
+5700 euros \\ 
+
+\citealt{Hodgson2013} & Si & Determinar la eficacia para detectar e identificar dugongs.  Comprobar la actitud de los RPAS en diferentes condiciones ambientales. Determinar la resolución ideal  & Australia & Shark Bay Marine Park & Dugong & Ala fija &  ScanEagle & Nikon® D90 12 megapixel digital SLR camera  & Si & ?  \\ 
+
+
+\cite{Wilson2017}  & No & Monitoreo bioacústico con RPAS & USA & State Game Lands & Pájaros  & Multicóptero & DJI Phantom 2 & ZOOM H1 Handy Recorder  & Si & ? \\ 
+
+\cite{Szantoi2017}  & Si & Mapeo de hábitat & Indonesia & Gunung Leuser National Park & Pongo abelii (orangután)  & Ala fija & Skywalker & Canon S100  & Si & \$ 4000 \\ 
+
+
+\cite{Bayram2016}  &  No & Detección de collares VHF & ? & & Osos  & Multirotor & DJI F550 hexarotor, Pixhawk autopilot & Telonics MOD-500 VHF, Uniden handheld scanner  & Si & ? \\ 
+
+\cite{Christie2016}  &  Si  & Estimación abundancia & USA &  Aleutian Islands & Eumetopias jubatus (Steller sea lion)  & Multirotor & APH- 22 hexacopter & ?  & Si & \$ 25.000 , \$ 3000 vessel support, or \$ 1700 per site \\ 
+
+\cite{Christie2016}  &  Si & Estimación abundancia & USA &  Monte Vista National Wildlife Refuge
+ & Grus canadensis (sandhill cranes)  & Ala fija & Raven RQ- 11A & ?  & Si & \$ 400 \\ 
+
+\multicolumn{11}{c}{ MONITOREO DE ECOSISTEMAS TERRESTRES Y ACUÁTICOS } \\
+  
+  \cite{Perroy2017}  & No & Monitoreo de plantas invasoras & USA & Pahoa, Hawai & Miconia calvescens & Multirotor & DJ Inspire-1 & DJI FC350 camera  & Si & ?  \\ 
+  
+  \cite{Ivosevic2015}  & Si & Monitoreo de habitats en zonas restringidas; Modelos; Comprobar la actitud de los RPAS en diferentes condiciones ambientales. & South Korea & Chiaksan National Park;Taeanhaean National Park &  Especie & Multicóptero & DJI Phantom 2 Vision+ , built-in full HD videos  1080p/30fps and 720p/60fps, 14 megapixels 4384x3288 resolution camera & Si & Costo \\ 
+  
+  
+  \cite{Lisein2015}  & No & Discriminación de especies de  hoja caduca, inventario forestal & Bélgica & Grand-Leez & English oak, birches (Betula pendula Roth. and Betula pubescens Ehrh.), sycamore maple (Acer pseudoplatanus L.), common ash (Fraxinus excelsior L.) and poplars (two distinct varieties of cultivated Populus spp.) & Ala fija & Gatewing X100  & Ricoh GR2 GR3 GR4 10 megapixels CCD  & Si & ?  \\ 
+  
+  \cite{Puttock2015}  & Si & Caracterización ecosistemas afectados por la actividad del castor & UK & Devon Beaver Project site & Eurasian beaver (Castor fiber) & Multirotor & 3D Robotics Y6 & Canon ELPH 520 HS  & Si & ?  \\ 
+  
+  \cite{Zahawi2015}  & No & Caracterización estructura bosques tropicales para acciones de restauración & Costa Rica & Devon Beaver Project site & Varias especies & Multirotor & 3D Robotics Y6 & Canon S100  & Si & \$ 1500 \\ 
+  
+  
+  \cite{Bustamante2015}  & Si &  Monitoreo de bosques & Brasil & Riverine Forests (Permanent Protected Areas), Rio de Janeiro, Barrãcao do Mendes, Santa Cruz and São Lorenço & DJI Phantom Vision 2S  & RGB digital camera with 14 mega pixels & Riverine Areas & Si & \$ 9700  \\ 
+  
+  \cite{Gini2012}  & Si & Modelamiento 3D y clasificación de especies arbóreas & Italy & Parco Adda Nord
+    & Multirotor  &  MicrodronesTM MD4-200 & RGB CCD 12 megapixels Pentax Optio A40, modified NIR Sigma DP1 with a Foveon X3 sensor & Varias especies & Si & ?  \\
+
+\multicolumn{11}{c}{ EVALUACIÓN DE INFRAESTRUCTURAS Y RIESGO } \\
+
+  
+  \cite{Lobermeier2015} & No  & Mitigar el riesgo de colisión mediante la instalación de marcadores en líneas electríca & USA & ? & Especie & Aves  & Multirotor  & Mikrokopter Hexa XL  & KX 171 Microcam & ?  \\ 
+  
+  \cite{Mulero-Pazmany2014a} & Si  & Evaluación del riesgo riesgo eléctrico en nidos instalados en postes de alta tensión & España & Parque Nacional de Doñana &  Aves  & Ala fija  & Easy fly St-330 & GoPro Hero 2 11 MP, Panasonic LX3 11MP & Si & 7800 euros  \\ 
+  
+  
+  \cite{Mulero-Pazmany2014}  & Vigilancia en áreas protegidas & Si & Africa & KwaZulu-Nata & black rhinoceros
+  (Diceros bicornis), white rhinoceros (Ceratotherium simum)  & Ala fija  & Easy Fly St-330 & Panasonic Lumix LX-3 11 MP, GoPro Hero2, Thermoteknix Micro CAM microbolometer & Si & 13750 euros  \\ 
+
+  \cite{Hansen2016} & Si  & Monitoreo actividad visitantes  & Sweeden & Kosterhavet National Park &  Humanos  & ?  & ? & ?  & ? & ?  \\ 
+  \cite{King2014} & Si  & Aplicaciones RPAs en actividades ecoturismo   & Sweeden & Kosterhavet National Park &  Humanos  & ?  & ? & ?  & ? & ?  \\ 
+  
+  
+  \cite{Vas2015} & Si  & Impacto de los RPAS en especies de aves lacustres  & France & e Zoo du Lunaret, Cros Martin Natural Area &  Anas platyrhyncho, Phoenicopterus roseus, Tringa nebularia  & multirrotor &  Phantom & Hero3 GoPro & Si  & ?  \\ 
+  \cite{Ditmer2015} & Si  & Impacto de los RPAS en el oso negro americano   & USA & Kosterhavet National Park &  Ursus americanus  & 3DR IRIS quadcopter + Pixhawk +   & GoPro HERO3+ & ?  & ? & ?  \\ 
+
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\restoregeometry
 
 \section{Resultados}\label{resultados}
 
@@ -699,119 +776,6 @@ RPAS sobre la fauna, por lo que sería necesario contar con experiencias
 que abarcaran un mayor número de especies y permitieran adoptar un
 conjunto de buenas prácticas y recomendaciones para el desarrollo de
 RPAS específicos para este tipo de estudios.
-
-\onecolumn
-
-\begin{sidewaystable}
-\centering
-\captionsetup{font=scriptsize,labelfont=scriptsize}
-\caption{Estudios con RPAS realizados en áreas protegidas, características técnicas de la plataforma y especies objetivos}
-\label{my-label}
-\tiny
-\begin{tabular}{p{2.5cm}p{1cm}p{3cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}p{2cm}p{1cm}p{0.5cm}}
-\cmidrule(r){1-11}
-
-Estudio & Tipo de Estudio & Objetivo/s & País & Lugar & Especie & Tipo RPAS & Modelo RPAS & Sensor & Georref. & Costo \\ \cmidrule(r){1-11}
-
-\ ESTUDIOS DE FAUNA Y VIDA SILVESTRE \\ 
-
-
-\cite{PazmanyMulero2015}  & Si & Estudio comparativo modelos distribución de especies & España & Parque Nacional de Doñana & Bos taurus  & Ala fija & Easy Fly plane, Ikarus autopilot, Eagletree GPS logger & Panasonic Lumix LX-3 11MP & Si & 
-5700 euros \\ 
-
-\citealt{Hodgson2013} & Si & Determinar la eficacia para detectar e identificar dugongs.  Comprobar la actitud de los RPAS en diferentes condiciones ambientales. Determinar la resolución ideal  & Australia & Shark Bay Marine Park & Dugong & Ala fija &  ScanEagle & Nikon® D90 12 megapixel digital SLR camera  & Si & ?  \\ 
-
-
-\cite{Wilson2017}  & No & Monitoreo bioacústico con RPAS & USA & State Game Lands & Pájaros  & Multicóptero & DJI Phantom 2 & ZOOM H1 Handy Recorder  & Si & ? \\ 
-
-\cite{Szantoi2017}  & Si & Mapeo de hábitat & Indonesia & Gunung Leuser National Park & Pongo abelii (orangután)  & Ala fija & Skywalker & Canon S100  & Si & \$ 4000 \\ 
-
-
-\cite{Bayram2016}  &  No & Detección de collares VHF & ? & & Osos  & Multirotor & DJI F550 hexarotor, Pixhawk autopilot & Telonics MOD-500 VHF, Uniden handheld scanner  & Si & ? \\ 
-
-\cite{Christie2016}  &  Si  & Estimación abundancia & USA &  Aleutian Islands & Eumetopias jubatus (Steller sea lion)  & Multirotor & APH- 22 hexacopter & ?  & Si & \$ 25.000 , \$ 3000 vessel support, or \$ 1700 per site \\ 
-
-\cite{Christie2016}  &  Si & Estimación abundancia & USA &  Monte Vista National Wildlife Refuge
- & Grus canadensis (sandhill cranes)  & Ala fija & Raven RQ- 11A & ?  & Si & \$ 400 \\ 
-
-\end{tabular}
-\end{sidewaystable}
-
-\begin{sidewaystable}
-\centering
-\captionsetup{font=scriptsize,labelfont=scriptsize}
-\caption{Monitoreo de ecosistemas terrestres y acuáticos}
-\label{my-label}
-\tiny
-\begin{tabular}{p{2.5cm}p{1cm}p{3cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}p{2cm}p{1cm}p{0.5cm}}
-\cmidrule(r){1-11}
-
-Estudio & Área protegida & Objetivo/s & País & Lugar & Especie & Tipo RPAS & Modelo RPAS & Sensor & Georref. & Costo \\ \cmidrule(r){1-11}
-
-  \ MONITOREO DE ECOSISTEMAS TERRESTRES Y ACUÁTICOS \\ 
-  
-  \cite{Perroy2017}  & No & Monitoreo de plantas invasoras & USA & Pahoa, Hawai & Miconia calvescens & Multirotor & DJ Inspire-1 & DJI FC350 camera  & Si & ?  \\ 
-  
-  \cite{Ivosevic2015}  & Si & Monitoreo de habitats en zonas restringidas; Modelos; Comprobar la actitud de los RPAS en diferentes condiciones ambientales. & South Korea & Chiaksan National Park;Taeanhaean National Park &  Especie & Multicóptero & DJI Phantom 2 Vision+ , built-in full HD videos  1080p/30fps and 720p/60fps, 14 megapixels 4384x3288 resolution camera & Si & Costo \\ 
-  
-  
-  \cite{Lisein2015}  & No & Discriminación de especies de  hoja caduca, inventario forestal & Bélgica & Grand-Leez & English oak, birches (Betula pendula Roth. and Betula pubescens Ehrh.), sycamore maple (Acer pseudoplatanus L.), common ash (Fraxinus excelsior L.) and poplars (two distinct varieties of cultivated Populus spp.) & Ala fija & Gatewing X100  & Ricoh GR2 GR3 GR4 10 megapixels CCD  & Si & ?  \\ 
-  
-  \cite{Puttock2015}  & Si & Caracterización ecosistemas afectados por la actividad del castor & UK & Devon Beaver Project site & Eurasian beaver (Castor fiber) & Multirotor & 3D Robotics Y6 & Canon ELPH 520 HS  & Si & ?  \\ 
-  
-  \cite{Zahawi2015}  & No & Caracterización estructura bosques tropicales para acciones de restauración & Costa Rica & Devon Beaver Project site & Varias especies & Multirotor & 3D Robotics Y6 & Canon S100  & Si & \$ 1500 \\ 
-  
-  
-  \cite{Bustamante2015}  & Si &  Monitoreo de bosques & Brasil & Riverine Forests (Permanent Protected Areas), Rio de Janeiro, Barrãcao do Mendes, Santa Cruz and São Lorenço & DJI Phantom Vision 2S  & RGB digital camera with 14 mega pixels & Riverine Areas & Si & \$ 9700  \\ 
-  
-  \cite{Gini2012}  & Si & Modelamiento 3D y clasificación de especies arbóreas & Italy & Parco Adda Nord
-    & Multirotor  &  MicrodronesTM MD4-200 & RGB CCD 12 megapixels Pentax Optio A40, modified NIR Sigma DP1 with a Foveon X3 sensor & Varias especies & Si & ?  \\
-
-\\ \cmidrule(r){1-11}
-
-
-
-\end{tabular}
-\end{sidewaystable}
-
-\begin{sidewaystable}
-  \centering
-  \captionsetup{font=scriptsize,labelfont=scriptsize}
-  \caption{Estudios con RPAS realizados en Areas protegidas, caracteristicas tecnicas de la plataforma y especies objetivos}
-  \label{my-label}
-  \tiny
-  \begin{tabular}{p{2.5cm}p{1cm}p{3cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}p{2cm}p{1cm}p{0.5cm}}
-  \cmidrule(r){1-11}
-  
-  Estudio & Área protegida & Objetivo/s & País & Lugar & Especie & Tipo RPAS & Modelo RPAS & Sensor & Georref. & Costo \\ \cmidrule(r){1-11}
-  
-  
-  \ EVALUACIÓN DE INFRAESTRUCTURAS Y RIESGO \\
-  
-  \cite{Lobermeier2015} & No  & Mitigar el riesgo de colisión mediante la instalación de marcadores en líneas electríca & USA & ? & Especie& Aves  & Multirotor  & Mikrokopter Hexa XL  & KX 171 Microcam & ?  \\ 
-  
-  \cite{Mulero-Pazmany2014a} & Si  & Evaluación del riesgo riesgo eléctrico en nidos instalados en postes de alta tensión & España & Parque Nacional de Doñana &  Aves  & Ala fija  & Easy fly St-330 & GoPro Hero 2 11 MP, Panasonic LX3 11MP & Si & 7800 euros  \\ 
-  
-  
-  \ VIGILANCIA \\ 
-  
-  \cite{Mulero-Pazmany2014}  & Vigilancia en áreas protegidas & Si & Africa & KwaZulu-Nata & black rhinoceros
-  (Diceros bicornis), white rhinoceros (Ceratotherium simum)  & Ala fija  & Easy Fly St-330 & Panasonic Lumix LX-3 11 MP, GoPro Hero2, Thermoteknix Micro CAM microbolometer & Si & 13750 euros  \\ 
-
-  
-  \ ECOTURISMO  \\
-  
-  \cite{Hansen2016} & Si  & Monitoreo actividad visitantes  & Sweeden & Kosterhavet National Park &  Humanos  & ?  & ? & ?  & ? & ?  \\ 
-  \cite{King2014} & Si  & Aplicaciones RPAs en actividades ecoturismo   & Sweeden & Kosterhavet National Park &  Humanos  & ?  & ? & ?  & ? & ?  \\ 
-  
-  
-  \ ETICA ANIMAL  \\
-  \cite{Vas2015} & Si  & Impacto de los RPAS en especies de aves lacustres  & France & e Zoo du Lunaret, Cros Martin Natural Area &  Anas platyrhyncho, Phoenicopterus roseus, Tringa nebularia  & multirrotor &  Phantom & Hero3 GoPro & Si  & ?  \\ 
-  \cite{Ditmer2015} & Si  & Impacto de los RPAS en el oso negro americano   & USA & Kosterhavet National Park &  Ursus americanus  & 3DR IRIS quadcopter + Pixhawk +   & GoPro HERO3+ & ?  & ? & ?  \\ 
-
-  
-  \end{tabular}
-  \end{sidewaystable}
 
 \newpage
 \singlespacing 

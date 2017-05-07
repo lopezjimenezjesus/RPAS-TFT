@@ -2,8 +2,8 @@
 title: 'Contribución de los RPAS en investigación y conservación en espacios protegidos:
   presente y futuro'
 author:
-  affiliation: Trabajo fin de curso de   Experto Universitario en Vehículos Aéreos no Tripulados y
-    sus Aplicaciones Civiles. Universidad de Cádiz.
+  affiliation: Trabajo fin de curso de   Experto Universitario en Vehículos Aéreos
+    no Tripulados y sus Aplicaciones Civiles. Universidad de Cádiz.
   name: 'Autor: Jesús Jiménez López'
 bibliography:
 - ~/Documents/CURSOS/drones/RTF/project/internet.bib
@@ -16,7 +16,7 @@ output:
     latex_engine: pdflatex
     pandoc_args:
     - -V
-    - classoption=twocolumn
+    - classoption=onecolumn
     template: ~/Documents/CURSOS/drones/RTF/project/svm.latex.ms.tex
     toc: yes
   html_document: default
@@ -27,11 +27,11 @@ keywords: RPAs, UAVs, drones, espacios naturales, conservación, biodiversidad, 
   innovación
 fontfamily: mathpazo
 spacing: double
-abstract: En este estudio se describe el estado actual y las
-  tendencias en el uso de los RPAS en proyectos científicos con fines de conservación   
-  en espacios naturales protegidos, mediante la recopilación y revisión de material
-  bibliográfico en forma de artículos científicos, revistas, proyectos de conservación
-  y otras fuentes de información relevantes.
+abstract: En este estudio se describe el estado actual y las tendencias en el uso
+  de los RPAS en proyectos científicos con fines de conservación en espacios naturales
+  protegidos, mediante la recopilación y revisión de material bibliográfico en forma
+  de artículos científicos, revistas, proyectos de conservación y otras fuentes de
+  información relevantes.
 ---
 
 ```{r setup, include=FALSE}
@@ -42,7 +42,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \small
 
-Las aplicaciones civiles de las aeronaves pilotadas remotamente (siglas en inglés RPAS, también conocidos como sistemas aéreos no tripulados, UAS, drones) han sido planteadas en un número cada vez mayor de artículos científicos. Durante los últimos años se ha producido un incremento significativo de las líneas de investigación sobre  vida silvestre en espacios protegidos que hacen uso de RPAS [@Linchant2015] [@Christie2016]. En la mayoría de los casos son estudios pilotos que evalúan estos sistemas frente a instrumentos tradicionales de apoyo a la conservación, delimitando sus ventajas e inconvenientes, estableciendo pautas y recomendaciones de uso y abriendo nuevas perspetivas de aplicación.
+Las aplicaciones civiles de las aeronaves pilotadas remotamente (siglas en inglés RPAS, también conocidos como sistemas aéreos no tripulados, UAS, drones) han sido planteadas en un número cada vez mayor de artículos científicos. Durante los últimos años se ha producido un incremento significativo de las líneas de investigación sobre  vida silvestre en espacios protegidos que hacen uso de RPAS [@Linchant2015; @Christie2016]. En la mayoría de los casos son estudios pilotos que evalúan estos sistemas frente a instrumentos tradicionales de apoyo a la conservación, delimitando sus ventajas e inconvenientes, estableciendo pautas y recomendaciones de uso y abriendo nuevas perspetivas de aplicación.
 
 Los espacios naturales protegidos son aquellos en los que la intervención del hombre no ha llegado a alterar de forma significativa la presencia y funcionamiento de los elementos bióticos y abióticos que lo integran [@Bravo2008]. Cumplen con finalidades de protección y conservación del medio biofísico y cultural, donde se promueven iniciativas en el ámbito científico, educativo y de restauración, actividades recreativas y turísticas compatibles con el medio natural  y acciones de índole socioeconómica enmarcadas en el desarrollo sostenible del territorio. Están amparados bajo alguna figura nacional o internacional de protección y regulados a través de los planes de manejo específicos. A pesar de que el número de áreas protegidas ha experimentado un aumento considerable a nivel mundial, con un 15.4 % de la superficie terrestre y un 8.4% de las áreas marinas bajo alguna figura de protección [@juffe2014protected] , hay autores que resaltan la necesidad de mejorar las herramientas de gestión de áreas protegidas que aseguren la efectividad de la conservación de la biodiversidad [@Chape2005]. Por otra parte  algunas áreas protegidas sufren procesos de degradación, continúan disminuyendo en tamaño o han dejado de existir [@Mascia2011], o bien han sido declaradas bajo criterios oportunistas que no reflejan necesariamente el valor ecológico de los ecosistemas a preservar [@Knight2007]. En un reciente informe realizado por la Sociedad Zoológica de Londres [@Living2016] , se calcula que el tamaño de las poblaciones de vida silvestre ha disminuido en un 52 % en el periodo de 1970 hasta 2012. Todos los indicios apuntan al hombre como principal desencadenante de la ya denominada sexta extinción masiva en nuestro planeta [@Barnosky2011], hasta el punto de que algunos investigadores comienzan a hablar del antropoceno, como inicio de una nueva época del Cuaternario. La fragmentación del hábitat, el aumento de la contaminación, especialmente grave en ecosistemas de agua dulce, la sobreexplotación de los recursos, las consecuencias a nivel global del cambio climático y el impacto de las especies invasoras sobre poblaciones autóctonas han sido identificados como las principales amenazas para la diversidad biológica [@Conabio2017]. 
 
@@ -58,26 +58,25 @@ Finalmente, algunos autores señalan la necesidad de mejorar el marco regulatori
 
 # Métodos
 
-Para alcanzar los objetivos propuestos se procedió a la revisión bibliográfica de artículos, literatura gris, tesis de postgrado, sitios web y revistas especializadas, siguiendo una línea similar a otros estudios realizados con anterioridad [@Linchant2015, @Christie2016] Mediante artículos seleccionados para el curso de Experto Universitario en Vehículos Aéreos no Tripulados y sus Aplicaciones Civiles organizado por la Universidad de Cádiz en su edición de 2016-2017, junto con herramientas como Google Schoolar, ResearchGate y Mendeley Desktop se obtuvo la mayor parte de la bibliografía seleccionada, mientras que el uso de los motores de búsqueda por internet incluyeron el resto de materiales mencionados. Los principales criterios de búsqueda por palabras claves incluyeron los vehículos aéreos no tripulados en sus diversas acepciones y acrónimos (RPAS, UAV, drones, etc.),  junto con una variedad de términos que hacen referencia a áreas naturales protegidas, fundamentalmente en inglés. Dicha actividad tuvo lugar desde el 4 de Abril de 2017 hasta el 12 de Mayo del mismo año. 
+Para alcanzar los objetivos propuestos se procedió a la revisión bibliográfica de artículos, literatura gris, tesis de postgrado, sitios web y revistas especializadas, siguiendo una línea similar a otros estudios realizados con anterioridad [@Linchant2015; @Christie2016] Mediante artículos seleccionados para el curso de Experto Universitario en Vehículos Aéreos no Tripulados y sus Aplicaciones Civiles organizado por la Universidad de Cádiz en su edición de 2016-2017, junto con herramientas como Google Schoolar, ResearchGate y Mendeley Desktop se obtuvo la mayor parte de la bibliografía seleccionada, mientras que el uso de los motores de búsqueda por internet incluyeron el resto de materiales mencionados. Los principales criterios de búsqueda por palabras claves incluyeron los vehículos aéreos no tripulados en sus diversas acepciones y acrónimos (RPAS, UAV, drones, etc.),  junto con una variedad de términos que hacen referencia a áreas naturales protegidas, fundamentalmente en inglés. Dicha actividad tuvo lugar desde el 4 de Abril de 2017 hasta el 12 de Mayo del mismo año. 
 
 La información obtenida se categorizó según el propósito de aplicación de los RPAS en relación directa o indirecta con la conservación en espacios protegidos. La mayoría de las fuentes analizadas se centran en proyectos de conservación a escala local  y estudios de viabilidad de los RPAS en la caracterización de poblaciones y comunidades de vida silvestre, especialmente en estudios de distribución y abundancia. La literatura comienza a ser igualmente prolífica en actividades de monitoreo y mapeo en ecosistemas terrestres y acuáticos, nicho actualmente ocupado por las plataformas aéreas y espaciales de teledetección ambiental. A pesar de la dificultad de encontrar artículos dedicados al uso de RPAS en el control y vigilancia de áreas protegidas, es uno de los temas que mayor debate social genera y no es extraño encontrar iniciativas gubernamentales o promovidas por organizaciones ambientales en la lucha contra la caza y pesca furtiva.  Adicionalmente se revisan algunos aspectos de calado social recogidos en los materiales seleccionados y que son motivo de controversia, con especial referencia a la privacidad de las personas y el bienestar de las especies estudiadas, las implicaciones éticas y legales y la repercusión en la efectividad de los RPAS en la conservación a largo plazo. En cualquier caso, dado el carácter multidisciplinar y multipropósito de estos estudios existe cierto solape entre los objetivos marcados dentro de cada proyecto,  por lo que se ha tenido en cuenta aquellos objetivos que mayor peso tienen en el contexto de la investigación. 
 
 La información seleccionada se presenta en formato tabular, identificando los países implicados,  el propósito principal de cada estudio, las técnicas y sistemas empleados, haciendo referencia explicita al tipo de aplicación y plataformas de vuelo, tanto de ala fija como de pala rotatoria. Finalmente se discuten los posibles escenarios  que presentan  los RPAS como herramientas fundamentales para contribuir a la consecución de los planes de conservación en espacios protegidos, destacando algunas tendencias y oportunidades que aparentemente aún no han sido convenientemente explotadas.
 
-\onecolumn
 
-\begin{sidewaystable}
-\centering
-\captionsetup{font=scriptsize,labelfont=scriptsize}
-\caption{Estudios con RPAS realizados en áreas protegidas, características técnicas de la plataforma y especies objetivos}
-\label{my-label}
+\newgeometry{margin=1cm}
+\begin{landscape}
+\begin{table}
+ \caption{A normal caption}
 \tiny
-\begin{tabular}{p{2.5cm}p{1cm}p{3cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}p{2cm}p{1cm}p{0.5cm}}
+\begin{tabular}{p{3cm}p{1.2cm}p{3cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}}
+
 \cmidrule(r){1-11}
 
-Estudio & Tipo de Estudio & Objetivo/s & País & Lugar & Especie & Tipo RPAS & Modelo RPAS & Sensor & Georref. & Costo \\ \cmidrule(r){1-11}
+Estudio & Área protegida & Objetivo/s & País & Lugar & Especie & Tipo RPAS & Modelo RPAS & Sensor & Georref. & Costo \\ \cmidrule(r){1-11}
 
-\ ESTUDIOS DE FAUNA Y VIDA SILVESTRE \\ 
+\multicolumn{11}{c}{ESTUDIOS DE FAUNA Y VIDA SILVESTRE } \\
 
 
 \cite{PazmanyMulero2015}  & Si & Estudio comparativo modelos distribución de especies & España & Parque Nacional de Doñana & Bos taurus  & Ala fija & Easy Fly plane, Ikarus autopilot, Eagletree GPS logger & Panasonic Lumix LX-3 11MP & Si & 
@@ -98,22 +97,7 @@ Estudio & Tipo de Estudio & Objetivo/s & País & Lugar & Especie & Tipo RPAS & M
 \cite{Christie2016}  &  Si & Estimación abundancia & USA &  Monte Vista National Wildlife Refuge
  & Grus canadensis (sandhill cranes)  & Ala fija & Raven RQ- 11A & ?  & Si & \$ 400 \\ 
 
-\end{tabular}
-\end{sidewaystable}
-
-
-\begin{sidewaystable}
-\centering
-\captionsetup{font=scriptsize,labelfont=scriptsize}
-\caption{Monitoreo de ecosistemas terrestres y acuáticos}
-\label{my-label}
-\tiny
-\begin{tabular}{p{2.5cm}p{1cm}p{3cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}p{2cm}p{1cm}p{0.5cm}}
-\cmidrule(r){1-11}
-
-Estudio & Área protegida & Objetivo/s & País & Lugar & Especie & Tipo RPAS & Modelo RPAS & Sensor & Georref. & Costo \\ \cmidrule(r){1-11}
-
-  \ MONITOREO DE ECOSISTEMAS TERRESTRES Y ACUÁTICOS \\ 
+\multicolumn{11}{c}{ MONITOREO DE ECOSISTEMAS TERRESTRES Y ACUÁTICOS } \\
   
   \cite{Perroy2017}  & No & Monitoreo de plantas invasoras & USA & Pahoa, Hawai & Miconia calvescens & Multirotor & DJ Inspire-1 & DJI FC350 camera  & Si & ?  \\ 
   
@@ -132,53 +116,30 @@ Estudio & Área protegida & Objetivo/s & País & Lugar & Especie & Tipo RPAS & M
   \cite{Gini2012}  & Si & Modelamiento 3D y clasificación de especies arbóreas & Italy & Parco Adda Nord
     & Multirotor  &  MicrodronesTM MD4-200 & RGB CCD 12 megapixels Pentax Optio A40, modified NIR Sigma DP1 with a Foveon X3 sensor & Varias especies & Si & ?  \\
 
-\\ \cmidrule(r){1-11}
+\multicolumn{11}{c}{ EVALUACIÓN DE INFRAESTRUCTURAS Y RIESGO } \\
 
-
-
-\end{tabular}
-\end{sidewaystable}
-
-
-  \begin{sidewaystable}
-  \centering
-  \captionsetup{font=scriptsize,labelfont=scriptsize}
-  \caption{Estudios con RPAS realizados en Areas protegidas, caracteristicas tecnicas de la plataforma y especies objetivos}
-  \label{my-label}
-  \tiny
-  \begin{tabular}{p{2.5cm}p{1cm}p{3cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}p{2cm}p{1cm}p{0.5cm}}
-  \cmidrule(r){1-11}
   
-  Estudio & Área protegida & Objetivo/s & País & Lugar & Especie & Tipo RPAS & Modelo RPAS & Sensor & Georref. & Costo \\ \cmidrule(r){1-11}
-  
-  
-  \ EVALUACIÓN DE INFRAESTRUCTURAS Y RIESGO \\
-  
-  \cite{Lobermeier2015} & No  & Mitigar el riesgo de colisión mediante la instalación de marcadores en líneas electríca & USA & ? & Especie& Aves  & Multirotor  & Mikrokopter Hexa XL  & KX 171 Microcam & ?  \\ 
+  \cite{Lobermeier2015} & No  & Mitigar el riesgo de colisión mediante la instalación de marcadores en líneas electríca & USA & ? & Especie & Aves  & Multirotor  & Mikrokopter Hexa XL  & KX 171 Microcam & ?  \\ 
   
   \cite{Mulero-Pazmany2014a} & Si  & Evaluación del riesgo riesgo eléctrico en nidos instalados en postes de alta tensión & España & Parque Nacional de Doñana &  Aves  & Ala fija  & Easy fly St-330 & GoPro Hero 2 11 MP, Panasonic LX3 11MP & Si & 7800 euros  \\ 
   
   
-  \ VIGILANCIA \\ 
-  
   \cite{Mulero-Pazmany2014}  & Vigilancia en áreas protegidas & Si & Africa & KwaZulu-Nata & black rhinoceros
   (Diceros bicornis), white rhinoceros (Ceratotherium simum)  & Ala fija  & Easy Fly St-330 & Panasonic Lumix LX-3 11 MP, GoPro Hero2, Thermoteknix Micro CAM microbolometer & Si & 13750 euros  \\ 
 
-  
-  \ ECOTURISMO  \\
-  
   \cite{Hansen2016} & Si  & Monitoreo actividad visitantes  & Sweeden & Kosterhavet National Park &  Humanos  & ?  & ? & ?  & ? & ?  \\ 
   \cite{King2014} & Si  & Aplicaciones RPAs en actividades ecoturismo   & Sweeden & Kosterhavet National Park &  Humanos  & ?  & ? & ?  & ? & ?  \\ 
   
   
-  \ ETICA ANIMAL  \\
   \cite{Vas2015} & Si  & Impacto de los RPAS en especies de aves lacustres  & France & e Zoo du Lunaret, Cros Martin Natural Area &  Anas platyrhyncho, Phoenicopterus roseus, Tringa nebularia  & multirrotor &  Phantom & Hero3 GoPro & Si  & ?  \\ 
   \cite{Ditmer2015} & Si  & Impacto de los RPAS en el oso negro americano   & USA & Kosterhavet National Park &  Ursus americanus  & 3DR IRIS quadcopter + Pixhawk +   & GoPro HERO3+ & ?  & ? & ?  \\ 
 
-  
-  \end{tabular}
-  \end{sidewaystable}
-  
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\restoregeometry
+
   
 # Resultados
   

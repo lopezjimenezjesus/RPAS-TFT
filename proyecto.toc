@@ -1,0 +1,11 @@
+\contentsline {section}{Introducci\IeC {\'o}n}{1}{section*.1}
+\contentsline {section}{M\IeC {\'e}todos}{4}{section*.2}
+\contentsline {section}{Resultados}{7}{section*.4}
+\contentsline {subsection}{Estudios de fauna y vida silvestre}{7}{subsection*.5}
+\contentsline {subsection}{Evaluaci\IeC {\'o}n de infraestructuras y riesgo}{8}{subsection*.6}
+\contentsline {subsection}{Monitoreo y mapeo de ecosistemas terrestres y acu\IeC {\'a}ticos}{8}{subsection*.7}
+\contentsline {subsection}{Vigilancia y apoyo para el cumplimiento de las leyes en \IeC {\'a}reas protegidas}{9}{subsection*.8}
+\contentsline {subsection}{Ecoturismo}{9}{subsection*.9}
+\contentsline {subsection}{Impacto de los RPAS en la fauna silvestre}{10}{subsection*.10}
+\contentsline {section}{Conclusiones}{10}{section*.11}
+\contentsline {section}{Literatura citada}{11}{section*.11}

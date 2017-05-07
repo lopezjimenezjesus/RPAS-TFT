@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: proyecto.aux
+The style file: abbrv.bst
+Database file #1: /home/jesus/Documents/CURSOS/drones/RTF/project/master.bib.bib
+Database file #2: /home/jesus/Documents/CURSOS/drones/RTF/project/internet.bib.bib
+Warning--empty journal in Bayram2016
+Warning--there's a number but no volume in Bayram2016
+Warning--empty journal in Bravo2008
+Warning--empty journal in Bustamante2015
+Warning--there's a number but no volume in Cliff2015
+Warning--empty journal in Forum2008
+Warning--there's a number but no volume in Forum2008
+Warning--empty journal in Korner2010
+Warning--there's a number but no volume in Leonardo2013
+Warning--empty journal in Mascia2011
+Warning--empty journal in PazmanyMulero2015
+Warning--empty publisher in quilter1997vegetation
+Warning--empty journal in Wulder2004
+Warning--empty publisher in Living2016
+Warning--empty journal in Zhang2016
+Warning--there's a number but no volume in Zhang2016
+You've used 60 entries,
+            2118 wiz_defined-function locations,
+            884 strings with 17571 characters,
+and the built_in function-call counts, 21870 in all, are:
+= -- 2079
+> -- 1331
+< -- 4
++ -- 528
+- -- 468
+* -- 1774
+:= -- 3758
+add.period$ -- 180
+call.type$ -- 60
+change.case$ -- 412
+chr.to.int$ -- 0
+cite$ -- 76
+duplicate$ -- 650
+empty$ -- 1483
+format.name$ -- 468
+if$ -- 4327
+int.to.chr$ -- 0
+int.to.str$ -- 60
+missing$ -- 54
+newline$ -- 303
+num.names$ -- 120
+pop$ -- 402
+preamble$ -- 1
+purify$ -- 354
+quote$ -- 0
+skip$ -- 453
+stack$ -- 0
+substring$ -- 1285
+swap$ -- 79
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 236
+warning$ -- 16
+while$ -- 205
+width$ -- 62
+write$ -- 638
+(There were 16 warnings)
