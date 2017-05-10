@@ -26,8 +26,10 @@ $endif$
 \usepackage[utf8]{inputenc}
 \usepackage[nottoc,notlof,notlot]{tocbibind} 
 \renewcommand\refname{Literatura citada} % change original References title
+
 \renewcommand{\contentsname}{Tabla de contenidos  }
 
+\usepackage[tablename=Tabla]{caption}
 
 
 \usepackage{abstract}
@@ -199,7 +201,7 @@ $if(title)$
  
 {
    \vskip 13.5pt\relax \normalsize\fontsize{8}{10} 
-$if(anonymous)$\hfill $else$$for(author)$ \textbf{\authorfont $author.name$} \hskip 10pt \vskip 5pt  \bf\emph{\small $author.affiliation$}  $sep$ \par $endfor$ $endif$
+$if(anonymous)$\hfill $else$$for(author)$ \textbf{\authorfont $author.name$} \hskip 10pt \vskip 5pt  \bf\emph{\small $author.affiliation$} \vskip 5pt $sep$ \par $endfor$ $endif$
 
 }
 
@@ -215,7 +217,7 @@ $if(abstract)$
 
 \begin{abstract}
 
-    \hbox{\vrule height .2pt width 19.10pc}
+    \hbox{\vrule height .2pt width 38.9pc}
 
     \vskip 6pt % \small 
 
@@ -225,7 +227,7 @@ $if(keywords)$
 
 \vskip 8pt \noindent \textbf{Palabras claves}: \emph{$keywords$} \par
 
-    \hbox{\vrule height .2pt width 19.10pc}
+    \hbox{\vrule height .2pt width 38.9pc}
 
 
 $else$
