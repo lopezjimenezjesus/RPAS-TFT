@@ -1,0 +1,82 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[AEDRON(2017)]{Aedron2017}
+Asociación Española de Drones y~Afines AEDRON.
+\newblock \emph{Borrador de la nueva normativa (pendiente aprobación y
+  publicación)}, 2017.
+\newblock \url{https://www.aedron.com/borrador-nueva-normativa} [Accessed: 07
+  de Abril, 2017].
+
+\bibitem[Agencia~EFE(2013)]{Nacion2013}
+La~Nación. Agencia~EFE.
+\newblock \emph{CIDH alerta del creciente uso de 'drones' en América Latina},
+  2013.
+\newblock
+  \url{http://www.nacion.com/mundo/latinoamerica/Comision_Interamericana_de_Derechos_Humanos-drones-regulacion-Costa_Rica_0_1375662598.html}
+  [Accessed: 07 de Abril, 2017].
+
+\bibitem[Andrews(2014)]{Andrews2014}
+C.~Andrews.
+\newblock \emph{Wildlife monitoring: should UAV drones be banned?}, 2014.
+\newblock
+  \url{https://prod-eandt.theiet.org/content/articles/2014/07/wildlife-monitoring-should-uav-drones-be-banned/}
+  [Accessed: 07 de Abril, 2017].
+
+\bibitem[Bayram et~al.()Bayram, Doddapaneni, Stefas, and
+  Isler]{bayram_active_2016}
+Haluk Bayram, Krishna Doddapaneni, Nikolaos Stefas, and Volkan Isler.
+\newblock Active localization of {VHF} collared animals with aerial robots.
+\newblock \penalty0 (13):\penalty0 74--75.
+\newblock ISSN 21618089.
+\newblock \doi{10.1109/COASE.2016.7743503}.
+\newblock bibtex: bayram\_active\_2016.
+
+\bibitem[Conabio(2017)]{Conabio2017}
+Conabio.
+\newblock \emph{Canarias usará drones para controlar la pesca furtiva y
+  mejorar su inspección}, 2017.
+\newblock \url{http://www.biodiversidad.gob.mx/biodiversidad/porque.html }
+  [Accessed: 7 de Mayo, 2017].
+
+\bibitem[Gerster/Panos(2017)]{Georg2016}
+Georg Gerster/Panos.
+\newblock \emph{Project uses drones to monitor coastal erosion in Ghana}, 2017.
+\newblock
+  \url{http://www.scidev.net/sub-saharan-africa/environment/news/project-drones-monitor-coastal-erosion-ghana.html
+  } [Accessed: 7 de Mayo, 2017].
+
+\bibitem[INFORCASA(2017)]{Canarias2017}
+INFORCASA.
+\newblock \emph{Canarias usará drones para controlar la pesca furtiva y
+  mejorar su inspección}, 2017.
+\newblock
+  \url{https://www.canarias7.es/hemeroteca/canarias_usara_drones_para_controlar_la_pesca_furtiva_y_mejorar_su_inspeccion_-JDCSN451293
+  } [Accessed: 28 de Abril, 2017].
+
+\bibitem[USGS(2014)]{USGS2014}
+USGS.
+\newblock \emph{US Geological Survey National Unmanned Aircraft Systems
+  Project}, 2014.
+\newblock \url{http:// rmgsc.cr.usgs.gov/UAS} [Accessed: 13 de Abril, 2017].
+
+\bibitem[Wich(2017)]{WichS2017}
+S.~Wich.
+\newblock \emph{Amazon river dolphin project}, 2017.
+\newblock
+  \url{https://conservationdrones.org/2017/04/05/amazon-river-dolphin-project/}
+  [Accessed: 07 de Abril, 2017].
+
+\bibitem[Wulder et~al.()Wulder, Hall, Coops, and Franklin]{wulder_high_2004}
+Michael~A Wulder, Ronald~J Hall, Nicholas~C Coops, and Steven~E Franklin.
+\newblock High spatial resolution remotely sensed data for ecosystem
+  characterization.
+\newblock 54\penalty0 (6):\penalty0 511--521.
+\newblock \doi{10.1641/0006-3568(2004)054}.
+\newblock bibtex: wulder\_high\_2004.
+
+\end{thebibliography}

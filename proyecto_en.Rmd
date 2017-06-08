@@ -1,0 +1,217 @@
+---
+title: 'Contribution of RPAS in research and conservation in natural protected areas:
+  present and future'
+author:
+- affiliation: University
+  name: Jesús Jiménez López
+- affiliation: University
+  name: Margarita Mulero-Pázmány
+bibliography:
+- ./internet.bib
+- ./master.bib
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    latex_engine: pdflatex
+    pandoc_args:
+    - -V
+    - classoption=onecolumn
+    template: ./svm.latex.ms.tex
+  html_document: default
+  word_document: default
+csl: taylor-and-francis-chicago-author-date.csl
+documentclass: article
+keywords: RPAS, UAV, drones, natural protected areas, conservation, biodiversity,
+  research, innovation
+cls: ./interact.cls
+runhead: A Running Head
+thanks: null
+abstract: This paper is aimed at establishing the current state and trends in the
+  use of RPAS in scientific projects for conservation purposes in natural protected
+  areas, through the collection and revision of bibliographic material in the form
+  of scientific articles, journals, conservation projects and other sources of relevant
+  information.
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+## Current context
+
+Civil applications of remotely piloted aircraft  systems (RPAS, also known as unmanned aerial systems, UAS, drones) have been raised in an increasing number of scientific articles. During the last few years there have been a significant amount of  wildlife research projects in natural protected areas using RPAS [@linchant_are_2015; @christie_unmanned_2016]. In most cases, these are pilot studies that assess the capacity of these systems in relation to traditional conservation instruments, delimiting their strenghts and weakness, establishing guidelines and recommendations, which together result in new perspectives of application.
+
+ In the early 1980s, the first experiments with RPAS on environmental issues began with the objective of acquiring aerial photographs and demonstrating their usefulness in forestry applications, the management of fish resources or the coupling of sensors for atmospheric studies [@tomlins_remotely_1983]. By the end of the 20th century, the first mapping surveys of vegetation in threatened species appear (Quilter, 1997), while with the arrival of the new millennium the number of publications began to increase significantly [ see @hardin_small-scale_2013].  At present there are some initiatives that seek to determine the current state of the RPAS in the areas of ecology and conservation. Recently, the journal  *Remote Sensing in Ecology and Conservation* made a call to the scientific community for the sending of proposals, in order to sensitize students and professionals and demonstrate the responsible use of RPAS. It is expected that the result of this appeal will produce a significant increase in the scientific literature in this area. On the other hand, it is remarkable the greater presence of portals in Internet that center their activity around civil applications with RPAS. In the field of applied research to conservation, the web portal <http://conservationdrones.org/>  is a worldwide reference, whose contents illustrate recent pioneering projects, so they are not always reflected in the scientific literature. The popularity of RPAS has transcended the scientific-technical field, giving rise to the emergence of user communities with a large presence on the Internet. One of the most active portals is <http://diydrones.com/>, which brings together fans of the do-it-yourself philosophy that encourages the use of open platforms versus the traditional closed systems offered by the traditional industry. This has resulted in the reduction of costs of these equipment and, together with the development of specialized free software, have led to the democratization of technology, bringing it closer to a greater number of users and organizations. The scientific community has probably benefited from this general trend. For some authors, the flexibility in the assembly of RPAS offers in principle a greater degree of customization, allowing to combine different sensors and control systems according to the particular needs of each project and within the research group itself  [@koh_dawn_2012]. In the commercial field,  more companies  offer RPAS of great performance and qualified to develop professional applications, reason why the sector benefits from a great dynamism. 
+
+The limitations from the financial and technological point of view of remote sensing, by which images of the earth's surface are obtained from sensors installed on aerial or space platforms, are described by several authors [@koh_dawn_2012; @rodriguez_eye_2012]. While it is possible to acquire satellite images at low or virtually zero cost (LandSat, MODIS, Sentinel, etc.), most of these platforms operate on a global or regional scale. The limited spatial and temporal resolution, together with the problems of cloud presence especially accentuated in tropical areas, reduces the effectiveness of remote sensing in the collection of data in detail scale, according to the requirements of ecological studies at the level of species, habitats or populations  [@wulder_high_2004]. In addition, the large extent of these protected areas significantly increases the costs of field work, while increasing risks in particularly inaccessible areas. As a consequence, RPAS have been positioned as an appropriate complement for conservation activities  [@zahawi_using_2015] avoiding to a greater or lesser extent some of the above-mentioned disadvantages. In developing countries, especially sensitive in terms of budgetary allocations and technical capacities, monitoring and surveillance programs are being successfully developed through the use of RPAS. For example, by capturing aerial images in the Volta delta, Ghana, a team of scientists measures the effects of climate change on coastal areas and evaluates the effectiveness of prevention and restoration measures against erosive processes [@Georg2016].  In principle, manned aerial vehicles offer a better alternative in capturing images of the earth's surface, but their use is not justified in studies at the local scale due to excessively high operational costs. On the other hand, the risk of air accidents is higher, ranking as the leading cause of death in wildlife specialists in the United States [@sasse_job-related_2003]. 
+
+In order to measure the impact of drones in wildlife studies, some experiments analyze the response of birds to RPAS [@vas_approaching_2015]. OOther trials focus on mammals and measure physiological stress and possible changes in behavior [@ditmer_bears_2015]. As a result, manuals of good practices and recommendations of use of RPAS to mitigate the negative impact on the welfare of the species and to avoid disturbances in the behavior patterns are being documented.
+
+Finally, some authors point out the need to improve the regulatory framework regarding the civil use of RPAS  [@nugraha_urgency_2016]. In the United States and in most of the European countries consulted, interim legislation has been adopted which, to a certain extent, equates the management of RPAS with that of traditional aircraft. Legal restrictions could limit the possibilities of use of the RPAS in the field of conservation, which makes clear the urgent need to harmonize the legislation in relation to this type of activities. In general terms, the situation in Latin America is uneven, with some countries still not developing specific laws to deal with the boom of the RPAS in both the civil and military sectors [@Nacion2013]. Africa is one of the continents where the impact of drones in conservation has had greater repercussions. However, in the opinion of some conservationists, their use has not been without problems, resulting in governments that have totally or partially prohibited drone operations, arguing national security problems to the detriment of protection of protected natural areas  [@Andrews2014]. The uncertainty of the users has promoted the development of associations in order to advise on the legal aspects to be taken into account during the operation. In Spain, the Spanish Association of Drones and Related Affinities <https://www.aedron.com> ppromotes a conscious and responsible use of RPAS and organizes seminars to inform members about topics of interest. On its website, it is possible to consult the draft of the new regulation that regulates the civil use of the piloted aircraft by remote control in Spain [@Aedron2017]. Globally, other initiatives have emerged, with the International Association for Unmanned Vehicle Systems (AUVSI) <http://www.auvsi.org>  the largest nonprofit organization in the world dedicated to advancing the community of  unmanned aerial vehicles users.
+
+## Protected natural areas
+
+Natural protected areas are those in which human intervention has not significantly altered the presence and functioning of the biotic and abiotic elements	 that comprise it  [@bravo_espacios_2008]. They fulfill the objectives of conservation of the biophysical and cultural environment, where initiatives are promoted in the scientific, educational and recreational field compatible with the natural environment and the socioeconomic activities framed in the sustainable development of the territory. They are  under some national or international protection figure and regulated through specific management plans. Despite the fact that the number of protected areas has increased considerably at a global level, with 15.4% of the land area and 8.4% of the marine areas under some protection figure  [@juffe-bignoli_protected_2014] there are authors who emphasize the need to improve the  protected areas  management tools  that ensure the effectiveness of the conservation of biodiversity  [@chape_measuring_2005].Moreover, some protected areas suffer degradation processes, continue to shrink in size or have ceased to exist [@mascia_protected_2011]. In other cases they have been declared under opportunistic criteria that do not necessarily reflect the ecological value of the ecosystems to be preserved [@knight_embracing_2007]. In a recent report by the Zoological Society of London [@wwf_living_2016] , the size of wildlife populations has been estimated to have decreased by 52% in the period 1970 to 2012. Habitat fragmentation, severe pollution particularly in freshwater ecosystems, overexploitation of resources, environmental impacts of climate change and the impact of invasive species on indigenous populations have been identified as the main threats to biodiversity [@barnosky_has_2011; @Conabio2017]. 
+
+The Group on Earth Observations Biodiversity Observation Network  (GEOBON) has identified a set of Essential Biodiversity Variables  [@pereira_essential_2013] as key components for the collection of environmental information that allow us to know the global state of our ecosystems and support better decision-making on biodiversity [@forum_toward_2008]. In addition, the Convention on Biological Diversity, developed as part of the United Nations Environment Program (UNEP), established in Nagoya, Japan, a strategic plan for the period 2011-2020 which includes the so-called Aichi targets for biological diversity. Among the stated objectives is the increase of protected area systems of special importance for biodiversity and ecosystem services (Goal 11) and establishes a set of governance, equity, management, representativeness and ecological connectivity criteria for the inclusion of Priority areas for conservation. 
+
+To address the current environmental crisis, it is necessary to develop solutions that improve our knowledge of the current state of biodiversity and allow us to manage our natural resources efficiently. In this context, the present document reviews the current state of the RPAS in studies of conservation and management of protected areas, mentioning the technical and legal barriers that limit their effectiveness.
+
+# Methods
+
+To achieve the proposed objectives, a bibliographical review of scientific articles, gray literature, postgraduate theses, websites and specialized journals was carried out, following a similar line to other studies [@linchant_are_2015; @christie_unmanned_2016]The main tools for selection of the cited bibliography include Google Schoolar, Research Gate and Mendeley Desktop, while the use of Internet search engines include other references outside the scientific scope. Key search criteria for keywords included unmanned aerial vehicles in their various meanings and acronyms (RPAS, UAV, drones, etc.), along with a variety of terms referring to natural protected areas, primarily in English. This activity took place from April 4, 2017 until May 12 of the same year.
+
+The selected information was categorized according to the role played by RPAS in direct or indirect relation to conservation in natural areas. It is presented in tabular format, identifying where the study was conducted, the expected accomplishments and technical specifications of the aerial platform. Finally, possible scenarios for implementing  RPAS as essential tools to help achieve conservation plans in protected areas are discussed, highlighting some trends and opportunities that apparently have not yet been adequately exploited.
+
+# Results
+
+## Wildlife Studies
+  
+One of the central themes of ecology is the development of statistical models of species distribution that allow inferring the potential or suitable habitat of organisms from the collection of environmental information and presence data from different sources [@mateo_modelos_2011].  Radio telemetry is one of the most common methods for collecting movement data in individuals marked with geolocators. Some studies compared the use of RPAS against these systems [@mulero-pazmany_unmanned_2015] in large animals, easily identifiable by high resolution aerial images. The authors obtain similar results regarding the performance of the models but highlight the cost-benefit factor of RPAS as the main advantage. Usually the number of available geolocators is limited, with implications on sample size. Added to the risk of marking individuals under non-random criteria, the robustness of the analysis can be seriously affected. However, main advantage of radio telemetry is based on its ability to generate large volumes of data over a longer period of time.  Regarding positional accuracy,  GPS included in RPAS have a maximum error between 1 and 3 meters, while under unfavorable conditions can be more than 20 meters for telemetry. In any case, the authors point out that both methodologies have the potential to complement each other throughout all phases of the study. [@bayram_active_2016]
+
+Other innovative techniques have recently been illustrated in scientific papers evaluating the feasibility of pairing radio locators in RPAS in the search for individuals marked with VHF radio collars [@korner_autonomous_2010; @bayram_active_2016; @cliff_online_2015; @leonardo_miniature_2013].  In some cases, in order to overcome the difficulties of directly detecting the species of interest, the studies focus on locating and characterizing their breeding and nesting areas [@van_andel_locating_2015]. Large terrestrial mammals have been successfully counted, and no adverse reactions have been recorded on flights at a minimum height of 100 meters [@jain_unmanned_2013]. The estimation of mammalian populations in marine ecosystems has also been documented with positive results  [@hodgson_unmanned_2013], while in birds RPAS have been used to study population dynamics in colonies  [@sarda-palomera_fine-scale_2012]. The usefulness of these systems is also evident in the inspection and characterization of bird nests in areas difficult to access [@weissensteiner_low-budget_2015], allowing to evaluate the state in which nests are in a less intrusive way.
+
+Given the large amount of information generated, it is not surprising that methods have been developed in the field of computer vision that allow the automatic counting of individuals captured in scenes acquired by photographic sensors [@lhoest_how_2015; @abd-elrahman_development_2005; @van_gemert_nature_2015]. This leads to a reduction in costs with regard to the manual counting, with the additional advantage of not being subject to a greater or lesser extent to the interpretation of the specialist. In this regard, methods of direct observation from manned aerial vehicles also represent disadvantages with respect to aerial imaging, since they require a greater number of observers to guarantee an exhaustive count of populations to avoid errors in estimation. 
+
+Outside the scientific literature, there are projects for monitoring wildlife in both marine and terrestrial ecosystems, most of which are supported by non-governmental organizations and research centers. Based on information gathered at <https://conservationdrones.org> sseveral studies have been identified pursuing methods for registering  individuals in marine mammal populations, primates and macrofauna in general, located in protected areas or frequently visited by wildlife  under some legal figure of threat. For example, a work conducted in the Amazon Basin in Brazil is experimenting with the use of drones to improve the density and abundance estimation of different species of dolphins, compared with direct observation by specialists [@WichS2017]. The main research aims include the validation and harmonization of both methodologies and, indirectly, evaluate the feasibility for its regular application in monitoring projects with a similar purpose, taking into account the cost-benefit of the execution.
+
+<!-- \newgeometry{margin=1cm} -->
+\begin{landscape}
+\begin{table}
+\caption{RPAS APPLICATIONS IN  NATURAL PROTECTED AREas}
+\tiny
+\begin{tabular}{p{3cm}p{1.2cm}p{3cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}p{2cm}p{1cm}p{2cm}}
+
+\cmidrule(r){1-11}
+
+Study & Protected Area & Aims & Country & Place & Species & RPAS type &  RPAS model & Sensor & Georef. & Costs \\ \cmidrule(r){1-11}
+
+\multicolumn{11}{c}{} \\
+\multicolumn{11}{c}{ {\bf ESTUDIOS DE FAUNA Y VIDA SILVESTRE}  } \\
+\multicolumn{11}{c}{} \\
+\cite{pazmany_mulero_unmanned_2015}  & Si & Estudio comparativo modelos distribución de especies & España & Parque Nacional de Doñana & Bos taurus  & Ala fija & Easy Fly plane, Ikarus autopilot, Eagletree GPS logger & Panasonic Lumix LX-3 11MP & Si & 
+5700 euros \\ 
+
+\cite{hodgson_unmanned_2013} & Si & Detección e identificación de dugongs.  Comprobar actitud  RPAS en diferentes condiciones ambientales. Determinar altura y resolución ideal  & Australia & Shark Bay Marine Park & Dugong & Ala fija &  ScanEagle & Nikon D90 12 megapixel digital SLR camera  & Si & ?  \\ 
+
+\cite{longmore_adapting_2017} & No & Desarrollo de software detección especies infrarrojo térmico & Inglaterra & ? & Fauna & Multicóptero & 750mm carbon-folding Y6 multi-rotor APM 2 autopilot 3Drobotics & FLIR, Tau 2 LWIR Thermal Imaging Camera Core  & ? & ?  \\ 
+
+\cite{wilson_feasibility_2017}  & No & Monitoreo bioacústico con RPAS & USA & State Game Lands & Aves  & Multicóptero & DJI Phantom 2 & ZOOM H1 Handy Recorder  & Si & ? \\ 
+
+\cite{bayram_active_2016}  &  No & Detección de collares VHF & ? & ? & Oso (Ursus)  & Multicóptero & DJI F550 hexarotor, Pixhawk autopilot & Telonics MOD-500 VHF, Uniden handheld scanner  & Si & ? \\ 
+
+\cite{christie_unmanned_2016}  &  Si  & Estimación abundancia & USA &  Aleutian Islands & León marino de Steller (Eumetopias jubatus) & Multicóptero & APH- 22 hexacopter & ?  & Si & \$ 25.000 , \$ 3000 alquiler barco, or \$ 1700 por sitio \\ 
+
+\cite{christie_unmanned_2016}  &  Si & Estimación abundancia & USA &  Monte Vista National Wildlife Refuge & Grus canadensis (sandhill cranes)  & Ala fija & Raven RQ- 11A & ?  & Si & \$ 400 \\ 
+
+\multicolumn{11}{c}{} \\
+\multicolumn{11}{c}{{\bf  MONITOREO DE ECOSISTEMAS TERRESTRES Y ACUÁTICOS  }} \\
+\multicolumn{11}{c}{} \\
+
+\cite{perroy_assessing_2017}  & No & Monitoreo de plantas invasoras & USA & Pahoa, Hawai & Miconia calvescens & Multicóptero & DJ Inspire-1 & DJI FC350 camera  & Si & ?  \\ 
+
+\cite{szantoi_mapping_2017}  & Si & Mapeo de hábitat & Indonesia & Gunung Leuser National Park & Orangután (Pongo abelii)  & Ala fija & Skywalker & Canon S100  & Si & \$ 4000 \\ 
+  
+\cite{ivosevic_use_2015}  & Si & Monitoreo hábitats zonas restringidas; Modelos; Comprobar actitud  RPAS en diferentes condiciones ambientales & South Korea & Chiaksan National Park;Taeanhaean National Park &  ? & Multicóptero & DJI Phantom 2 Vision+  & full HD videos 1080p/30fps and 720p/60fps, cámara 14 megapixels 4384x3288 & Si & ? \\ 
+  
+\cite{lisein_discrimination_2015}  & No & Discriminación de especies de  hoja caduca, inventario forestal & Bélgica & Grand-Leez & English oak, birches (Betula pendula Roth. and Betula pubescens Ehrh.), sycamore maple (Acer pseudoplatanus L.), common ash (Fraxinus excelsior L.) and poplars (Populus spp.) & Ala fija & Gatewing X100  & Ricoh GR2 GR3 GR4 10 megapixels CCD  & Si & ?  \\ 
+  
+\cite{puttock_aerial_2015}  & Si & Caracterización ecosistemas afectados por la actividad del castor & UK & Devon Beaver Project site & Eurasian beaver (Castor fiber) & Multicóptero & 3D Robotics Y6 & Canon ELPH 520 HS  & Si & ?  \\ 
+  
+\cite{zahawi_using_2015}  & No & Caracterización estructura bosques tropicales para acciones de restauración & Costa Rica & Devon Beaver Project site & Varias especies & Multicóptero & 3D Robotics Y6 & Canon S100  & Si & \$ 1500 \\ 
+  
+\cite{bustamante_forest_2015}  & Si &  Monitoreo de bosques & Brasil & Riverine Forests (Permanent Protected Areas), Rio de Janeiro, Barrãcao do Mendes, Santa Cruz and São Lorenço & Bosques de rivera & Multicóptero & DJI Phantom Vision 2S   & RGB digital camera with 14 mega pixels & Si & \$ 9700  \\ 
+  
+\cite{gini_aerial_2012}  & Si & Modelamiento 3D, clasificación de especies arbóreas & Italy & Parco Adda Nord &  Varias especies &  Multicóptero  &  Microdrones TM MD4-200 & RGB CCD 12 megapixels Pentax Optio A40, modified NIR Sigma DP1 with a Foveon X3 sensor  & Si & ?  \\
+
+\cite{miyamoto_use_2004}& Si & Clasificación de especies en humedales & Japón & Humedales de Kushiro &  Varias especies & Globo helio  & ? & NIKON F-801, NIKKOR 28 mm f/2.8  & Si & Helio \$ 600, globo \$ 1000  \\ 
+
+\multicolumn{11}{c}{} \\
+\multicolumn{11}{c}{{\bf EVALUACIÓN DE INFRAESTRUCTURAS Y RIESGO, VIGILANCIA, ECOTURISMO, IMPACTO EN LA FAUNA }} \\
+\multicolumn{11}{c}{} \\
+
+\cite{lobermeier_mitigating_2015} & No  & Mitigar el riesgo de colisión mediante la instalación de marcadores en líneas electríca & USA & ?  & Aves  & Multicóptero  & Mikrokopter Hexa XL  & KX 171 Microcam & ? & ? \\ 
+
+\cite{pazmany_low_2014a} & Si  & Evaluación riesgo riesgo eléctrico de nidos en postes de alta tensión & España & Parque Nacional de Doñana &  Aves  & Ala fija  & Easy fly St-330 & GoPro Hero 2 11 MP, Panasonic LX3 11MP & Si & 7800 euros  \\ 
+
+\cite{mulero-pazmany_remotely_2014}  & Si  & Vigilancia en áreas protegidas & Africa & KwaZulu-Nata & black rhinoceros (Diceros bicornis), white rhinoceros (Ceratotherium simum)  & Ala fija  & Easy Fly St-330 & Panasonic Lumix LX-3 11 MP, GoPro Hero2, Thermoteknix Micro CAM microbolometer & Si & 13750 euros  \\ 
+
+\cite{hansen_applying_2016} & Si  & Monitoreo actividad visitantes  & Suecia & Kosterhavet National Park &  Humanos  & ?  & ? & ?  & ? & ?  \\ 
+
+\cite{king_will_2014} & Si  & Aplicaciones RPAS en actividades ecoturismo & Suecia & Kosterhavet National Park &  Humanos  & ?  & ? & ?  & ? & ?  \\ 
+  
+\cite{vas_approaching_2015} & Si  & Impacto RPAS  especies aves lacustres  & Francia & e Zoo du Lunaret, Cros Martin Natural Area &  Anas platyrhyncho, Phoenicopterus roseus, Tringa nebularia  & Multicóptero &  Phantom & Hero3 GoPro & Si  & ?  \\ 
+
+\cite{ditmer_bears_2015} & Si  & Impacto  RPAS oso negro americano   & USA & Kosterhavet National Park &  Oso negro americano (Ursus americanus) & Multicóptero & 3DR IRIS Pixhawk & GoPro HERO3+ & ?  & ?  \\ 
+
+\bibliographystyle{plainnat}
+\bibliography{master}
+\end{tabular}
+
+\end{table}
+\end{landscape}
+
+<!-- \restoregeometry -->
+
+
+
+## Infrastructure and risk assessment
+
+Other research projects highlight the utility of RPAS in assessing the risk of human infrastructure for wildlife, which results in the implementation of more effective preventive measures. Although not exclusively addressed to protected areas, they could be of special interest in buffer zones, where anthropic development may lead to conflict with the surrounding fauna. For example, some species of birds nest on high voltage power lines poles, making them especially vulnerable to death by electrocution. [@margarita_mulero-pazmany_juan_jose_negro_low_2014,  @zhang_uav_2016]  use a fixed-wing RPAS for the visual evaluation of linear electrical structures in which  operation costs and flight time is crucial. On the other hand, one of the most common causes of death in birds is due to collisions with the wiring. [@lobermeier_mitigating_2015] propose to install marks that are easily visible through the use of robotics arms installed in multicopters. Due to the ease of maneuvering of the platform, multicopters are more suitable for precision work.  Another possible use case is related to birds that nest in the soil, especially in cereal crops. As a pre-harvest activity, generally performed under mechanical procedures,   [@mulero-pazmany_m_aeromab_2011] suggest a flyby to identify possible nests, and if necessary, take the appropriate actions to avoid their destruction.
+
+## Monitoring and mapping of terrestrial and aquatic ecosystems
+
+During the last decades, the emergence of remote sensors on board air or space platforms has led to an increase in applications for the study of ecosystems [@wulder_high_2004].The data obtained have enabled the development of vegetation and soil maps, improvements in the characterization of habitats, enhance the understanding of the structure and function of forest ecosystems, develop digital elevation models or geomorphological maps of application in the modeling of species distribution. The emergence of RPAS has led to the quantitative analysis of habitats at a level of detail that had not been possible previously, either for economic reasons or for technological limitations. This impulse has been especially notable with the parallel development of multispectral and hyperspectral sensors adapted to small aircraft, whose price is expected to decrease according to trends in the  sector. The United States Geological Survey (USGS) has conducted flights to classify vegetation cover in wetlands  [@USGS2014].Other studies monitor the distribution of invasive species under different flight conditions and vegetation cover [@perroy_assessing_2017], while the characterization of forest stands constitutes an important section given the number of articles that approach the problem from different perspectives. [@gini_aerial_2012] employs a quadcopter model operated at  low-height and RGB and NIR cameras in small areas. Due to the reduced reliability and autonomy of the platform and the difficulties to increase the load capacity, the flight planning is reduced to three passes with a percentage of 80% and 30% of longitudinal and transverse overlap respectively. [@lisein_discrimination_2015]  performs a multitemporal analysis of the spectral response to phenological variations in different species of deciduous trees and concludes that the intraspecific spectral variation is of maximum interest for the optimization of classification algorithms and discrimination between species. In his research, he operates a fixed wing RPAS model, uses different sensors in the visible and near infrared range, and optimizes flight parameters in order to cover the maximum surface with the fewest number of flights possible.  [@zahawi_using_2015] applies the Ecosynth methodology, a toolkit for mapping and measuring 3D vegetation using digital cameras and open source artificial vision software, in order to evaluate the effectiveness of restoration actions in forests using RPAS as a viable alternative for traditional field measurements and applying different predictive models of the presence of frugivorous birds from height and canopy structure data.
+
+## Surveillance and support for compliance with laws in protected areas
+
+RPAS have also  relevance in the control and surveillance of protected areas, documented through different experiences focused mainly on controlling poaching. This type of study is characterized in giving greater emphasis on improving first-person view methods (FPV) in order to obtain a real-time view of the monitored area. Also, it is worth mentioning the greater use of fixed-wing RPAS as  provide longer flight times, the convenience of using thermal cameras in low visibility conditions, generally related to hours of greater furtive activity, along with advances in computer vision systems programmed to detect the presence of humans and target species under pressure from illegal trade in protected areas [@mulero-pazmany_remotely_2014,] focus on the African rhinoceros and note the advantages of  real time video compared to still photography, which require  longer post-processing time. In addition, authors emphasize the need to improve the resolution of thermal sensors to increase the chances of detecting suspicious activity at night time.  [@duffy_waging_2014] analyzes the consequences of the militarization of conservation practices as an increasing trend in natural protected areas around the world and illustrates the use of RPAS through several examples. With respect to coastal zones, a quick search on Internet allows collecting  several initiatives that try to optimize the control of illegal fishing through RPAS. However we have not been able to verify scientific studies that endorse such initiatives, so it opens an interesting field of research. To illustrate some examples, a pioneering survey was conducted in Belize for fisheries monitoring using a fixed wing model Skywalker. The Government of the Canary Islands is considering the use of RPAS in hard to reach coastal areas  to deal with poaching [@Canarias2017]. Finally <http://soarocean.org/> is an initiative of National Geographic and Lindblad Expedition fostering the use of low cost drones in the protection of the oceans and it looks a good starting point to search for latest applications in this field.
+
+
+## Ecotourism
+
+The high degree of diversification offered by  RPAS in the ecotourism industry is summarized in a recent article, which shows possible recreational activities, business opportunities, search and rescue operations, mapping and formulas for granting RPAS flight permits  in designated areas  [@king_will_2014]. DWithin the still scarce literature,  [@hansen_applying_2016] values the effectiveness of RPAS in monitoring visitors in marine and coastal areas, in combination with other innovative solutions. According to the author the RPAS would theoretically allow to operate under different environmental conditions, improving the level of detail and offering a continuous coverage in the flow and behavior of the visitors, as opposed to other techniques of habitual use like the manual observation or the installation of networks of Surveillance cameras.
+
+## Impact of RPAS on wildlife
+
+Animal welfare should be present on wildlife monitoring  using RPAS , establishing ethical principles that complement the current standards in research and conservation.  [@vas_approaching_2015] obtained promising results in the field of ornithology, assessing the impact of color, speed and angle of flight on the behavioral responses of wetland birds to the approach of multicopters. The  latter factor is considered as  the primary trigger for changes in behavioral patterns, especially in vertical approaches at an angle of 90º. Finally, a core set of recommendations is included,  and authors encourages to extend	 the trials to a wide range of RPAS and species. [@vincent_barriers_2015] measures physiological stress in American black bear (Ursus americanus) by electronic recording of cardiac activity in the presence of RPAS in the presence of RPAS. Although no changes in behavior patterns are detected, the increase in beats per minute (bmp) is significant in most cases observed. In the absence of further experiences explicitly addressing the phenomenon, [@hodgson_best_2016] conclude with a series of general recommendations as the basis for a code of good practice, highlighting the adoption of the precautionary principle and respect for aviation standards, the specific training of operators, the appropriate selection of equipment, the cessation of operations in the case of obvious disturbances in the populations studied and the reporting of observations in scientific publications, that allows sharing of knowledge to progressively improve the protocols of operations with RPAS that involve the observation of the wild fauna.
+
+# Discussion 
+
+Most of the sources analyzed focus on local-scale conservation projects and feasibility studies of RPAS in the characterization of wildlife populations and communities, especially in distribution and abundance studies. Literature begins to be equally prolific in monitoring and mapping activities in terrestrial and aquatic ecosystems, a niche currently occupied by aerial and space platforms for environmental remote sensing. Despite low number of scientific articles addressing the use of RPAS in the control and surveillance of natural protected areas, it is still one of the issues that more social debate generates and it is not strange to find governmental initiatives or promoted by environmental organizations in the fight against poaching. From the economic point of view,  expenses derived from the operation with RPAS are hardly quantifiable. Also, not all studies consider the effort required for the development of technical and analytical skills of the staff involved. The computational requirements are demanding and certain phases of information processing requires the acquisition of computer programs whose price is generally high. Also, operations with RPAS are not exempt from accidents, which has an negative impact on the budget originally planned.
+
+## Wildlife Studies
+
+Most fixed-wing RPAS studies focus on population counts, with promising results in the macrofauna. It is still early to generalize its use in smaller species and areas of high vegetation coverage, although the development of LIDAR technology and wide-spectrum sensors could help overcome technical barriers. In addition, it is necessary to improve the knowledge regarding the planning of the sampling performed with RPAS, to avoid errors in estimation. Multicopters could cover some of the limitations mentioned above, but there still seem to be no studies combining both systems. On the other hand, the use of RPAS can increase the complexity of research,  requiring highly skilled work teams and computational needs that are not available to many institutions. In any case,  RPAS could become an essential tool for ecologist and its use could be justified as long as there are no advances in other traditional techniques supporting wildlife research.
+
+## Infrastructure and risk assessment
+
+RPAS have demonstrated their capacity for the technical inspection of industrial premises. The high cost of wildlife risk assessment using manual methods in areas of high incidence of deaths could persuade environmental authorities to encourage their use for preventive purposes. As previously discussed, relative low operational cost of RPAS make them an attractive alternative, which may foster such activities.  RPAS  could also prevent accidents by applying dissuasive measures to prevent the collision of birds in wind farms. Other uses include the revision of natural areas facilities, by scheduling periodic flights. Also RPAS are positioned as fundamental tools in the prevention and evaluation of forest fires.
+
+## Monitoring and mapping of terrestrial and aquatic ecosystems
+
+The integration of the classical remote sensing elements developed during the last decades in the scope of the RPAS open new possibilities in the observation of environmental phenomena at multiple scales. The high resolution of  images will allow the discrimination of plant communities at the species level, observe the evolution of ecosystems in shorter periods of time or more accurately quantify the volume and structure of canopy. Also it will allow attending to urgent needs of mapping in areas affected by   natural and anthropic disasters. The ability of computer systems to process massive amount of information is closely linked to such applications.
+
+## Surveillance and support for compliance with laws in natural protected areas
+
+The integration of RPAS in the fight against poaching and illegal fishing in protected areas faces important technical and legal constraints. In the first point, the reviewed literature mention the need to design more efficient live vision systems. The low autonomy of  RPAS is especially critical in large natural parks, limiting the area under surveillance. The issues concerning atmospheric conditions have not yet been completely resolved. However, it is expected that main barriers will appear in the legislative and social sphere. In some countries it is forbidden to fly beyond the visual range of the operator, limiting the effectiveness of the inspection in real time. The work of  RPAS in the surveillance of protected areas is also questioned because it may affects civil liberties, especially with regards to privacy. Some detractors are skeptical about the ability of RPAS to persuade offenders, who in many cases face situations of greatest need. Probably the success of such initiatives requires a greater consensus among the parties involved and the development of strategies that seek to solve the causes of poaching.
+
+## Ecotourism
+
+A permissive regularization of the use of RPAS in ecotourism activities in natural parks could lead to unpredictable situations. On the one hand, the constant presence of propeller and engine noise, the sensation of invasion or lack of privacy and the visual impact of RPAS on the landscape could negatively affect the tourist experience. It could also significantly interfere with the health of ecosystems. Awareness of the abuse of RPAS for recording wildlife has resulted in a ban on flying for recreational purposes in natural parks in the United States and other parts of the world. Not to mention the real risk of accidents that could lead, for example, to the contamination of water reserves, due to the toxicity of the materials. The abandonment or loss of damaged RPAS could also increase the risk of fires in sensitive areas due to the presence of flammable components. It does not appear that pilot or feasibility studies or opinion polls have been published that respond to the issues raised and to the ethical and legal implications derived from their use. Even if the leisure possibilities are wide and recognized, it would be advisable to be cautious in the face of the demand of the ecotourism industry to incorporate  RPAS in their activities.
+
+## Impact of RPAS on wildlife
+
+The review of the literature suggests that there are still certain niches that need more attention from the community. The ethical implications of RPAS in wildlife studies have not yet been adequately weighed. For example, most studies only marginally address the presence or absence of reactions in species in the vicinity of RPAS. We believe that experiments aimed at quantifying physiological and behavioral changes are insufficient and that despite the emergence of some initiatives and a greater degree of awareness, it would be necessary to improve our current knowledge in order to include a set of good practices and recommendations aimed at a wider group of wildlife  species. Other key factors include the specific professionalisation of operators and the investment in RPAS models optimized to reduce the impact on wildlife and facilitate their observation.  We could mention for example the reduction of propeller and engine noise and the design of non-polluting components. 
+
+
+# Conclusions 
+
+The consolidation of the RPAS as management and research tools in natural protected areas is closely linked to the technological development of the elements associated with the platform and to the establishment of measures that favorably regulate its use, increasing opportunities in the sector and stimulating innovation in priority conservation areas. There are continually improvements in navigation control and flight autonomy, while we are witnessing the progressive miniaturization and diversification of sensors along with advances in the field of artificial intelligence. This rapidly expanding confluence of factors encourages the emergence of new scenarios with ethical and legal implications. Most governments have reacted by setting constraints that could have a negative impact on the capacity to integrate RPAS into the civilian sphere. Given this situation, it is difficult to foresee the actions that each country will adopt from now on in an attempt to harmonize the advantages and disadvantages of these systems, reason why it is probable that the future of the RPAS in protected areas is conditioned fundamentally by political and social factors.
+
+

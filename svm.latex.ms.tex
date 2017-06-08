@@ -1,87 +1,121 @@
+% interactcadsample.tex
+% v1.03 - April 2017
 
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{extarticle}
+\documentclass[]{interact}
 %\documentclass[a4paper]{article}
+\usepackage{epstopdf}% To incorporate .eps illustrations using PDFLaTeX, etc.
+\usepackage{subfigure}% Support for small, `sub' figures and tables
+%\usepackage[nolists,tablesfirst]{endfloat}% To `separate' figures and tables from text if required
+
+$if(natbib)$
+\usepackage[]{natbib}
+\bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
+\bibpunct[, ]{(}{)}{;}{a}{}{,}% Citation support using natbib.sty
+\renewcommand\bibfont{\fontsize{10}{12}\selectfont}% Bibliography support using natbib.sty
+
+$endif$
+
+$if(biblatex)$
+\usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
+
+$if(biblatexoptions)$\ExecuteBibliographyOptions{$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$}$endif$
+$for(bibliography)$
+% Set low penalties for breaks at numbers, uppercase letters and lowercase letters
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburlucpenalty}{9000}
+\setcounter{biburllcpenalty}{9000}
+\raggedright
+
+\addbibresource{$bibliography$}
+$endfor$
+$endif$
+$if(listings)$
+\usepackage{listings}
+$endif$
+
+\theoremstyle{plain}% Theorem-like structures provided by amsthm.sty
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem{notation}{Notation}
+
+
 \usepackage{layout}
-\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
 \setlength{\headsep}{15pt}
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage{graphicx}
 \usepackage{setspace}
-\usepackage{geometry}
 \usepackage{pdflscape}
 \onehalfspacing
 \usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage{caption}
-\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
-$if(fontfamily)$
-\usepackage[$fontfamilyoptions$]{$fontfamily$}
-$else$
-\usepackage{lmodern}
-$endif$
 
 
 \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[nottoc,notlof,notlot]{tocbibind} 
-\renewcommand\refname{Literatura citada} % change original References title
-
-\renewcommand{\contentsname}{Tabla de contenidos  }
-
-\usepackage[tablename=Tabla]{caption}
-
 
 \usepackage{abstract}
 \renewcommand{\abstractname}{}    % clear the title
 \renewcommand{\absnamepos}{empty} % originally center
 
 \renewenvironment{abstract}
- {{%
-    \setlength{\leftmargin}{0mm}
+ {{
+    \setlength{\leftmargin}{10mm}
     \setlength{\rightmargin}{\leftmargin}%
-  }%
+  }
   \relax}
  {\endlist}
 
+
+\newtheorem{hypothesis}{Hypothesis}
+\usepackage{setspace}
+
 \makeatletter
-\def\@maketitle{%
-  \newpage
-%  \null
-%  \vskip 2em%
-%  \begin{center}%
-  \let \footnote \thanks
-    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
 }
-%\fi
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
 \makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={$if(anonymous)$$else$$for(author)$$author.name$ ($author.affiliation$)$sep$ and $endfor$$endif$},
+             pdfkeywords = {$if(keywords)$$keywords$$endif$},  
+            pdftitle={$title$$if(subtitle)$: $subtitle$$endif$},
+            colorlinks=true,
+            citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
+            urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
+            linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
 
+$for(header-includes)$
+$header-includes$
+$endfor$
 
-$if(appendix)$
-\renewcommand*\thetable{$appendixletter$.\arabic{table}}
-\renewcommand*\thefigure{$appendixletter$.\arabic{figure}}
+$if(endnotes)$
+\usepackage{endnotes}
+\renewcommand{\enotesize}{\normalsize}
+\let\footnote=\endnote
 $endif$
-
-
-\setcounter{secnumdepth}{0}
-
-$if(listings)$
-\usepackage{listings}
-$endif$
-$if(lhs)$
-\lstnewenvironment{code}{\lstset{language=r,basicstyle=\small\ttfamily}}{}
-$endif$
-$if(highlighting-macros)$
-$highlighting-macros$
-$endif$
-$if(verbatim-in-note)$
-\usepackage{fancyvrb}
-$endif$
-$if(tables)$
-\usepackage{longtable,booktabs}
-
-$endif$
-
 $if(graphics)$
 \usepackage{graphicx}
 % We will generate all images so they have a width \maxwidth. This means
@@ -101,7 +135,7 @@ $if(title)$
 $endif$ 
 
 
-$if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$}  $sep$ \and $endfor$}$endif$
+$if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$ }  $sep$ \and $endfor$}$endif$
 
 
 \date{}
@@ -116,33 +150,6 @@ $if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \n
 \titleformat*{\paragraph}{\normalsize\itshape}
 \titleformat*{\subparagraph}{\normalsize\itshape}
 
-
-
-$if(natbib)$
-\usepackage[round]{natbib}
-\bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
-$endif$
-
-$if(biblatex)$
-\usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
-\renewcommand*{\bibfont}{\small}
-$if(biblatexoptions)$\ExecuteBibliographyOptions{$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$}$endif$
-$for(bibliography)$
-% Set low penalties for breaks at numbers, uppercase letters and lowercase letters
-\setcounter{biburlnumpenalty}{9000}
-\setcounter{biburlucpenalty}{9000}
-\setcounter{biburllcpenalty}{9000}
-\raggedright
-
-\addbibresource{$bibliography$}
-$endfor$
-$endif$
-$if(listings)$
-\usepackage{listings}
-$endif$
-
-\newtheorem{hypothesis}{Hypothesis}
-\usepackage{setspace}
 
 \makeatletter
 \@ifpackageloaded{hyperref}{}{%
@@ -179,75 +186,48 @@ $endfor$
 
 
 \begin{document}
-	
+
+\articletype{ARTICLE TEMPLATE}
+
 % \pagenumbering{arabic}% resets `page` counter to 1 
 %$if(appendix)$
 %\renewcommand*{\thepage}{$appendixletter$--\arabic{page}}
 %$endif$    
 
 $if(title)$
-% \maketitle
-
-{% \usefont{T1}{pnc}{m}{n}
-
-\setlength{\parindent}{0pt}
-\thispagestyle{plain}
-
-{\fontsize{16}{20}\selectfont\raggedright 
-\maketitle  % title \par  
-
+\author{
+\name{A.~N. Author\textsuperscript{a}\thanks{CONTACT A.~N. Author. Email: latex.helpdesk@tandf.co.uk} and John Smith\textsuperscript{b}}
+\affil{\textsuperscript{a}Taylor \& Francis, 4 Park Square, Milton Park, Abingdon, UK; \textsuperscript{b}Institut f\"{u}r Informatik, Albert-Ludwigs-Universit\"{a}t, Freiburg, Germany}
 }
-
- 
-{
-   \vskip 13.5pt\relax \normalsize\fontsize{8}{10} 
-$if(anonymous)$\hfill $else$$for(author)$ \textbf{\authorfont $author.name$} \hskip 10pt \vskip 5pt  \bf\emph{\small $author.affiliation$} \vskip 5pt $sep$ \par $endfor$ $endif$
-
-}
-
-}
-
+% $if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$} $sep$ \and $endfor$}$endif$
+\title{$title$}
+\maketitle  % title \par 
+  
 
 $endif$
 
 
 $if(abstract)$
 
+  \textbf{ABSTRACT}: \par
+  {$abstract$}
 
-
-\begin{abstract}
-
-    \hbox{\vrule height .2pt width 38.9pc}
-
-    \vskip 6pt % \small 
-
-\noindent $abstract$
+$endif$
 
 $if(keywords)$
-
-\vskip 8pt \noindent \textbf{Palabras claves}: \emph{$keywords$} \par
-
-    \hbox{\vrule height .2pt width 38.9pc}
-
-
-$else$
-
-    \hbox{\vrule height .2pt width 19.10pc}
-
+    
+   \textbf{KEYWORDS}: \par
+   {$keywords$}
 $endif$
 
-\end{abstract}
-
-$endif$
-
-$if(toc)$
-{
-\fontsize{8}{10} 
-\hypersetup{linkcolor=black}
-\setcounter{tocdepth}{$toc-depth$}
-\tableofcontents
-}
-$endif$
+% $if(toc)$
+% {
+% \fontsize{8}{10} 
+% \hypersetup{linkcolor=black}
+% \setcounter{tocdepth}{$toc-depth$}
+% \tableofcontents
+% }
+% $endif$
 
 
 \vskip 6.5pt
