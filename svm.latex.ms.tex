@@ -1,4 +1,4 @@
-% interactcadsample.tex
+% interactcadsample.tex mod using svm.latex.ms.texs
 % v1.03 - April 2017
 
 \documentclass[]{interact}
@@ -7,31 +7,16 @@
 \usepackage{subfigure}% Support for small, `sub' figures and tables
 %\usepackage[nolists,tablesfirst]{endfloat}% To `separate' figures and tables from text if required
 
-$if(natbib)$
-\usepackage[]{natbib}
-\bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
+% $if(natbib)$
+% \usepackage[]{natbib}
+% \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
+% \bibpunct[, ]{(}{)}{;}{a}{}{,}% Citation support using natbib.sty
+% \renewcommand\bibfont{\fontsize{10}{12}\selectfont}% Bibliography support using natbib.sty
+% $endif$
+
+\usepackage{natbib}% Citation support using natbib.sty
 \bibpunct[, ]{(}{)}{;}{a}{}{,}% Citation support using natbib.sty
 \renewcommand\bibfont{\fontsize{10}{12}\selectfont}% Bibliography support using natbib.sty
-
-$endif$
-
-$if(biblatex)$
-\usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
-
-$if(biblatexoptions)$\ExecuteBibliographyOptions{$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$}$endif$
-$for(bibliography)$
-% Set low penalties for breaks at numbers, uppercase letters and lowercase letters
-\setcounter{biburlnumpenalty}{9000}
-\setcounter{biburlucpenalty}{9000}
-\setcounter{biburllcpenalty}{9000}
-\raggedright
-
-\addbibresource{$bibliography$}
-$endfor$
-$endif$
-$if(listings)$
-\usepackage{listings}
-$endif$
 
 \theoremstyle{plain}% Theorem-like structures provided by amsthm.sty
 \newtheorem{theorem}{Theorem}[section]
@@ -48,6 +33,27 @@ $endif$
 \newtheorem{notation}{Notation}
 
 
+\usepackage{rotating}
+% \usepackage[]{geometry}
+
+$if(biblatex)$
+\usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
+
+% $if(biblatexoptions)$\ExecuteBibliographyOptions{$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$}$endif$
+% $for(bibliography)$
+% % Set low penalties for breaks at numbers, uppercase letters and lowercase letters
+% \setcounter{biburlnumpenalty}{9000}
+% \setcounter{biburlucpenalty}{9000}
+% \setcounter{biburllcpenalty}{9000}
+% \raggedright
+
+\addbibresource{$bibliography$}
+$endfor$
+$endif$
+$if(listings)$
+\usepackage{listings}
+$endif$
+
 \usepackage{layout}
 \setlength{\headsep}{15pt}
 \usepackage{booktabs}
@@ -55,6 +61,8 @@ $endif$
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{tabu}
 \onehalfspacing
 \usepackage{helvet}
 
@@ -134,56 +142,11 @@ $if(title)$
 
 $endif$ 
 
-
 $if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$ }  $sep$ \and $endfor$}$endif$
-
 
 \date{}
 
-\usepackage{titlesec}
-
-
-\titleformat*{\section}{\large\bfseries}
-\titlespacing{\section}{0em}{\parskip}{-\parskip}
-\titleformat*{\subsection}{\normalsize\bfseries}
-\titleformat*{\subsubsection}{\normalsize\itshape}
-\titleformat*{\paragraph}{\normalsize\itshape}
-\titleformat*{\subparagraph}{\normalsize\itshape}
-
-
-\makeatletter
-\@ifpackageloaded{hyperref}{}{%
-\ifxetex
-  \usepackage[setpagesize=false, % page size defined by xetex
-              unicode=false, % unicode breaks when used with xetex
-              xetex]{hyperref}
-\else
-  \usepackage[unicode=true]{hyperref}
-\fi
-}
-\@ifpackageloaded{color}{
-    \PassOptionsToPackage{usenames,dvipsnames}{color}
-}{%
-    \usepackage[usenames,dvipsnames]{color}
-}
-\makeatother
-\hypersetup{breaklinks=true,
-            bookmarks=true,
-            pdfauthor={$if(anonymous)$$else$$for(author)$$author.name$ ($author.affiliation$)$sep$ and $endfor$$endif$},
-             pdfkeywords = {$if(keywords)$$keywords$$endif$},  
-            pdftitle={$title$$if(subtitle)$: $subtitle$$endif$},
-            colorlinks=true,
-            citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
-            urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
-            linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
-            pdfborder={0 0 0}}
-
-\urlstyle{same}  % don't use monospace font for urls
-
-$for(header-includes)$
-$header-includes$
-$endfor$
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
 \begin{document}
 
@@ -209,15 +172,31 @@ $endif$
 
 $if(abstract)$
 
-  \textbf{ABSTRACT}: \par
-  {$abstract$}
-
+  \fontsize{9}{10}{\textbf{ABSTRACT}}: \par
+  \begingroup
+  \leftskip1em
+  \rightskip\leftskip
+  \noindent{\fontsize{9}{10}\selectfont $abstract$}
+  \rightskip5em
+  \par
+  \endgroup
+  \vspace{5mm}
+  
 $endif$
+
 
 $if(keywords)$
     
-   \textbf{KEYWORDS}: \par
-   {$keywords$}
+ \fontsize{9}{10}{\textbf{KEYWORDS}}: \par
+  \begingroup
+  \leftskip1em
+  \rightskip\leftskip
+  \noindent{\fontsize{9}{10}\selectfont $keywords$}
+  \rightskip5em
+  \par
+  \endgroup
+  \vspace{5mm}
+
 $endif$
 
 % $if(toc)$

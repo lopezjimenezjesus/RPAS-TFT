@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.4)  6 JUN 2017 10:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.4)  8 JUN 2017 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -285,7 +285,8 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@theorem=\count115
 \c@remark=\count116
 \c@notation=\count117
- (./interactcadsample.aux)
+
+No file interactcadsample.aux.
 \openout1 = `interactcadsample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -300,7 +301,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count118
@@ -427,6 +427,9 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <11> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 73.
+
+LaTeX Warning: Reference `class' on page 2 undefined on input line 82.
+
 [2]
 Overfull \hbox (5.90552pt too wide) in paragraph at lines 121--121
 []\OT1/cmtt/m/n/10.95 \title{Taylor \& Francis \LaTeX\ template for authors (\t
@@ -434,6 +437,10 @@ extsf{Interact}[]
  []
 
 [3] [4]
+
+LaTeX Warning: Reference `sample-figure' on page 5 undefined on input line 201.
+
+
 Package epstopdf Info: Source file: <graph1.eps>
 (epstopdf)                    date: 2007-04-10 20:49:44
 (epstopdf)                    size: 37501 bytes
@@ -444,7 +451,7 @@ Package epstopdf Info: Source file: <graph1.eps>
 f graph1.eps>
 (epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
- <graph1-eps-converted-to.pdf, id=36, 231.24393pt x 187.51053pt>
+<graph1-eps-converted-to.pdf, id=36, 231.24393pt x 187.51053pt>
 File: graph1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use graph1-eps-converted-to.pdf>
@@ -467,13 +474,108 @@ File: graph2-eps-converted-to.pdf Graphic file (type pdf)
 <use graph2-eps-converted-to.pdf>
 Package pdftex.def Info: graph2-eps-converted-to.pdf used on input line 219.
 (pdftex.def)             Requested size: 231.24336pt x 187.51006pt.
- [5 <./graph1-eps-converted-to.pdf> <./graph2-eps-converted-to.pdf>] [6] [7] [8
-]
+ [5 <./graph1-eps-converted-to.pdf> <./graph2-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `sample-table' on page 6 undefined on input line 238.
+
+[6] [7]
+
+LaTeX Warning: Reference `subeqnexample' on page 8 undefined on input line 373.
+
+
+
+LaTeX Warning: Reference `subeqnparta' on page 8 undefined on input line 373.
+
+
+LaTeX Warning: Reference `subeqnpartb' on page 8 undefined on input line 373.
+
+[8]
 
 LaTeX Font Warning: Font shape `OML/eur/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 383.
 
-[9] [10] [11] [12]
+[9]
+
+Package natbib Warning: Citation `Alb05' on page 10 undefined on input line 420
+.
+
+
+Package natbib Warning: Citation `Gre08' on page 10 undefined on input line 420
+.
+
+
+Package natbib Warning: Citation `Sch87' on page 10 undefined on input line 420
+.
+
+
+Package natbib Warning: Citation `JTL97' on page 10 undefined on input line 420
+.
+
+
+Package natbib Warning: Citation `FogEHPD04' on page 10 undefined on input line
+ 420.
+
+
+Package natbib Warning: Citation `FogJEE04' on page 10 undefined on input line 
+420.
+
+
+Package natbib Warning: Citation `Fow89' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Bro86' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Bro02' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Roh08' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Sam06' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Lev05' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Mor08' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Cho08' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `ChoGul08' on page 10 undefined on input line 
+422.
+
+
+Package natbib Warning: Citation `Tep05' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Ell68' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Wau50' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Str00' on page 10 undefined on input line 422
+.
+
+
+Package natbib Warning: Citation `Wei02' on page 10 undefined on input line 422
+.
+
+[10] [11] [12]
 Overfull \hbox (11.6542pt too wide) in paragraph at lines 643--643
 [] \OT1/cmtt/m/n/10.95 Muscle Development of Atlantic Salmon (\emph{Salmo salar
 } L.) Embryos.''[] 
@@ -491,7 +593,15 @@ Underfull \hbox (badness 1082) in paragraph at lines 711--712
 OT1/cmr/m/n/10.95 class file and the as-so-ci-ated open-source
  []
 
-[15] (./interactcadsample.aux)
+
+Package natbib Warning: There were undefined citations.
+
+[15] (./interactcadsample.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -499,11 +609,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4029 strings out of 493029
- 52139 string characters out of 6136235
- 125216 words of memory out of 5000000
+ 4027 strings out of 493029
+ 52095 string characters out of 6136235
+ 124495 words of memory out of 5000000
  7469 multiletter control sequences out of 15000+600000
  24152 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -532,7 +648,7 @@ onts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pf
 b>
-Output written on interactcadsample.pdf (15 pages, 336237 bytes).
+Output written on interactcadsample.pdf (15 pages, 336348 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  118 compressed objects within 2 object streams
