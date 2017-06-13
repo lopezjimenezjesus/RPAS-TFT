@@ -1,264 +1,166 @@
-\begin{thebibliography}{27}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{}
 
-\bibitem[Andrew and Shephard()]{andrew_semi-automated_2017}
-Margaret~E Andrew and Jill~M Shephard.
+\bibitem[Andrew and Shephard, ]{andrew_semi-automated_2017}
+Andrew, M.~E. and Shephard, J.~M.
 \newblock Semi-automated detection of eagle nests: an application of very
   high-resolution image data and advanced image analyses to wildlife surveys.
-\newblock ISSN 20563485.
-\newblock \doi{10.1002/rse2.38}.
 
-\bibitem[Bayram et~al.()Bayram, Doddapaneni, Stefas, and
-  Isler]{bayram_active_2016}
-Haluk Bayram, Krishna Doddapaneni, Nikolaos Stefas, and Volkan Isler.
+\bibitem[Bayram et~al., ]{bayram_active_2016}
+Bayram, H., Doddapaneni, K., Stefas, N., and Isler, V.
 \newblock Active localization of {VHF} collared animals with aerial robots.
-\newblock \penalty0 (13):\penalty0 74--75.
-\newblock ISSN 21618089.
-\newblock \doi{10.1109/COASE.2016.7743503}.
+\newblock (13):74--75.
 
-\bibitem[Bustamante()]{bustamante_forest_2015}
-Luis Antonio~Esquivel Bustamante.
+\bibitem[Bustamante, ]{bustamante_forest_2015}
+Bustamante, L. A.~E.
 \newblock Forest monitoring with drones : Application strategies for protected
   riverine forest ecosystems in the atlantic forest of rio de.
 \newblock page~96.
 
-\bibitem[Casella et~al.()Casella, Collin, Harris, Ferse, Bejarano, Parravicini,
-  Hench, and Rovere]{casella_mapping_2017}
-Elisa Casella, Antoine Collin, Daniel Harris, Sebastian Ferse, Sonia Bejarano,
-  Valeriano Parravicini, James~L. Hench, and Alessio Rovere.
+\bibitem[Casella et~al., ]{casella_mapping_2017}
+Casella, E., Collin, A., Harris, D., Ferse, S., Bejarano, S., Parravicini, V.,
+  Hench, J.~L., and Rovere, A.
 \newblock Mapping coral reefs using consumer-grade drones and structure from
   motion photogrammetry techniques.
-\newblock 36\penalty0 (1):\penalty0 269--275.
-\newblock ISSN 0722-4028, 1432-0975.
-\newblock \doi{10.1007/s00338-016-1522-0}.
-\newblock URL \url{http://link.springer.com/10.1007/s00338-016-1522-0}.
+\newblock 36(1):269--275.
 
-\bibitem[Christie et~al.()Christie, Gilbert, Brown, Hatfield, and
-  Hanson]{christie_unmanned_2016}
-Katherine~S. Christie, Sophie~L. Gilbert, Casey~L. Brown, Michael Hatfield, and
-  Leanne Hanson.
+\bibitem[Christie et~al., ]{christie_unmanned_2016}
+Christie, K.~S., Gilbert, S.~L., Brown, C.~L., Hatfield, M., and Hanson, L.
 \newblock Unmanned aircraft systems in wildlife research: Current and future
   applications of a transformative technology.
-\newblock 14\penalty0 (5):\penalty0 241--251.
-\newblock ISSN 15409309.
-\newblock \doi{10.1002/fee.1281}.
+\newblock 14(5):241--251.
 
-\bibitem[Colefax et~al.()Colefax, Butcher, and Kelaher]{colefax_potential_2017}
-Andrew~P. Colefax, Paul~A. Butcher, and Brendan~P. Kelaher.
+\bibitem[Colefax et~al., ]{colefax_potential_2017}
+Colefax, A.~P., Butcher, P.~A., and Kelaher, B.~P.
 \newblock The potential for unmanned aerial vehicles ({UAVs}) to conduct marine
   fauna surveys in place of manned aircraft.
-\newblock ISSN 1054-3139, 1095-9289.
-\newblock \doi{10.1093/icesjms/fsx100}.
-\newblock URL
-  \url{https://academic.oup.com/icesjms/article-lookup/doi/10.1093/icesjms/fsx100}.
 
-\bibitem[Ditmer et~al.()Ditmer, Vincent, Werden, Tanner, Laske, Iaizzo,
-  Garshelis, and Fieberg]{ditmer_bears_2015}
-Mark~A. Ditmer, John~B. Vincent, Leland~K. Werden, Jessie~C. Tanner, Timothy~G.
-  Laske, Paul~A. Iaizzo, David~L. Garshelis, and John~R. Fieberg.
+\bibitem[Ditmer et~al., ]{ditmer_bears_2015}
+Ditmer, M.~A., Vincent, J.~B., Werden, L.~K., Tanner, J.~C., Laske, T.~G.,
+  Iaizzo, P.~A., Garshelis, D.~L., and Fieberg, J.~R.
 \newblock Bears show a physiological but limited behavioral response to
   unmanned aerial vehicles.
-\newblock 25\penalty0 (17):\penalty0 2278--2283.
-\newblock ISSN 09609822.
-\newblock \doi{10.1016/j.cub.2015.07.024}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.cub.2015.07.024}.
+\newblock 25(17):2278--2283.
 
-\bibitem[Gini et~al.()Gini, Passoni, Pinto, and Sona]{gini_aerial_2012}
-R.~Gini, D.~Passoni, L.~Pinto, and G.~Sona.
+\bibitem[Gini et~al., ]{gini_aerial_2012}
+Gini, R., Passoni, D., Pinto, L., and Sona, G.
 \newblock Aerial images from an uav system: 3d modeling and tree species
   classification in a park area.
-\newblock {XXXIX}-B1:\penalty0 361--366.
-\newblock ISSN 1682-1777.
-\newblock \doi{10.5194/isprsarchives-XXXIX-B1-361-2012}.
+\newblock {XXXIX}-B1:361--366.
 
-\bibitem[Hansen()]{hansen_applying_2016}
-Andreas~Skriver Hansen.
+\bibitem[Hansen, ]{hansen_applying_2016}
+Hansen, A.~S.
 \newblock Applying visitor monitoring methods in coastal and marine areas –
   some learnings and critical reflections from sweden.
-\newblock 2250:\penalty0 1--18.
-\newblock ISSN 1502-2250.
-\newblock \doi{10.1080/15022250.2016.1155481}.
-\newblock URL
-  \url{http://www.tandfonline.com/doi/abs/10.1080/15022250.2016.1155481}.
+\newblock 2250:1--18.
 
-\bibitem[Hodgson et~al.({\natexlab{a}})Hodgson, Kelly, and
-  Peel]{hodgson_unmanned_2013}
-Amanda Hodgson, Natalie Kelly, and David Peel.
+\bibitem[Hodgson et~al., a]{hodgson_unmanned_2013}
+Hodgson, A., Kelly, N., and Peel, D.
 \newblock Unmanned aerial vehicles ({UAVs}) for surveying marine fauna: A
   dugong case study.
-\newblock 8\penalty0 (11):\penalty0 1--15, {\natexlab{a}}.
-\newblock ISSN 19326203.
-\newblock \doi{10.1371/journal.pone.0079556}.
+\newblock 8(11):1--15.
 
-\bibitem[Hodgson et~al.({\natexlab{b}})Hodgson, Peel, and
-  Kelly]{hodgson_unmanned_2017}
-Amanda Hodgson, David Peel, and Natalie Kelly.
+\bibitem[Hodgson et~al., b]{hodgson_unmanned_2017}
+Hodgson, A., Peel, D., and Kelly, N.
 \newblock Unmanned aerial vehicles for surveying marine fauna: assessing
   detection probability.
-\newblock {\natexlab{b}}.
-\newblock URL \url{http://onlinelibrary.wiley.com/doi/10.1002/eap.1519/full}.
 
-\bibitem[Ivošević et~al.()Ivošević, Han, Cho, and Kwon]{ivosevic_use_2015}
-Bojana Ivošević, Yong~Gu Han, Youngho Cho, and Ohseok Kwon.
+\bibitem[Ivošević et~al., ]{ivosevic_use_2015}
+Ivošević, B., Han, Y.~G., Cho, Y., and Kwon, O.
 \newblock The use of conservation drones in ecology and wildlife research.
-\newblock 38\penalty0 (1):\penalty0 113--118.
-\newblock ISSN 22881220.
-\newblock \doi{10.5141/ecoenv.2015.012}.
+\newblock 38(1):113--118.
 
-\bibitem[King()]{king_will_2014}
-Lisa~M. King.
+\bibitem[King, ]{king_will_2014}
+King, L.~M.
 \newblock Will drones revolutionise ecotourism?
-\newblock 13\penalty0 (1):\penalty0 85--92.
-\newblock ISSN 1472-4049.
-\newblock \doi{10.1080/14724049.2014.948448}.
-\newblock URL
-  \url{http://www.tandfonline.com/doi/abs/10.1080/14724049.2014.948448}.
+\newblock 13(1):85--92.
 
-\bibitem[Koski et~al.()Koski, Allen, Ireland, Buck, Smith, Macrander, Halick,
-  Rushing, Sliwa, and {McDonald}]{koski_evaluation_2009}
-William~R. Koski, Travis Allen, Darren Ireland, Greg Buck, Paul~R. Smith,
-  A.~Michael Macrander, Melissa~A. Halick, Chris Rushing, David~J. Sliwa, and
-  Trent~L. {McDonald}.
+\bibitem[Koski et~al., ]{koski_evaluation_2009}
+Koski, W.~R., Allen, T., Ireland, D., Buck, G., Smith, P.~R., Macrander, A.~M.,
+  Halick, M.~A., Rushing, C., Sliwa, D.~J., and {McDonald}, T.~L.
 \newblock Evaluation of an unmanned airborne system for monitoring marine
   mammals.
-\newblock 35\penalty0 (3):\penalty0 347--357.
-\newblock ISSN 01675427.
-\newblock \doi{10.1578/AM.35.3.2009.347}.
-\newblock URL
-  \url{http://www.aquaticmammalsjournal.org/index.php?option=com_content&view=article&id=136:evaluation-of-an-unmanned-airborne-system-for-monitoring-marine-mammals&catid=34:volume-35-issue-3&Itemid=94}.
+\newblock 35(3):347--357.
 
-\bibitem[Lisein et~al.()Lisein, Michez, Claessens, and
-  Lejeune]{lisein_discrimination_2015}
-Jonathan Lisein, Adrien Michez, Hugues Claessens, and Philippe Lejeune.
+\bibitem[Lisein et~al., ]{lisein_discrimination_2015}
+Lisein, J., Michez, A., Claessens, H., and Lejeune, P.
 \newblock Discrimination of deciduous tree species from time series of unmanned
   aerial system imagery.
-\newblock 10\penalty0 (11).
-\newblock ISSN 19326203.
-\newblock \doi{10.1371/journal.pone.0141006}.
+\newblock 10(11).
 
-\bibitem[Lobermeier et~al.()Lobermeier, Moldenhauer, Peter, Slominski, Tedesco,
-  Meer, Dwyer, Harness, and Stewart]{lobermeier_mitigating_2015}
-Scott Lobermeier, Matthew Moldenhauer, Christopher Peter, Luke Slominski,
-  Richard Tedesco, Marcus Meer, James Dwyer, Richard Harness, and Andrew
-  Stewart.
+\bibitem[Lobermeier et~al., ]{lobermeier_mitigating_2015}
+Lobermeier, S., Moldenhauer, M., Peter, C., Slominski, L., Tedesco, R., Meer,
+  M., Dwyer, J., Harness, R., and Stewart, A.
 \newblock Mitigating avian collision with power lines: a proof of concept for
   installation of line markers via unmanned aerial vehicle.
-\newblock 3\penalty0 (4):\penalty0 252--258.
-\newblock ISSN 2291-3467.
-\newblock \doi{10.1139/juvs-2015-0009}.
+\newblock 3(4):252--258.
 
-\bibitem[Longmore et~al.()Longmore, Collins, Pfeifer, Fox, Mulero-Pazmany,
-  Bezombes, Goodwind, Ovelar, Knapen, and Wich]{longmore_adapting_2017}
-S.~N. Longmore, R.~P. Collins, S.~Pfeifer, S.~E. Fox, M.~Mulero-Pazmany,
-  F.~Bezombes, A.~Goodwind, M.~de~Juan Ovelar, J.~H. Knapen, and S.~A. Wich.
+\bibitem[Longmore et~al., ]{longmore_adapting_2017}
+Longmore, S.~N., Collins, R.~P., Pfeifer, S., Fox, S.~E., Mulero-Pazmany, M.,
+  Bezombes, F., Goodwind, A., Ovelar, M. d.~J., Knapen, J.~H., and Wich, S.~A.
 \newblock Adapting astronomical source detection software to help detect
   animals in thermal images obtained by unmanned aerial systems.
-\newblock 00\penalty0 (0):\penalty0 1--16.
-\newblock ISSN 0143-1161.
-\newblock \doi{10.1080/01431161.2017.1280639}.
-\newblock URL \url{http://arxiv.org/abs/1701.01611}.
+\newblock 00(0):1--16.
 
-\bibitem[Martin et~al.()Martin, Edwards, Burgess, Percival, Fagan, Gardner,
-  Ortega-Ortiz, Ifju, Evers, and Rambo]{martin_estimating_2012}
-Julien Martin, Holly~H. Edwards, Matthew~A. Burgess, H.~Franklin Percival,
-  Daniel~E. Fagan, Beth~E. Gardner, Joel~G. Ortega-Ortiz, Peter~G. Ifju,
-  Brandon~S. Evers, and Thomas~J. Rambo.
+\bibitem[Martin et~al., ]{martin_estimating_2012}
+Martin, J., Edwards, H.~H., Burgess, M.~A., Percival, H.~F., Fagan, D.~E.,
+  Gardner, B.~E., Ortega-Ortiz, J.~G., Ifju, P.~G., Evers, B.~S., and Rambo,
+  T.~J.
 \newblock Estimating distribution of hidden objects with drones: From tennis
   balls to manatees.
-\newblock 7\penalty0 (6):\penalty0 1--8.
-\newblock ISSN 19326203.
-\newblock \doi{10.1371/journal.pone.0038882}.
+\newblock 7(6):1--8.
 
-\bibitem[Miyamoto et~al.()Miyamoto, Yoshino, Nagano, Ishida, and
-  Sato]{miyamoto_use_2004}
-Michiru Miyamoto, Kunihiko Yoshino, Toshihide Nagano, Tomoyasu Ishida, and
-  Yohei Sato.
+\bibitem[Miyamoto et~al., ]{miyamoto_use_2004}
+Miyamoto, M., Yoshino, K., Nagano, T., Ishida, T., and Sato, Y.
 \newblock Use of balloon aerial photography for classification of kushiro
   wetland vegetation, northeastern japan.
-\newblock 24\penalty0 (3):\penalty0 701--710.
-\newblock ISSN 0277-5212.
-\newblock \doi{10.1672/0277-5212(2004)024[0701:UOBAPF]2.0.CO;2}.
+\newblock 24(3):701--710.
 
-\bibitem[Mulero-Pázmány et~al.()Mulero-Pázmány, Stolper, Van~Essen, Negro,
-  and Sassen]{mulero-pazmany_remotely_2014}
-Margarita Mulero-Pázmány, Roel Stolper, L.~D. Van~Essen, Juan~J. Negro, and
-  Tyrell Sassen.
+\bibitem[Mulero-Pázmány et~al., ]{mulero-pazmany_remotely_2014}
+Mulero-Pázmány, M., Stolper, R., Van~Essen, L.~D., Negro, J.~J., and Sassen,
+  T.
 \newblock Remotely piloted aircraft systems as a rhinoceros anti-poaching tool
   in africa.
-\newblock 9\penalty0 (1):\penalty0 1--10.
-\newblock ISSN 19326203.
-\newblock \doi{10.1371/journal.pone.0083873}.
+\newblock 9(1):1--10.
 
-\bibitem[Perroy et~al.()Perroy, Sullivan, and
-  Stephenson]{perroy_assessing_2017}
-Ryan~L. Perroy, Timo Sullivan, and Nathan Stephenson.
+\bibitem[Perroy et~al., ]{perroy_assessing_2017}
+Perroy, R.~L., Sullivan, T., and Stephenson, N.
 \newblock Assessing the impacts of canopy openness and flight parameters on
   detecting a sub-canopy tropical invasive plant using a small unmanned aerial
   system.
-\newblock 125:\penalty0 174--183.
-\newblock ISSN 09242716.
-\newblock \doi{10.1016/j.isprsjprs.2017.01.018}.
-\newblock URL
-  \url{http://linkinghub.elsevier.com/retrieve/pii/S0924271616303082}.
+\newblock 125:174--183.
 
-\bibitem[Puttock et~al.()Puttock, Cunliffe, Anderson, and
-  Brazier]{puttock_aerial_2015}
-A.K. Puttock, A.M. Cunliffe, K.~Anderson, and R.E. Brazier.
+\bibitem[Puttock et~al., ]{puttock_aerial_2015}
+Puttock, A., Cunliffe, A., Anderson, K., and Brazier, R.
 \newblock Aerial photography collected with a multirotor drone reveals impact
   of eurasian beaver reintroduction on ecosystem structure 1.
-\newblock 3\penalty0 (3):\penalty0 123--130.
-\newblock ISSN 2291-3467.
-\newblock \doi{10.1139/juvs-2015-0005}.
-\newblock URL
-  \url{http://www.nrcresearchpress.com/doi/10.1139/juvs-2015-0005#.VsR9-HWLSLo}.
+\newblock 3(3):123--130.
 
-\bibitem[Pázmány~Mulero()]{pazmany_mulero_unmanned_2015}
-Margarita Pázmány~Mulero.
+\bibitem[Pázmány~Mulero, ]{pazmany_mulero_unmanned_2015}
+Pázmány~Mulero, M.
 \newblock Unmanned aerial systems in conservation biology.
 
-\bibitem[Szantoi et~al.()Szantoi, Smith, Strona, Koh, and
-  Wich]{szantoi_mapping_2017}
-Zoltan Szantoi, Scot~E. Smith, Giovanni Strona, Lian~Pin Koh, and Serge~A.
-  Wich.
+\bibitem[Szantoi et~al., ]{szantoi_mapping_2017}
+Szantoi, Z., Smith, S.~E., Strona, G., Koh, L.~P., and Wich, S.~A.
 \newblock Mapping orangutan habitat and agricultural areas using landsat {OLI}
   imagery augmented with unmanned aircraft system aerial photography.
-\newblock 38\penalty0 (8):\penalty0 1--15.
-\newblock ISSN 0143-1161.
-\newblock \doi{10.1080/01431161.2017.1280638}.
-\newblock URL
-  \url{https://www.tandfonline.com/doi/full/10.1080/01431161.2017.1280638}.
+\newblock 38(8):1--15.
 
-\bibitem[Vas et~al.()Vas, Lescroel, Duriez, Boguszewski, and
-  Gremillet]{vas_approaching_2015}
-E.~Vas, A.~Lescroel, O.~Duriez, G.~Boguszewski, and D.~Gremillet.
+\bibitem[Vas et~al., ]{vas_approaching_2015}
+Vas, E., Lescroel, A., Duriez, O., Boguszewski, G., and Gremillet, D.
 \newblock Approaching birds with drones: first experiments and ethical
   guidelines.
-\newblock 11\penalty0 (2):\penalty0 20140754--20140754.
-\newblock ISSN 1744-9561.
-\newblock \doi{10.1098/rsbl.2014.0754}.
-\newblock URL
-  \url{http://rsbl.royalsocietypublishing.org/cgi/doi/10.1098/rsbl.2014.0754}.
+\newblock 11(2):20140754--20140754.
 
-\bibitem[Wilson et~al.()Wilson, Barr, and Zagorski]{wilson_feasibility_2017}
-Andrew~M Wilson, Janine Barr, and Megan Zagorski.
+\bibitem[Wilson et~al., ]{wilson_feasibility_2017}
+Wilson, A.~M., Barr, J., and Zagorski, M.
 \newblock The feasibility of counting songbirds using unmanned aerial vehicles.
-\newblock 134\penalty0 (2):\penalty0 350--362.
-\newblock \doi{10.1642/AUK-16-216.1}.
-\newblock URL \url{http://dx.doi.org/10.1642/AUK-16-216.1}.
+\newblock 134(2):350--362.
 
-\bibitem[Zahawi et~al.()Zahawi, Dandois, Holl, Nadwodny, Reid, and
-  Ellis]{zahawi_using_2015}
-Rakan~A. Zahawi, Jonathan~P. Dandois, Karen~D. Holl, Dana Nadwodny, J.~Leighton
-  Reid, and Erle~C. Ellis.
+\bibitem[Zahawi et~al., ]{zahawi_using_2015}
+Zahawi, R.~A., Dandois, J.~P., Holl, K.~D., Nadwodny, D., Reid, J.~L., and
+  Ellis, E.~C.
 \newblock Using lightweight unmanned aerial vehicles to monitor tropical forest
   recovery.
-\newblock 186:\penalty0 287--295.
-\newblock ISSN 00063207.
-\newblock \doi{10.1016/j.biocon.2015.03.031}.
-\newblock URL \url{http://dx.doi.org/10.1016/j.biocon.2015.03.031}.
+\newblock 186:287--295.
 
 \end{thebibliography}
