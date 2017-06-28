@@ -1,0 +1,149 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tables.aux
+The style file: plainnat.bst
+Database file #1: master.bib
+Warning--entry type for "mccaldin_use_2015" isn't style-file defined
+--line 2360 of file master.bib
+Warning--I didn't find a database entry for "pazmany_low_2014a"
+Warning--empty journal in andrew_semi-automated_2017
+Warning--empty year in andrew_semi-automated_2017
+Warning--empty year in andrew_semi-automated_2017
+Warning--empty journal in bayram_active_2016
+Warning--there's a number but no volume in bayram_active_2016
+Warning--empty year in bayram_active_2016
+Warning--empty year in bayram_active_2016
+Warning--empty journal in bustamante_forest_2015
+Warning--empty year in bustamante_forest_2015
+Warning--empty year in bustamante_forest_2015
+Warning--empty journal in casella_mapping_2017
+Warning--empty year in casella_mapping_2017
+Warning--empty journal in casella_drones_2016
+Warning--empty year in casella_drones_2016
+Warning--empty journal in christie_unmanned_2016
+Warning--empty year in christie_unmanned_2016
+Warning--empty year in christie_unmanned_2016
+Warning--empty journal in colefax_potential_2017
+Warning--empty year in colefax_potential_2017
+Warning--empty year in colefax_potential_2017
+Warning--empty journal in cornell_use_2016
+Warning--empty year in cornell_use_2016
+Warning--empty year in cornell_use_2016
+Warning--empty journal in ditmer_bears_2015
+Warning--empty year in ditmer_bears_2015
+Warning--empty year in ditmer_bears_2015
+Warning--empty journal in fornace_mapping_2014
+Warning--empty year in fornace_mapping_2014
+Warning--empty year in fornace_mapping_2014
+Warning--empty journal in gini_aerial_2012
+Warning--empty year in gini_aerial_2012
+Warning--empty year in gini_aerial_2012
+Warning--empty journal in hansen_applying_2016
+Warning--empty year in hansen_applying_2016
+Warning--empty year in hansen_applying_2016
+Warning--empty journal in hodgson_unmanned_2013
+Warning--empty year in hodgson_unmanned_2013
+Warning--empty journal in hodgson_unmanned_2017
+Warning--empty year in hodgson_unmanned_2017
+Warning--empty journal in ivosevic_use_2015
+Warning--empty year in ivosevic_use_2015
+Warning--empty year in ivosevic_use_2015
+Warning--empty journal in king_will_2014
+Warning--empty year in king_will_2014
+Warning--empty year in king_will_2014
+Warning--empty journal in koski_evaluation_2009
+Warning--empty year in koski_evaluation_2009
+Warning--empty year in koski_evaluation_2009
+Warning--empty journal in lisein_discrimination_2015
+Warning--empty year in lisein_discrimination_2015
+Warning--empty year in lisein_discrimination_2015
+Warning--empty journal in lobermeier_mitigating_2015
+Warning--empty year in lobermeier_mitigating_2015
+Warning--empty year in lobermeier_mitigating_2015
+Warning--empty journal in longmore_adapting_2017
+Warning--empty year in longmore_adapting_2017
+Warning--empty year in longmore_adapting_2017
+Warning--empty journal in martin_estimating_2012
+Warning--empty year in martin_estimating_2012
+Warning--empty year in martin_estimating_2012
+Warning--empty year in mccaldin_use_2015
+Warning--empty journal in miyamoto_use_2004
+Warning--empty year in miyamoto_use_2004
+Warning--empty year in miyamoto_use_2004
+Warning--empty journal in mulero-pazmany_remotely_2014
+Warning--empty year in mulero-pazmany_remotely_2014
+Warning--empty year in mulero-pazmany_remotely_2014
+Warning--empty journal in perroy_assessing_2017
+Warning--empty year in perroy_assessing_2017
+Warning--empty year in perroy_assessing_2017
+Warning--empty journal in puttock_aerial_2015
+Warning--empty year in puttock_aerial_2015
+Warning--empty year in puttock_aerial_2015
+Warning--empty journal in pazmany_mulero_unmanned_2015
+Warning--empty year in pazmany_mulero_unmanned_2015
+Warning--empty year in pazmany_mulero_unmanned_2015
+Warning--empty journal in szantoi_mapping_2017
+Warning--empty year in szantoi_mapping_2017
+Warning--empty year in szantoi_mapping_2017
+Warning--empty journal in van_andel_locating_2015
+Warning--empty year in van_andel_locating_2015
+Warning--empty year in van_andel_locating_2015
+Warning--empty journal in vas_approaching_2015
+Warning--empty year in vas_approaching_2015
+Warning--empty year in vas_approaching_2015
+Warning--empty journal in ventura_low-cost_2016
+Warning--empty year in ventura_low-cost_2016
+Warning--empty year in ventura_low-cost_2016
+Warning--empty journal in wich_preliminary_2016
+Warning--empty year in wich_preliminary_2016
+Warning--empty year in wich_preliminary_2016
+Warning--empty journal in wilson_feasibility_2017
+Warning--empty year in wilson_feasibility_2017
+Warning--empty year in wilson_feasibility_2017
+Warning--empty journal in zahawi_using_2015
+Warning--empty year in zahawi_using_2015
+Warning--empty year in zahawi_using_2015
+Warning--empty year in zang_investigating_2012
+Warning--empty year in zang_investigating_2012
+You've used 35 entries,
+            2773 wiz_defined-function locations,
+            820 strings with 14578 characters,
+and the built_in function-call counts, 21019 in all, are:
+= -- 1839
+> -- 1591
+< -- 8
++ -- 535
+- -- 498
+* -- 2089
+:= -- 3313
+add.period$ -- 176
+call.type$ -- 35
+change.case$ -- 271
+chr.to.int$ -- 33
+cite$ -- 169
+duplicate$ -- 736
+empty$ -- 1340
+format.name$ -- 535
+if$ -- 4179
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 34
+newline$ -- 253
+num.names$ -- 140
+pop$ -- 656
+preamble$ -- 1
+purify$ -- 236
+quote$ -- 0
+skip$ -- 469
+stack$ -- 0
+substring$ -- 673
+swap$ -- 22
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 385
+warning$ -- 99
+while$ -- 160
+width$ -- 0
+write$ -- 537
+(There were 101 warnings)

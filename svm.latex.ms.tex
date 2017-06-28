@@ -34,6 +34,13 @@
 \usepackage{rotating}
 % \usepackage[]{geometry}
 
+\usepackage{array}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{1cm}}
+\newcolumntype{S}{>{\raggedleft\arraybackslash}p{3cm}}
+\newcolumntype{T}{>{\raggedleft\arraybackslash}p{4cm}}
+\newcolumntype{U}{>{\raggedleft\arraybackslash}p{2cm}}
+
+
 $if(biblatex)$
 \usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
 
@@ -157,8 +164,8 @@ $if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \n
 
 $if(title)$
 \author{
-\name{A.~N. Author\textsuperscript{a}\thanks{CONTACT A.~N. Author. Email: latex.helpdesk@tandf.co.uk} and John Smith\textsuperscript{b}}
-\affil{\textsuperscript{a}Taylor \& Francis, 4 Park Square, Milton Park, Abingdon, UK; \textsuperscript{b}Institut f\"{u}r Informatik, Albert-Ludwigs-Universit\"{a}t, Freiburg, Germany}
+\name{A.~N. Author\textsuperscript{a}\thanks{CONTACT L.~Jimenez. Jesus. Email: foo@foo.com} and Margarita Múlero-Pázmani\textsuperscript{b}}
+\affil{\textsuperscript{a}Taylor \& Francis, 4 Park Square, Milton Park, Abingdon, UK; \textsuperscript{b}Institut f\"{u}r Informatik, Albert-Ludwigs-Universidad\"{a}t, Seville, Spain}
 }
 % $if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$} $sep$ \and $endfor$}$endif$
 \title{$title$}
