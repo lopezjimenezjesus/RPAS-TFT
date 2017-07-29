@@ -27,12 +27,8 @@
 
 \usepackage{rotating}
 % \usepackage[]{geometry}
+\usepackage{url}
 
-\usepackage{array}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}p{1cm}}
-\newcolumntype{S}{>{\raggedleft\arraybackslash}p{3cm}}
-\newcolumntype{T}{>{\raggedleft\arraybackslash}p{4cm}}
-\newcolumntype{U}{>{\raggedleft\arraybackslash}p{2cm}}
 
 
 
@@ -108,6 +104,11 @@ present and future\vspace{0.25in}  }
 
 \date{}
 
+
+\usepackage{lscape}
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
 \begin{document}
@@ -150,7 +151,7 @@ However, through the development of novel solutions and continuous
 improvement of performance and sensor characteristics, the parallel
 design of computer intensive statistical methods and a greater concern
 for animal welfare issues, there are high expectations in the research
-community and RPAS applications in protected areas is increasingly
+community and RPAS applications in protected areas are increasingly
 justified.}
   \rightskip5em
   \par
@@ -183,10 +184,10 @@ Civil applications of remotely piloted aircraft systems (RPAS, also
 known as unmanned aerial systems, UAS, drones) have been raised in an
 growing number of scientific articles. During the last few years there
 have been a significant amount of wildlife research projects in natural
-protected areas using RPAS (J. Linchant et al. 2015; Chabot and Bird
-2015; Christie et al. 2016) and it is rapidly taking its place within
-the broad set of technological solutions that support conservation (Pimm
-et al. 2015). In most cases, feasibility studies were carried out,
+protected areas using RPAS (Linchant et al. 2015; Chabot and Bird 2015;
+Christie et al. 2016) and it is rapidly taking its place within the
+broad set of technological solutions that support conservation (Pimm et
+al. 2015). In most cases, feasibility studies were carried out,
 assessing the capacity of RPAS in relation to traditional conservation
 instruments by measuring the overall performance, delimiting their
 strengths and weakness, and establishing guidelines and recommendations,
@@ -198,18 +199,18 @@ back to the early 1980s, where first trials with RPAS applied on
 environmental issues began with the objective of acquiring aerial
 photographs and demonstrating their usefulness in forestry applications,
 fish resource management or the coupling of sensors for atmospheric
-studies (Tomlins and Lee 1983). At the beginning of the 20th century,
+studies (Tomlins and Lee 1983). At the beginning of the 21st century,
 first mapping surveys of vegetation in threatened species appeared
-({\textbf{???}}), while during the first decade the number of
-publications began to increase significantly (Hardin and Jensen 2013).
-At present there are some initiatives that seek to determine the current
-state of the RPAS in ecology and conservation. Recently, the journals
-\emph{Remote Sensing in Ecology and Conservation} and the
+(Quilter and Anderson 2000), while accross the first decade the number
+of publications began to increase significantly (Hardin and Jensen
+2013). At present there are some initiatives that seek to determine the
+current state of the RPAS in ecology and conservation. Recently, the
+journals \emph{Remote Sensing in Ecology and Conservation} and the
 \emph{International Journal of Remote Sensing} made a call to the
 scientific community for the sending of proposals in order to update the
-current state of RPAS applied into the environmental spere. As result, a
-significant production of RPAS related papers on the matter is expected.
-On the other hand, it is remarkable the greater presence of web portals
+current state of RPAS applied into the environmental sphere. As result,
+a significant production of related papers on the matter is expected. On
+the other hand, it is remarkable the greater presence of web portals
 that center their activity around civil applications with RPAS. In the
 field of research applied to conservation, the website
 \url{http://conservationdrones.org/} is a worldwide reference, whose
@@ -230,8 +231,8 @@ greater degree of customization, allowing to combine different sensors
 and control systems, according to the particular needs of each project
 and without having to depend on others beyond the research group itself
 (Koh and Wich 2012). In the commercial field, more companies offer RPAS
-of high performance and reliability along with professional services and
-software, so the sector benefits from great dynamism.
+of high performance and reliability together with professional services
+and software, so the sector benefits from great dynamism.
 
 \subsection{Protected areas}\label{protected-areas}
 
@@ -261,21 +262,21 @@ biodiversity. As part of the large array of observing systems monitoring
 ecosystems and measuring human impacts (Forum 2008, Pereira et al.
 (2013)), RPAS can fill the gap at an intermediate spatial scale,
 surpassing the financial and technological constrains of remote sensing
-and ground / aerial manned vehicles based surveys (Koh and Wich 2012; A.
+and ground / aerial manned vehicles based surveys (Koh and Wich 2012;
 Rodríguez et al. 2012; Chabot and Bird 2015). First, while it is
 possible to acquire satellite images at low or virtually zero cost
 (LandSat, MODIS, Sentinel, etc.), most of these platforms operate on a
 global or regional scale. The limited spatial and temporal resolution,
-along with the inconveniences of cloud presence especially noticeable in
+added to the inconveniences of cloud presence especially noticeable in
 tropical areas, reduces the effectiveness of remote sensing in the
 collection of data at fine-scale, according to the requirements of
 ecological studies at the level of species, habitats or populations
 (Wulder et al. 2004). Secondly, the large extent of these protected
 areas significantly increases the costs of field work on foot,
-particularly in hadarzous and inaccessible areas. Finally, while manned
+particularly in hadarzous and inaccessible spots. Finally, while manned
 aerial vehicles offers an optimal alternative for covering much larger
 areas, they suffer from excessively high operational costs and when not
-used for aerial mapping, it could be affected by observer bias. In
+used for aerial mapping, they could be affected by observer bias. In
 addition, air accidents are ranking as the leading cause of death in
 wildlife specialists in the United States (Sasse 2003). As a
 consequence, RPAS have been positioned as an appropriate complement for
@@ -309,34 +310,37 @@ operations, arguing national security problems in detriment of
 protection of natural areas (Andrews 2014). But RPAS have also been
 generally welcomed in several developing countries in Asia, where an
 array of related programs are being carried out (Nugraha, Jeyakodi, and
-Mahem 2016). The uncertainty of the users along the world has promoted
-the development of associations in order to advise on the legal aspects
-to be taken into account during the operation, with the International
-Association for Unmanned Vehicle Systems (AUVSI)
-\url{http://www.auvsi.org} being the largest nonprofit organization in
-the world dedicated to advancing the community of unmanned aerial
-vehicles users.
+Mahem 2016). (Consulting 2017) is a relative accurate database informing
+RPAS regulations by country. The uncertainty of the users along the
+world has promoted the development of associations in order to advise on
+the legal aspects to be taken into account during the operation, with
+the International Association for Unmanned Vehicle Systems (AUVSI)
+(UAVSI 2017) being the largest nonprofit organization in the world
+dedicated to advancing the community of unmanned aerial vehicles users.
+Also, a relative up-to-date database has been published online where
+users can consult the regulatory framework of RPAS by country
+(Consulting 2017).
 
 \section{Methods}\label{methods}
 
 To achieve the proposed objectives, a bibliographical review of
 scientific articles, gray literature, postgraduate theses, websites and
 specialized journals was carried out, following a similar line to other
-studies (J. Linchant et al. 2015; Christie et al. 2016). The main tools
-for selection of the cited bibliography include Google Schoolar,
-Research Gate and Mendeley Desktop, while the use of Internet search
-engines include other references outside the scientific scope. Key
-search criteria for keywords included unmanned aerial vehicles in their
-various meanings and acronyms (RPAS, UAV, drones, etc.), along with a
-variety of terms referring to natural protected areas, primarily in
-English. Last references revised were published on June, 2017.
+studies (Linchant et al. 2015; Christie et al. 2016). The main tools for
+selection of the cited bibliography include Google Schoolar, Research
+Gate and Mendeley Desktop, while the use of Internet search engines
+include other references outside the scientific scope. Key search
+criteria for keywords included unmanned aerial vehicles in their various
+meanings and acronyms (RPAS, UAV, UAS, drones), along with a variety of
+terms referring to natural protected areas, primarily in English. Last
+references revised were published on June, 2017.
 
 The selected information was categorized according to the role played by
 RPAS in direct or indirect relation to conservation in protected areas.
 It is presented in tabular format, identifying where the study was
 conducted, the expected accomplishments and technical specifications of
 the aerial platform. After posing main results obtained, gaps are
-indentified and possible scenarios for implementing RPAS as essential
+identified and possible scenarios for implementing RPAS as essential
 tools to help achieve conservation plans in protected areas are
 discussed, highlighting some trends and opportunities that apparently
 have not yet been adequately exploited.
@@ -355,15 +359,20 @@ count of populations. RPAS have emerged as a feasible alternative to
 surpass such inconveniences. Several studies addressed counting large
 terrestrial mammals with positive contributions (Jain 2013, Lancia et
 al. (2005), Mulero-Pázmány et al. (2015)). (Colefax, Butcher, and
-Kelaher 2017) reviewed the potential of RPAS to survey species relying
-on coastal and marine ecosystems. RPAS have as well been applied to
-study population dynamics in bird colonies (Sardà-Palomera et al. 2012),
-but also in the inspection and characterization of inaccessible nesting
+Kelaher 2017) conducted an extensive bibliographic revision to unveil
+the potential of RPAS to monitor species relying on coastal and marine
+ecosystems in placed on manned aircraft. In this context, (Hodgson,
+Peel, and Kelly 2017) performed a comparative study using both RPAS and
+traditional methods to survey humpback whales (\emph{Megaptera
+novaeangliae}), while described a novel statistical method to estimate
+marine mammal populations. RPAS have as well been applied to study
+population dynamics in bird colonies (Sardà-Palomera et al. 2012), but
+also in the inspection and characterization of inaccessible nesting
 sites using multi-rotors (Weissensteiner, Poelstra, and Wolf 2015). In
 some cases, in order to overcome the barriers to directly detect the
 species of interest, the studies focused on locating and characterizing
 their breeding and nesting areas (Andel et al. 2015, Szantoi et al.
-(2017), Andrew and Shephard (2017), Serge Wich et al. (2016)).
+(2017), Andrew and Shephard (2017), Wich et al. (2016)).
 
 On the other hand, one of the central themes in ecology is the
 development of surveys and statistical models for estimating abundance
@@ -412,13 +421,926 @@ individuals in marine mammal populations, primates and macrofauna in
 general. For instance, a work conducted in the Amazon Basin in Brazil is
 testing the use of RPAS to improve the density and abundance estimation
 of different species of dolphins, compared with direct observation by
-specialists (S. Wich 2017). The main research aims include the
-validation and harmonization of both methodologies and, indirectly,
-evaluate the feasibility for its regular application in monitoring
-projects with a similar purpose, taking into account the cost-benefit of
-the execution.
+specialists (Wich 2017). The main research aims include the validation
+and harmonization of both methodologies and, indirectly, evaluate the
+feasibility for its regular application in monitoring projects with a
+similar purpose, taking into account the cost-benefit of the execution.
 
-\include{tables}
+\newpage
+
+\blandscape
+
+\tiny
+
+\begin{longtable}[]{@{}llllllll@{}}
+\caption{WILDLIFE MONITORING AND MANAGEMENT}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Study\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright\strut
+Aims\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Country\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+Place\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright\strut
+Target\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
+RPAS platform\strut
+\end{minipage} & \begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Payload\strut
+\end{minipage} & \begin{minipage}[b]{0.01\columnwidth}\raggedright\strut
+Costs\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Study\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright\strut
+Aims\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Country\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+Place\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright\strut
+Target\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
+RPAS platform\strut
+\end{minipage} & \begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Payload\strut
+\end{minipage} & \begin{minipage}[b]{0.01\columnwidth}\raggedright\strut
+Costs\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Mulero-Pázmány et al. 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Telemetry/RPAS SDM comparative study\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Spain\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Doñana N.P.\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+\emph{Bos taurus}\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: Easy Fly plane, Ikarus autopilot, Eagletree GPS logger\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Panasonic Lumix LX-3 11MP\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 6500\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Hodgson, Peel, and Kelly 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Comparative survey RPAS/land based observation; abundance
+estimation\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Australia\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+North Stradbroke Island\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+humback whales\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: ScanEagle\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Nikon D90 12MP, Standard Definition Electro-Optical Camera\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Hodgson, Kelly, and Peel 2013)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Dugongs detection\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Australia\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Shark Bay Marine Park\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Dugong\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: ScanEagle\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Nikon D90 12MP\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Wilson, Barr, and Zagorski 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Bioacustic monitoring\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+State Game Lands\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Birds\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: DJI Phantom 2\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+ZOOM H1 Handy Recorder\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Bayram et al. 2016)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+VHF collars tracking\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Bears (Ursus)\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: DJI F550\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Telonics MOD-500 VHF, Uniden handheld scanner\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Christie et al. 2016)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Abundance estimation\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Aleutian Islands\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Steller Sea Lion (Eumetopias jubatus)\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: APH-22\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 25.000\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Christie et al. 2016\})\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Abundace estimation\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Monte Vista National Wildlife Refuge\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Grus canadensis (sandhill cranes)\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: Raven RQ- 11A\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 400\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Wich et al. 2016)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Sumatran orangutan nest detection\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: Skywalker 2013\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Canon S100\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Andel et al. 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Chimpanzee nest detection\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Africa\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Loango National Park\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Chimpanzee (Pan troglodytes)\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: Maja\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Canon Powershot SX230 HS\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 5000\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Koski et al. 2009)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Marine mammals monitoring\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Admiralty Bay\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Marine mammals\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: ScanEagle\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+NTSC Video Camera\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Andrew and Shephard 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Semi-automated image processing tools to detect and map sea eagle
+nests\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Australia\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Houtman Abrolhos Islands\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+White-bellied sea eagle (Haliaeetus leucogaster)\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Longmore et al. 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Software development to help detect animals in thermal images\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+UK\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Arrowe Brook Farm Wirral\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Wildlife\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: 3DR robotics Y6\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+FLIR, Tau 2 LWIR Thermal Imaging Camera Core\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Martin et al. 2012)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Estimate the distribution of organisms using statistical models\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Manatee (\emph{Trichechus manatus latirostris})\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: Nova 2.1\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Olympus H E-420\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}llllllll@{}}
+\caption{MONITORING OF TERRESTRIAL AND AQUATIC
+ECOSYSTEMS}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Study\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright\strut
+Aims\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Country\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+Place\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright\strut
+Target\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
+RPAS platform\strut
+\end{minipage} & \begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Payload\strut
+\end{minipage} & \begin{minipage}[b]{0.01\columnwidth}\raggedright\strut
+Costs\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Study\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright\strut
+Aims\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Country\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+Place\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright\strut
+Target\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
+RPAS platform\strut
+\end{minipage} & \begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Payload\strut
+\end{minipage} & \begin{minipage}[b]{0.01\columnwidth}\raggedright\strut
+Costs\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Perroy, Sullivan, and Stephenson 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Tropical invasive plants\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Pahoa, Hawai\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+\emph{Miconia calvescens}\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: DJ Inspire-1\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+DJI FC350 camera\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Szantoi et al. 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Habitat Mapping\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Indonesia\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Gunung Leuser National Park\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Orangutan (Pongo abelii)\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: Skywalker\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Canon S100\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 4000\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Casella et al. 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Coral reef mapping\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+French Polynesia\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Tiahura,; Moorea\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Coral reef\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: DJI Phantom 2\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Modified GoPro HERO4\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 1678\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Casella et al. 2016)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Monitoring coastal erosion dynamics in shorelines\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+French Polynesia\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Tiahura; Moorea\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Coral reef\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: Mikrokopter Okto XL\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Canon G11\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 7500\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Müllerová et al. 2016)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Monitoring plant invasion\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Exotic species\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: VUT 712 713 720\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Canon S100\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Ventura et al. 2016)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Marine fish nursery areas mapping\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Italy\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Giglio Island\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Marine fish nursery areas\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: homemade prototype\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Mobius HD, GoPro HERO3 Black Edition\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 100\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Ivošević et al. 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Habitat monitoring and modeling in restricted areas; RPAS performance
+test \& South Korea \& Chiaksan National Park;Taeanhaean National
+Park\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+South Korea\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Chiaksan National Park;Taeanhaean National Park\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: DJI Phantom 2 Vision+\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Full HD videos 1080p/30fps and 720p/60fps\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Lisein et al. 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Discrimination of deciduous species; Forest inventory\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Belgium\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Grand-Leez\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+English oak, birches, sycamore maple ,common ash and poplars\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wings: Gatewing X100\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Ricoh GR2 GR3 GR4 10 megapixels CCD\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Puttock et al. 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Characterization of ecosystems affected by beaver activity\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+UK\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Devon Beaver Project site\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Eurasian beaver (\emph{Castor fiber})\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: 3D Robotics Y6\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+anon ELPH 520 HS\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Zahawi et al. 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Characterization of tropical forest structure for restoration
+actions\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Costa Rica\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Devon Beaver Project site\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Several species\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: 3D Robotics Y6\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Canon S100\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 1500\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Bustamante 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Forest monitoring\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Brasil\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Riverine Forests (Permanent Protected Areas), Rio de Janeiro, Barrãcao
+do Mendes, Santa Cruz and São Lorenço\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Riverbank forests\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: DJI Phantom Vision 2S\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+RGB digital camera 14MP\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 9700\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Gini et al. 2012)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+3D modeling and classification of tree species\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Italy\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Parco Adda Nord\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Several species\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: Microdrones TM MD4-200\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+RGB CCD 12 megapixels Pentax Optio A40; modified NIR Sigma DP1 with a
+Foveon X3 sensor\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Miyamoto et al. 2004)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Classification of species in wetlands\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Japan\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Kushiro Wetlands\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Several species\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Helium balloon\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+NIKON F-801, NIKKOR 28 mm f/2.8\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 1600\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Casella et al. 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Mapping coral reefs\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor.wing: DJI Phantom 2\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+GoPro HERO4\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}llllllll@{}}
+\caption{INFRASTRUCTURES AND RISK ASSESSMENT, ECOTOURISM, IMPACT ON
+WILDLIFE AND ECOSYSTEMS}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Study\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright\strut
+Aims\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Country\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+Place\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright\strut
+Target\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
+RPAS platform\strut
+\end{minipage} & \begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Payload\strut
+\end{minipage} & \begin{minipage}[b]{0.01\columnwidth}\raggedright\strut
+Costs\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Study\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright\strut
+Aims\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Country\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+Place\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright\strut
+Target\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
+RPAS platform\strut
+\end{minipage} & \begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Payload\strut
+\end{minipage} & \begin{minipage}[b]{0.01\columnwidth}\raggedright\strut
+Costs\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Lobermeier et al. 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Mitigate the risk of collision by installing markers on electrical
+lines\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Birds\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: Mikrokopter Hexa XL\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+KX 171 Microcam\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Margarita Mulero-Pázmány 2014\})\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Bird risk hazards in power lines\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Spain\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Doñana National Park\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Birds\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+ixed-wing: Easy fly St-330\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+GoPro HERO2 11MP;Panasonic LX3 11MP\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 8863\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Mulero-Pázmány et al. 2014)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Anti-poaching\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Africa\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+KwaZulu-Nata\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Black rhinocero (\emph{Diceros bicornis}), white rhinocero
+(\emph{Ceratotherium simum})\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: Easy Fly St-330\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Panasonic Lumix LX-3 11 MP, GoPro Hero2; Thermoteknix Micro CAM
+microbolometer\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 15700\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Hansen 2016)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Visitors Surveillance\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Sweden\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Sweden \& Kosterhavet National Park\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Humans\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Sabella et al. 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Visitors Surveillance\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Italy\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+R.N.O. Oasi faunistica di Vendicari\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Humans\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: DJI Phantom 3\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(King 2014)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+RPAS applications in ecotourism activities\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Sweeden\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Sweeden \& Kosterhavet National Park\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Humans\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Vas et al. 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+RPAS impact\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+France\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Zoo du Lunaret, Cros Martin Natural Area\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+\emph{Anas platyrhyncho}, \emph{Phoenicopterus roseus}, \emph{Tringa
+nebularia}\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: Phantom\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+GoPro HERO3\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Weissensteiner, Poelstra, and Wolf 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+RPAS Impact\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Sweeden\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Hooded crow (\emph{Corvus corone cornix})\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: DJI Phantom 2 Vision\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 1000\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}llllllll@{}}
+\caption{ENVIRONMENTAL MONITORING AND DECISION SUPPORT}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Study\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright\strut
+Aims\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Country\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+Place\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright\strut
+Target\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
+RPAS platform\strut
+\end{minipage} & \begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Payload\strut
+\end{minipage} & \begin{minipage}[b]{0.01\columnwidth}\raggedright\strut
+Costs\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Study\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright\strut
+Aims\strut
+\end{minipage} & \begin{minipage}[b]{0.03\columnwidth}\raggedright\strut
+Country\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+Place\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright\strut
+Target\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright\strut
+RPAS platform\strut
+\end{minipage} & \begin{minipage}[b]{0.11\columnwidth}\raggedright\strut
+Payload\strut
+\end{minipage} & \begin{minipage}[b]{0.01\columnwidth}\raggedright\strut
+Costs\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Zang et al. 2012)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Pollution monitoring\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+China\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Several cities\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Rivers\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Canon 50D, ACD multispectral camera\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Cornell, Herman, and Ontiveros 2016)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Water sampling\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Lake Ontari0\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: DJI Phantom 3\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+50mL Falcon tube\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(McCaldin, Johnston, and Rieker 2015)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Aerial baiting\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Australia\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Christmas Island\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Cat (\emph{Felis catus})\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: V-TOL Hornet I-II\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Canon S100; Drop mechanism with HD Video Recorder\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Fornace et al. 2014)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Spatial epidemiology\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Malaysia / Philippines\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Sabah / Palawan\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+?\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: Sensefly eBee\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+16mp\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+\$ 25000\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Van Tilburg 2017)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Search and Rescue (SAR)\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Columbia Gorge National Scenic Area\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Humans\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: Phantom 3, SAR Bot, Inspire 1\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+DJI 12MP; VUE PRO 640 thermal imager\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Schwarzbach et al. 2014)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Water sampling\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+Spain\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Doñana N.P.\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Freshwater ecosystems\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Rotor-wing: Helicopter\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Water sampling mechanism\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+(Schmale, Dingus, and Reinholtz 2008)\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
+Aerobiological sampling\strut
+\end{minipage} & \begin{minipage}[t]{0.03\columnwidth}\raggedright\strut
+USA\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+Virginia Tech's Kentland Farm\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright\strut
+Prokaryotic and eukaryotic microorganisms\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright\strut
+Fixed-wing: Senior Telemaster\strut
+\end{minipage} & \begin{minipage}[t]{0.11\columnwidth}\raggedright\strut
+Aerobiological sampling devices\strut
+\end{minipage} & \begin{minipage}[t]{0.01\columnwidth}\raggedright\strut
+?\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\elandscape
+\normalsize
 
 \subsection{Infrastructure and risk
 assessment}\label{infrastructure-and-risk-assessment}
@@ -434,7 +1356,7 @@ Collisions with the wiring is one of the most common causes of death in
 birds. (Lobermeier et al. 2015) proposed to install marks that are
 easily visible through the use of robotics arms installed in
 multicopters. Due to the ease of maneuvering of the platform,
-multicopters are more suitable for precision work. As a pre-harvest
+multi-rotors are more suitable for precision work. As a pre-harvest
 activity, generally performed under mechanical procedures,
 (Mulero-Pázmány Margarita 2011) suggested a flyby to identify possible
 nests on the ground, and if necessary, take appropriate actions to avoid
@@ -453,18 +1375,18 @@ of RPAS permits the quantitative analysis of habitats to a level of
 detail ever reached, either for economic reasons or for technological
 limitations. This momentum has been especially notable with the parallel
 development of affordable multispectral and hyperspectral sensors
-adapted to small aircraft ({\textbf{???}}). RPAS has been used by The
-United States Geological Survey (USGS) to classify vegetation cover in
-wetlands (USGS 2014). (Zaman, Jensen, and McKee 2011) monitored the
-spread of invasive species in such ecosystems while ({\textbf{???}})
-assessed the importance of spectral and spatial resolution to detect
-plant invasion using satellite, aerial and RPAS data. (Perroy, Sullivan,
-and Stephenson 2017) conducted several flight to quantify the detection
-rate of invasive species under different flight parameters, enviromental
-conditions and vegetation cover. The characterization of forest stands
-constitutes an important section, considering the number of papers
-facing the issue from different perspectives. (Gini et al. 2012)
-employed a quadcopter model operated at low-height and RGB and NIR
+adapted to small aircraft (Bareth et al. 2015). RPAS has been used by
+The United States Geological Survey (USGS) to classify vegetation cover
+in wetlands (USGS 2014). (Zaman, Jensen, and McKee 2011) monitored the
+spread of invasive species in such ecosystems while (Müllerová et al.
+2016) assessed the importance of spectral and spatial resolution to
+detect plant invasion using satellite, aerial and RPAS data. (Perroy,
+Sullivan, and Stephenson 2017) conducted several flight to quantify the
+detection rate of invasive species under different flight parameters,
+environmental conditions and vegetation cover. The characterization of
+forest stands constitutes an important section, considering the number
+of papers facing the issue from different perspectives. (Gini et al.
+2012) employed a quadcopter model operated at low-height and RGB and NIR
 cameras in small areas. Due to the reduced reliability and autonomy of
 the platform and the difficulties to increase the load capacity, the
 flight planning is reduced to three passes with a percentage of 80\% and
@@ -484,8 +1406,8 @@ restoration actions in forests using RPAS as a viable alternative for
 traditional field measurements and applying different predictive models
 of frugivorous birds presence by means of height and canopy structure
 data. Recently, shallow coastal habitats were also mapped using consumer
-grade RPAS (E. Casella et al. 2017, Ventura et al. (2016)), including
-monitoring erosion dynamics in shorelines. (E. Casella et al. 2016).
+grade RPAS (Casella et al. 2017, Ventura et al. (2016)), including
+monitoring erosion dynamics in shorelines. (Casella et al. 2016).
 
 \subsection{Surveillance and support for compliance with laws in
 protected
@@ -493,16 +1415,16 @@ areas}\label{surveillance-and-support-for-compliance-with-laws-in-protected-area
 
 RPAS have also relevance in the control and surveillance of protected
 areas, documented through different experiences focused mainly on
-controlling poaching. Due to the nature of these activities, emphasis
+controlling poaching. As a result of these preliminary results, emphasis
 has been placed on improving first-person vision (FPV) methods to obtain
-a clear, real-time view of the monitored area. Also, it is prefereable
-the use of fixed-wing RPAS for longer flight times and consequently
-cover greater areas. Other requisites include the convenience of using
-thermal cameras in low visibility conditions, generally related to hours
-of greater furtive activity, along with advances in computer vision
-systems programmed to detect the presence of humans and target species
-under pressure from illegal trade in protected areas. (Mulero-Pázmány et
-al. 2014) focused on the African rhinoceros (\emph{Diceros bicornis},
+a clear, real-time view of the monitored area. Also, fixed-wing RPAS are
+prefered, since they offered longer flight times and consequently cover
+greater areas. Other requisites include the convenience of using thermal
+cameras in low visibility conditions, generally related to hours of
+greater furtive activity, along with advances in computer vision systems
+programmed to detect the presence of humans and target species under
+pressure from illegal trade in protected areas. (Mulero-Pázmány et al.
+2014) focused on the African rhinoceros (\emph{Diceros bicornis},
 \emph{Ceratotherium simum}) and noted the advantages of real time video
 compared to still photography, which despite the better overall quality,
 requires longer post-processing time. In addition, authors emphasized
@@ -513,7 +1435,10 @@ activities in marine protected areas (MPA), claiming million-dollar
 economic losses in the fishing sector. (Duffy 2014) analyzed the
 consequences of the militarization of conservation practices as an
 increasing trend in natural protected areas around the world and
-illustrates the use of RPAS through several examples.
+illustrates the use of RPAS through several examples. Surveillance of
+other less contentious illegal activities in natural parks using an
+affordable small rotor-wing were also recently described (Sabella et al.
+2017).
 
 \subsection{Ecotourism}\label{ecotourism}
 
@@ -544,13 +1469,15 @@ recommendations is included, and authors encouraged to extend the trials
 to a wide range of RPAS and species. (McEvoy, Hall, and McDonald 2016)
 accomplished the most intensive disturbance assesment on waterfowl to
 date, by combining an array of fixed-wing and rotor-wings RPAS at
-various altitudes. (Scobie and Hugenholtz 2016) quantified noise
-detection by several representative species, suggesting flying higher
-than 200 meters to minimise noise disturbance. (Ditmer et al. 2015)
-measured physiological stress in American black bear (\emph{Ursus
-americanus}) by electronic recording of cardiac activity in the presence
-of RPAS. Although no changes in behavior patterns are detected, heart
-rate (measure in beats per minute) was significant higher in most cases
+various altitudes, while (BORRELLE and FLETCHER 2017) reviewed the
+published literature tackling the impact of RPAS on surface-nesting
+seabird. (Scobie and Hugenholtz 2016) quantified noise detection by
+several representative species, suggesting flying higher than 200 meters
+to minimise noise disturbance. (Ditmer et al. 2015) measured
+physiological stress in American black bear (\emph{Ursus americanus}) by
+electronic recording of cardiac activity in the presence of RPAS.
+Although no changes in behavior patterns are detected, heart rate
+(measure in beats per minute) was significant higher in most cases
 observed. (Pomeroy, O'Connor, and Davies 2015) noticed evidence of
 variation in reactivity in seal populations based on a variety of
 factors, from the RPAS platform, flight height and lateral distance to
@@ -559,27 +1486,28 @@ elephants (\emph{Loxodonta africana}) or cattle (\emph{Bos taurus}) on
 flights at a minimum height of 100 meters (Jain 2013, Mulero-Pázmány et
 al. (2015)). (Weissensteiner, Poelstra, and Wolf 2015) observed similar
 disturbance patterns using RPAS with respect to manual inspection when
-documenting nesting status in hooded crows, but they emphasized the
-shorter period of stress to which birds are exposed, along with reducing
-or eliminating risk in climbers and avoiding damages to trees. In the
-absence of further experiences to date explicitly addressing animal
-welfare, (Hodgson and Koh 2016) suggested a series of general
-recommendations as the basis for a code of good practice, highlighting
-the adoption of the precautionary principle and respect for aviation
-standards, the specific training of operators, the appropriate selection
-of equipment, the cessation of operations in the case of obvious
-disturbances in the populations studied and the reporting of
-observations in scientific publications, that allows sharing of
-knowledge to progressively improve the protocols of operations with RPAS
-that involve the observation of fauna. ({\textbf{???}}) carried out an
-up-to-date systematic review of literature documenting RPAS disturbance
-effects in wildlife and outlined some findings, while complementing the
-previously mentioned recommendations. The authors agreed that noise
-level and intensity are the main, but not the only factor inducing
-animal reactions in presence of RPAS, where birds are the most sensitive
-species, followed by terrestrial mammals and aquatic animals. These
-response patterns are also influenced by life-history stage and level of
-aggregation of targeted species.
+documenting nesting status in hooded crows (\emph{Corvus corone
+cornix}), but they emphasized the shorter period of stress to which
+birds are exposed, along with reducing or eliminating risk in climbers
+and avoiding damages to trees. In the absence of further experiences to
+date explicitly addressing animal welfare, (Hodgson and Koh 2016)
+suggested a series of general recommendations as the basis for a code of
+good practice, highlighting the adoption of the precautionary principle
+and respect for aviation standards, the specific training of operators,
+the appropriate selection of equipment, the cessation of operations in
+the case of obvious disturbances in the populations studied and the
+reporting of observations in scientific publications, that allows
+sharing of knowledge to progressively improve the protocols of
+operations with RPAS that involve the observation of fauna.
+(Mulero-Pázmány et al. 2017) carried out an up-to-date systematic review
+of literature documenting RPAS disturbance effects in wildlife and
+outlined some findings, while complementing the previously mentioned
+recommendations. The authors agreed that noise level and intensity are
+the main, but not the only factor inducing animal reactions in presence
+of RPAS, where birds are the most sensitive species, followed by
+terrestrial mammals and aquatic animals. These response patterns are
+also influenced by life-history stage and level of aggregation of
+targeted species.
 
 \section{Environmental management and decision
 support}\label{environmental-management-and-decision-support}
@@ -593,18 +1521,21 @@ threatened native species (McCaldin, Johnston, and Rieker 2015).
 adapting RPAS to take water samples for comparison with hyperspectral
 measurements of Landsat 8 Operational Land Imager (OLI). (Zang et al.
 2012) identified several pollution agents in riparian areas using RPAS
-imagery. (Fornace et al. 2014) considered mapping enviromental risk
-factors for predicting zoonotic diseases as part of a extensive
-epidemiological study carried out in Philippines and so on. Literature
-citing RPAS for search and rescue activities is profuse and an in-depth
-revision is beyond the scope of this article, but a recent publication
-ilustrate several examples where RPAS were succesfully operated to
-assist rescue teams (Van Tilburg 2017). A google scholar search sorted
-by relevance using disaster management and drones keywords throws at
-first place a complete report describing a complex framework for
-decision support using RPAS (Maza et al. 2011). RPAS in the fight
-against wildfires has transcended the scientific field and is currently
-on the agenda of many goberments and
+imagery. (Schwarzbach et al. 2014) goes further away by performing
+several aerial water sampling methods using an unmaned helicopter to
+monitor water pollution, while (Schmale, Dingus, and Reinholtz 2008)
+collected a broad spectrum of both prokaryotic and eukaryotic
+microorganisms using a fixed-wing aircraft equiped with a custom made
+aerial sampling device. (Fornace et al. 2014) considered mapping
+enviromental risk factors for predicting zoonotic diseases as part of a
+extensive epidemiological study carried out in Philippines and so on.
+Literature citing RPAS for search and rescue activities is profuse and
+an in-depth revision is beyond the scope of this article, but a recent
+publication ilustrate several examples where RPAS were succesfully
+operated to assist rescue teams (Van Tilburg 2017). A google scholar
+search sorted by relevance using disaster management and drones keywords
+throws at first place a complete report describing a complex framework
+for decision support using RPAS (Maza et al. 2011).
 
 \section{Discussion}\label{discussion}
 
@@ -641,12 +1572,11 @@ and monitoring capabilities. As becoming easier to operate, there are
 sufficient grounds to encourage park rangers training in the use of
 RPAS, which are subject in many cases to time-consuming and often
 dangerous raids. If operated responsibly, it could be closer of being
-considered a non-invasive and reliable monitoring technique
-({\textbf{???}}). From the technological point of view, ``Follow-me''"
-capabilities of RPAS constitute a promising advance in animal movement
-and remote sensing disciplines, by having high-resolution aerial imagery
-from places frequently visited or crossed by electronically tagged
-species.
+considered a non-invasive and reliable monitoring technique (Z. Jewell
+2013a). From the technological point of view, ``Follow-me'' capabilities
+of RPAS constitute a promising advance in animal movement and remote
+sensing disciplines, by having high-resolution aerial imagery from
+places frequently visited or crossed by electronically tagged species.
 
 \subsection{Infrastructure and risk
 assessment}\label{infrastructure-and-risk-assessment-1}
@@ -674,7 +1604,7 @@ aware of the benefits of having information on demand. As requirements
 change, Information Technology (IT) departments in protected areas must
 be ready to integrate data into effective conservation strategies and
 better decision-making. The inclusion of RPAS in monitoring activities
-should be weighed against the increasing complexity of such systems.
+should be weighed against the major complexity of such systems.
 
 \subsection{Surveillance and support for compliance with laws in natural
 protected
@@ -689,7 +1619,7 @@ Issues concerning atmospheric conditions have not yet been completely
 resolved. (Banzi 2014) proposed a sensor based economical feasible
 anti-poaching alternative, arguing that RPAS fulfilling suitable
 specifications are costly, especially in developing countries. However,
-as technology becomes more accesible, it is expected that main barriers
+as technology becomes more accessible, it is expected that main barriers
 will appear in the legislative and social sphere. In some countries it
 is forbidden to fly beyond the visual range of the operator, limiting
 the effectiveness of the inspection in real time. RPAS applied to
@@ -719,7 +1649,7 @@ regulation promoted by stakeholders. Such regulation looks reasonable
 and could be the way forward for other protected areas to adapt the
 allowed activities with RPAS. It seems obvious to deduce that in the
 hands of non-skilled operators, the risk of accidents and losses would
-increase. This may lead to the aforementioned widlife disturbance, but
+increase. This may lead to the aforementioned wildlife disturbance, but
 they also pose a risk for contamination of water supplies or the
 triggering of fires in sensitive areas due to the presence of flammable
 and toxic components, fueling the low popularity of RPAS to the
@@ -739,26 +1669,27 @@ implications of RPAS in wildlife studies have not yet been adequately
 weighed since most studies only marginally address the presence or
 absence of reactions in species in the vicinity of RPAS. Despite the
 greater degree of awareness reflected in a emergent set of guidelines
-(Hodgson and Koh 2016; {\textbf{???}}) , we consider that further trials
-aimed at quantifying physiological and behavioral changes targeting a
-broader group of wild species should be carried out. The establishment
-of a best practices and recommendations manual could increase the
-chances of integrating the responsible use of RPAS in conservation and
-management activities in natural areas. Moreover, some authors mentioned
-the lack of commercial operators with sufficient expertise to carry out
-such activities (McEvoy, Hall, and McDonald 2016). Also, an optimal
-trade-off between benefits and environmental costs should be pursued
-(Grémillet et al. 2012; Sepúlveda et al. 2010). By designing quieter,
-non-polluting and safer components, the impact on wildlife and
-ecosystems could be reduced and its objective observation facilitated.
-Nonetheless we trust that, as far as further testing be done, RPAS has
-great potential to replace more invasive monitoring techniques, whose
-reliability is challenged by the potential to induce conditions of
-unacceptable stress in wildlife that could ultimately invalidate the
-results of the research (Z. Jewell 2013, Wilson and McMahon (2006)).
-This should be consciously taken into account by the many actors
-involved in protected areas activities when they are reluctant to allow
-RPAS to be an essential part of research and conservation activities.
+(Hodgson and Koh 2016; Mulero-Pázmány et al. 2017) , we consider that
+further trials aimed at quantifying physiological and behavioral changes
+targeting a broader group of wild species should be carried out. The
+establishment of a best practices and recommendations manual could
+increase the chances of integrating the responsible use of RPAS in
+conservation and management activities in natural areas. Moreover, some
+authors mentioned the lack of commercial operators with sufficient
+expertise to carry out such activities (McEvoy, Hall, and McDonald
+2016). Also, an optimal trade-off between benefits and environmental
+costs should be pursued (Grémillet et al. 2012; Sepúlveda et al. 2010).
+By designing quieter, non-polluting and safer components, the impact on
+wildlife and ecosystems could be reduced and its objective observation
+facilitated. Nonetheless we trust that, as far as further testing be
+done, RPAS has great potential to replace more invasive monitoring
+techniques, whose reliability is challenged by the potential to induce
+conditions of unacceptable stress in wildlife that could ultimately
+invalidate the results of the research (Z. Jewell 2013b, Wilson and
+McMahon (2006)). This should be consciously taken into account by the
+many actors involved in protected areas activities when they are
+reluctant to allow RPAS to be an essential part of research and
+conservation activities.
 
 \section{Environmental monitoring and decision
 support}\label{environmental-monitoring-and-decision-support}
@@ -767,10 +1698,10 @@ Protected areas are subject to periodic environmental quality control
 procedures where RPAS could play a major role. Also, RPAS are suitable
 to assist decision making where rapid response is crucial by offering
 valuable information at real time to handle natural and man-made
-disasters. Forest fires is a major concern in natural parks and is not
-rare that RPAS have been put foward to assist in prevention, fighting
-and evaluation phases. In most cases, such applications have operational
-requirements which eventually are costly. For instance, sofisticated
+disasters. Wildfires is a major concern in natural parks and is not rare
+that RPAS have been put forward to assist in prevention, fighting and
+evaluation phases. In most cases, such applications have operational
+requirements which eventually are costly. For instance, sophisticated
 on-board instruments, gas powered engines for longer endurance and
 higher payloads or robotics arms and containers designed to assist
 sampling, hold cargo or deliver assistance. RPAS could leverage wildlife
@@ -809,6 +1740,8 @@ Abd-Elrahman, Amr, Leonard Pearlstine, and Franklin Percival. 2005.
 
 \hypertarget{ref-Bworld_of_drones2017}{}
 America, New. 2017. ``\emph{World of Drones}.''
+\url{http://drones.newamerica.org/\#regulations} {[}Accessed: 17 June,
+2017{]}.
 
 \hypertarget{ref-van_andel_locating_2015}{}
 Andel, Alexander C. van, Serge A. Wich, Christophe Boesch, Lian Pin Koh,
@@ -826,11 +1759,22 @@ doi:\href{https://doi.org/10.1002/rse2.38}{10.1002/rse2.38}.
 \hypertarget{ref-Andrews2014}{}
 Andrews, C. 2014. ``\emph{Wildlife Monitoring: Should Uav Drones Be
 Banned?}''
+\url{https://prod-eandt.theiet.org/content/articles/2014/07/wildlife-monitoring-should-uav-drones-be-banned/}
+{[}Accessed: 07 Abril, 2017{]}.
 
 \hypertarget{ref-banzi_sensor_2014}{}
 Banzi, Jamali Firmat. 2014. ``A Sensor Based Anti-Poaching System in
 Tanzania National Parks.'' \emph{International Journal of Scientific and
 Research Publications} 4 (4).
+
+\hypertarget{ref-bareth_low-weight_2015}{}
+Bareth, Georg, Helge Aasen, Juliane Bendig, Martin Leon Gnyp, Andreas
+Bolten, Andr?s Jung, Ren? Michels, and Jussi Soukkam?ki. 2015.
+``Low-Weight and UAV-Based Hyperspectral Full-Frame Cameras for
+Monitoring Crops: Spectral Comparison with Portable Spectroradiometer
+Measurements.'' \emph{Photogrammetrie - Fernerkundung - Geoinformation}
+2015 (1): 69--79.
+doi:\href{https://doi.org/10.1127/pfg/2015/0256}{10.1127/pfg/2015/0256}.
 
 \hypertarget{ref-barnosky_has_2011}{}
 Barnosky, Anthony D, Nicholas Matzke, Susumu Tomiya, Guinevere O U
@@ -844,6 +1788,16 @@ Bayram, Haluk, Krishna Doddapaneni, Nikolaos Stefas, and Volkan Isler.
 2016. ``Active Localization of VHF Collared Animals with Aerial
 Robots,'' no. 13: 74--75.
 doi:\href{https://doi.org/10.1109/COASE.2016.7743503}{10.1109/COASE.2016.7743503}.
+
+\hypertarget{ref-borrelle_will_2017}{}
+BORRELLE, SB, and AT FLETCHER. 2017. ``Will Drones Reduce Investigator
+Disturbance to Surface-Nesting Seabirds?'' bibtex: borrelle2017will.
+\emph{Marine Ornithology} 45: 89--94.
+
+\hypertarget{ref-bustamante_forest_2015}{}
+Bustamante, Luis Antonio Esquivel. 2015. ``Forest Monitoring with Drones
+: Application Strategies for Protected Riverine Forest Ecosystems in the
+Atlantic Forest of Rio de,'' 96.
 
 \hypertarget{ref-casella_mapping_2017}{}
 Casella, Elisa, Antoine Collin, Daniel Harris, Sebastian Ferse, Sonia
@@ -905,6 +1859,11 @@ Photogrammetry and Remote Sensing: A Review.'' \emph{ISPRS Journal of
 Photogrammetry and Remote Sensing} 92 (June): 79--97.
 doi:\href{https://doi.org/10.1016/j.isprsjprs.2014.02.013}{10.1016/j.isprsjprs.2014.02.013}.
 
+\hypertarget{ref-Global2017}{}
+Consulting, OZYRPAS. 2017. ``\emph{Global Drone Regulations Database}.''
+\url{https://www.droneregulations.info/index.html} {[}Accessed: 19 July,
+2017{]}.
+
 \hypertarget{ref-cook_design_1979}{}
 Cook, R. Dennis, and Jerald O. Jacobson. 1979. ``A Design for Estimating
 Visibility Bias in Aerial Surveys.'' \emph{Biometrics} 35 (4): 735.
@@ -926,7 +1885,7 @@ doi:\href{https://doi.org/10.1016/j.cub.2015.07.024}{10.1016/j.cub.2015.07.024}.
 
 \hypertarget{ref-dudley_guidelines_2008}{}
 Dudley, Nigel. 2008. \emph{Guidelines for Applying Protected Area
-Management Categories}. IUCN.
+Management Categories}. bibtex: dudley\_guidelines\_2008. IUCN.
 
 \hypertarget{ref-duffy_waging_2014}{}
 Duffy, Rosaleen. 2014. ``Waging a War to Save Biodiversity: The Rise of
@@ -963,6 +1922,8 @@ doi:\href{https://doi.org/10.1007/978-3-319-16178-5_17}{10.1007/978-3-319-16178-
 \hypertarget{ref-Georg2016}{}
 Gerster/Panos, Georg. 2017. ``\emph{Project Uses Drones to Monitor
 Coastal Erosion in Ghana}.''
+\url{http://www.scidev.net/sub-saharan-africa/environment/news/project-drones-monitor-coastal-erosion-ghana.html}
+{[}Accessed: 07 May, 2017{]}.
 
 \hypertarget{ref-gini_aerial_2012}{}
 Gini, R., D. Passoni, L. Pinto, and G. Sona. 2012. ``Aerial Images from
@@ -989,19 +1950,43 @@ Vehicles in Environmental Remote Sensing: Challenges and
 Opportunities,'' no. October 2014: 37--41.
 doi:\href{https://doi.org/10.2747/1548-1603.48.1.99}{10.2747/1548-1603.48.1.99}.
 
+\hypertarget{ref-hodgson_unmanned_2013}{}
+Hodgson, Amanda, Natalie Kelly, and David Peel. 2013. ``Unmanned Aerial
+Vehicles (UAVs) for Surveying Marine Fauna: A Dugong Case Study.''
+\emph{PLoS One} 8 (11): 1--15.
+doi:\href{https://doi.org/10.1371/journal.pone.0079556}{10.1371/journal.pone.0079556}.
+
+\hypertarget{ref-hodgson_unmanned_2017}{}
+Hodgson, Amanda, David Peel, and Natalie Kelly. 2017. ``Unmanned Aerial
+Vehicles for Surveying Marine Fauna: Assessing Detection Probability.''
+\emph{Ecological Applications}.
+\url{http://onlinelibrary.wiley.com/doi/10.1002/eap.1519/full}.
+
 \hypertarget{ref-hodgson_best_2016}{}
 Hodgson, Jarrod C., and Lian Pin Koh. 2016. ``Best Practice for
 Minimising Unmanned Aerial Vehicle Disturbance to Wildlife in Biological
 Field Research.'' \emph{Curr. Biol.} 26 (10).
 doi:\href{https://doi.org/10.1016/j.cub.2016.04.001}{10.1016/j.cub.2016.04.001}.
 
+\hypertarget{ref-ivosevic_use_2015}{}
+Ivošević, Bojana, Yong Gu Han, Youngho Cho, and Ohseok Kwon. 2015. ``The
+Use of Conservation Drones in Ecology and Wildlife Research.'' \emph{J.
+Ecol. Environ.} 38 (1): 113--118.
+doi:\href{https://doi.org/10.5141/ecoenv.2015.012}{10.5141/ecoenv.2015.012}.
+
 \hypertarget{ref-jain_unmanned_2013}{}
 Jain, Mukesh. 2013. ``Unmanned Aerial Survey of Elephants.'' \emph{PLoS
 One}.
 doi:\href{https://doi.org/10.1371/\%20journal.pone.0054700}{10.1371/ journal.pone.0054700}.
 
+\hypertarget{ref-jewell_effect_2013-1}{}
+Jewell, Zoe. 2013a. ``Effect of Monitoring Technique on Quality of
+Conservation Science: Ethics and Science in Conservation.''
+\emph{Conservation Biology} 27 (3): 501--508.
+doi:\href{https://doi.org/10.1111/cobi.12066}{10.1111/cobi.12066}.
+
 \hypertarget{ref-jewell_effect_2013}{}
-Jewell, Zoe. 2013. ``Effect of Monitoring Technique on Quality of
+Jewell, Zoe. 2013b. ``Effect of Monitoring Technique on Quality of
 Conservation Science: Ethics and Science in Conservation.''
 \emph{Conservation Biology} 27 (3): 501--508.
 doi:\href{https://doi.org/10.1111/cobi.12066}{10.1111/cobi.12066}.
@@ -1022,6 +2007,14 @@ Low-Cost Autonomous Aerial Vehicles for Conservation.'' \emph{Trop.
 Conserv. Sci.} 5 (2): 121--132.
 doi:\href{https://doi.org/WOS:000310846600002}{WOS:000310846600002}.
 
+\hypertarget{ref-koski_evaluation_2009}{}
+Koski, William R., Travis Allen, Darren Ireland, Greg Buck, Paul R.
+Smith, A. Michael Macrander, Melissa A. Halick, Chris Rushing, David J.
+Sliwa, and Trent L. McDonald. 2009. ``Evaluation of an Unmanned Airborne
+System for Monitoring Marine Mammals.'' \emph{Aquatic Mammals} 35 (3):
+347--357.
+doi:\href{https://doi.org/10.1578/AM.35.3.2009.347}{10.1578/AM.35.3.2009.347}.
+
 \hypertarget{ref-korner_autonomous_2010}{}
 Körner, Fabian, Raphael Speck, Ali Haydar, and Salah Sukkarieh. 2010.
 ``Autonomous Airborne Wildlife Tracking Using Radio Signal Strength,''
@@ -1030,7 +2023,7 @@ Körner, Fabian, Raphael Speck, Ali Haydar, and Salah Sukkarieh. 2010.
 \hypertarget{ref-lancia_estimating_2005}{}
 Lancia, Richard A, William L Kendall, Kenneth H Pollock, and James D
 Nichols. 2005. ``Estimating the Number of Animals in Wildlife
-Populations.''
+Populations.'' bibtex: lancia\_estimating\_2005.
 
 \hypertarget{ref-leary_drones_2017}{}
 Leary, David. 2017. ``Drones on Ice: An Assessment of the Legal
@@ -1075,10 +2068,26 @@ A Proof of Concept for Installation of Line Markers via Unmanned Aerial
 Vehicle.'' \emph{J. Unmanned Veh. Syst.} 3 (4): 252--258.
 doi:\href{https://doi.org/10.1139/juvs-2015-0009}{10.1139/juvs-2015-0009}.
 
+\hypertarget{ref-longmore_adapting_2017}{}
+Longmore, S. N., R. P. Collins, S. Pfeifer, S. E. Fox, M.
+Mulero-Pazmany, F. Bezombes, A. Goodwind, M. de Juan Ovelar, J. H.
+Knapen, and S. A. Wich. 2017. ``Adapting Astronomical Source Detection
+Software to Help Detect Animals in Thermal Images Obtained by Unmanned
+Aerial Systems'' 00 (0): 1--16.
+doi:\href{https://doi.org/10.1080/01431161.2017.1280639}{10.1080/01431161.2017.1280639}.
+
 \hypertarget{ref-margarita_mulero-pazmany_juan_jose_negro_low_2014}{}
 Margarita Mulero-Pázmány, Miguel Ferrer, Juan José Negro. 2014. ``A Low
 Cost Way for Assessing Bird Risk Hazards in Power Lines: Fixed-Wing
 Small Unmanned Aircraft Systems'' 2.
+
+\hypertarget{ref-martin_estimating_2012}{}
+Martin, Julien, Holly H. Edwards, Matthew A. Burgess, H. Franklin
+Percival, Daniel E. Fagan, Beth E. Gardner, Joel G. Ortega-Ortiz, Peter
+G. Ifju, Brandon S. Evers, and Thomas J. Rambo. 2012. ``Estimating
+Distribution of Hidden Objects with Drones: From Tennis Balls to
+Manatees.'' \emph{PLoS One} 7 (6): 1--8.
+doi:\href{https://doi.org/10.1371/journal.pone.0038882}{10.1371/journal.pone.0038882}.
 
 \hypertarget{ref-mateo_modelos_2011}{}
 Mateo, Rubén G., Ángel M. Felicísimo, and Jesús Muñoz. 2011. ``Modelos
@@ -1106,6 +2115,13 @@ Type for Waterfowl Surveys: Disturbance Effects and Species
 Recognition.'' \emph{PeerJ} 4 (March): e1831.
 doi:\href{https://doi.org/10.7717/peerj.1831}{10.7717/peerj.1831}.
 
+\hypertarget{ref-miyamoto_use_2004}{}
+Miyamoto, Michiru, Kunihiko Yoshino, Toshihide Nagano, Tomoyasu Ishida,
+and Yohei Sato. 2004. ``Use of Balloon Aerial Photography for
+Classification of Kushiro Wetland Vegetation, Northeastern Japan.''
+\emph{Wetlands} 24 (3): 701--710.
+doi:\href{https://doi.org/10.1672/0277-5212(2004)024\%5B0701:UOBAPF\%5D2.0.CO;2}{10.1672/0277-5212(2004)024{[}0701:UOBAPF{]}2.0.CO;2}.
+
 \hypertarget{ref-mulero-pazmany_margarita_aeromab_2011}{}
 Mulero-Pázmány Margarita, Negro JJ. 2011. ``AEROMAB Small UAS for
 Montagu's Harrier's Circus Pygargus Nests Monitoring.'' \emph{AEROMAB
@@ -1119,11 +2135,26 @@ Complement Biologging in Spatial Ecology Studies.'' \emph{Ecol. Evol.} 5
 (21): 4808--4818.
 doi:\href{https://doi.org/10.1002/ece3.1744}{10.1002/ece3.1744}.
 
+\hypertarget{ref-mulero-pazmany_unmanned_2017}{}
+Mulero-Pázmány, Margarita, Susanne Jenni-Eiermann, Nicolas Strebel,
+Thomas Sattler, Juan José Negro, and Zulima Tablado. 2017. ``Unmanned
+Aircraft Systems as a New Source of Disturbance for Wildlife: A
+Systematic Review.'' \emph{PloS One} 12 (6): e0178448.
+\url{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178448}.
+
 \hypertarget{ref-mulero-pazmany_remotely_2014}{}
 Mulero-Pázmány, Margarita, Roel Stolper, L. D. Van Essen, Juan J. Negro,
 and Tyrell Sassen. 2014. ``Remotely Piloted Aircraft Systems as a
 Rhinoceros Anti-Poaching Tool in Africa.'' \emph{PLoS One} 9 (1): 1--10.
 doi:\href{https://doi.org/10.1371/journal.pone.0083873}{10.1371/journal.pone.0083873}.
+
+\hypertarget{ref-mullerova_does_2016}{}
+Müllerová, Jana, Josef Brůna, Dvořák, Peter, Tomáš Bartaloš, and
+Michaela Vítková. 2016. ``DOES THE DATA RESOLUTION/ORIGIN MATTER?
+SATELLITE, AIRBORNE AND UAV IMAGERY TO TACKLE PLANT INVASIONS.''
+\emph{ISPRS - International Archives of the Photogrammetry, Remote
+Sensing and Spatial Information Sciences} XLI-B7 (June): 903--908.
+doi:\href{https://doi.org/10.5194/isprsarchives-XLI-B7-903-2016}{10.5194/isprsarchives-XLI-B7-903-2016}.
 
 \hypertarget{ref-nugraha_urgency_2016}{}
 Nugraha, Ridha Aditya, Deepika Jeyakodi, and Thitipon Mahem. 2016.
@@ -1158,6 +2189,19 @@ Breeding and Molt in the UK \(^{\textrm{1}}\).'' \emph{Journal of
 Unmanned Vehicle Systems} 3 (3): 102--113.
 doi:\href{https://doi.org/10.1139/juvs-2015-0013}{10.1139/juvs-2015-0013}.
 
+\hypertarget{ref-puttock_aerial_2015}{}
+Puttock, A.K., A.M. Cunliffe, K. Anderson, and R.E. Brazier. 2015.
+``Aerial Photography Collected with a Multirotor Drone Reveals Impact of
+Eurasian Beaver Reintroduction on Ecosystem Structure 1.'' \emph{J.
+Unmanned Veh. Syst.} 3 (3): 123--130.
+doi:\href{https://doi.org/10.1139/juvs-2015-0005}{10.1139/juvs-2015-0005}.
+
+\hypertarget{ref-quilter_low_2000}{}
+Quilter, MARK C., and Val Jo Anderson. 2000. ``Low Altitude/Large Scale
+Aerial Photographs: A Tool for Range and Resource Managers.''
+\emph{Rangelands Archives} 22 (2): 13--17.
+\url{https://journals.uair.arizona.edu/index.php/rangelands/article/download/11454/10727}.
+
 \hypertarget{ref-rodriguez_eye_2012}{}
 Rodríguez, Airam, Juan J. Negro, Mara Mulero, Carlos Rodríguez, Jesús
 Hernández-Pliego, and Javier Bustamante. 2012. ``The Eye in the Sky:
@@ -1165,6 +2209,14 @@ Combined Use of Unmanned Aerial Systems and GPS Data Loggers for
 Ecological Research and Conservation of Small Birds.'' \emph{PLoS One} 7
 (12).
 doi:\href{https://doi.org/10.1371/journal.pone.0050336}{10.1371/journal.pone.0050336}.
+
+\hypertarget{ref-sabella_preliminary_2017}{}
+Sabella, Giorgio, Fabio Massimo Viglianisi, Sergio Rotondi, and
+Filadelfo Brogna. 2017. ``Preliminary Observations on the Use of Drones
+in the Environmental Monitoring and in the Management of Protected
+Areas. the Case Study of `RNO Vendicari', Syracuse (Italy).'' bibtex:
+sabella\_preliminary\_2017. \emph{Biodiversity Journal} 8: 79--86.
+\url{http://www.biodiversityjournal.com/pdf/8(1)_79-86.pdf}.
 
 \hypertarget{ref-sarda-palomera_fine-scale_2012}{}
 Sardà-Palomera, Francesc, Gerard Bota, Carlos Viñolo, Oriol Pallarés,
@@ -1177,6 +2229,20 @@ doi:\href{https://doi.org/10.1111/j.1474-919X.2011.01177.x}{10.1111/j.1474-919X.
 Sasse, D. Blake. 2003. ``Job-Related Mortality of Wildlife Workers in
 the United States, 1937-2000.'' \emph{Wildl. Soc. Bull.} 31 (4):
 1000--1003.
+
+\hypertarget{ref-schmale_development_2008}{}
+Schmale, DG, Benjamin R. Dingus, and Charles Reinholtz. 2008.
+``Development and Application of an Autonomous Unmanned Aerial Vehicle
+for Precise Aerobiological Sampling Above Agricultural Fields.''
+\emph{J. F. Robot.} 25 (3): 133--147.
+doi:\href{https://doi.org/10.1002/rob}{10.1002/rob}.
+
+\hypertarget{ref-schwarzbach_remote_2014}{}
+Schwarzbach, Marc, Maximilian Laiacker, Margarita Mulero-Pazmany, and
+Konstantin Kondak. 2014. ``Remote Water Sampling Using Flying Robots.''
+\emph{2014 Int. Conf. Unmanned Aircr. Syst. ICUAS 2014 - Conf. Proc.},
+72--76.
+doi:\href{https://doi.org/10.1109/ICUAS.2014.6842240}{10.1109/ICUAS.2014.6842240}.
 
 \hypertarget{ref-scobie_wildlife_2016}{}
 Scobie, Corey A., and Chris H. Hugenholtz. 2016. ``Wildlife Monitoring
@@ -1225,9 +2291,16 @@ Inexpensive Option for Large-Scale Aerial Photography in Forestry
 Applications.'' \emph{Can. J. Remote Sens.} 9 (2): 76--85.
 doi:\href{https://doi.org/10.1080/07038992.1983.10855042}{10.1080/07038992.1983.10855042}.
 
+\hypertarget{ref-AUVSI2017}{}
+UAVSI. 2017. ``\emph{Association for Unmanned Vehicle Systems
+International}.'' \url{http://www.auvsi.org} {[}Accessed: 27 July,
+2017{]}.
+
 \hypertarget{ref-USGS2014}{}
 USGS. 2014. ``\emph{US Geological Survey National Unmanned Aircraft
 Systems Project}.''
+\href{http://\%20rmgsc.cr.usgs.gov/UAS}{http:// rmgsc.cr.usgs.gov/UAS}
+{[}Accessed: 13 April, 2017{]}.
 
 \hypertarget{ref-van_tilburg_first_2017}{}
 Van Tilburg, Christopher. 2017. ``First Report of Using Portable
@@ -1249,14 +2322,17 @@ Grounds.'' \emph{Estuar. Coast. Shelf Sci.} 171.
 doi:\href{https://doi.org/10.1016/j.ecss.2016.01.030}{10.1016/j.ecss.2016.01.030}.
 
 \hypertarget{ref-weissensteiner_low-budget_2015}{}
-Weissensteiner, M H, J W Poelstra, and J B W Wolf. 2015. ``Low-Budget
-Ready-to-Fly Unmanned Aerial Vehicles: An Effective Tool for Evaluating
-the Nesting Status of Canopy-Breeding Bird Species.'' \emph{J. Avian
-Biol.} 46 (4): 425--430.
+Weissensteiner, M. H., J. W. Poelstra, and J. B. W. Wolf. 2015.
+``Low-Budget Ready-to-Fly Unmanned Aerial Vehicles: An Effective Tool
+for Evaluating the Nesting Status of Canopy-Breeding Bird Species.''
+bibtex: weissensteiner\_low-budget\_2015. \emph{Journal of Avian
+Biology} 46 (4): 425--430.
 doi:\href{https://doi.org/10.1111/jav.00619}{10.1111/jav.00619}.
 
 \hypertarget{ref-WichS2017}{}
 Wich, S. 2017. ``\emph{Amazon River Dolphin Project}.''
+\url{https://conservationdrones.org/2017/04/05/amazon-river-dolphin-project/}
+{[}Accessed: 07 Abril, 2017{]}.
 
 \hypertarget{ref-wich_preliminary_2016}{}
 Wich, Serge, David Dellatore, Max Houghton, Rio Ardi, and Lian Pin Koh.
@@ -1264,6 +2340,12 @@ Wich, Serge, David Dellatore, Max Houghton, Rio Ardi, and Lian Pin Koh.
 Sumatran Orang-Utan (Pongo Abelii) Distribution and Density.'' \emph{J.
 Unmanned Veh. Syst.} 4 (1): 45--52.
 doi:\href{https://doi.org/10.1139/juvs-2015-0015}{10.1139/juvs-2015-0015}.
+
+\hypertarget{ref-wilson_feasibility_2017}{}
+Wilson, Andrew M, Janine Barr, and Megan Zagorski. 2017. ``The
+Feasibility of Counting Songbirds Using Unmanned Aerial Vehicles.''
+\emph{Auk} 134 (2): 350--362.
+doi:\href{https://doi.org/10.1642/AUK-16-216.1}{10.1642/AUK-16-216.1}.
 
 \hypertarget{ref-wilson_measuring_2006}{}
 Wilson, Rory P., and Clive R. McMahon. 2006. ``Measuring Devices on Wild

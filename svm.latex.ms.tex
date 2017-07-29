@@ -33,16 +33,15 @@
 
 \usepackage{rotating}
 % \usepackage[]{geometry}
+\usepackage{url}
 
-\usepackage{array}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}p{1cm}}
-\newcolumntype{S}{>{\raggedleft\arraybackslash}p{3cm}}
-\newcolumntype{T}{>{\raggedleft\arraybackslash}p{4cm}}
-\newcolumntype{U}{>{\raggedleft\arraybackslash}p{2cm}}
 
 
 $if(biblatex)$
 \usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
+
+
+
 
 % $if(biblatexoptions)$\ExecuteBibliographyOptions{$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$}$endif$
 % $for(bibliography)$
@@ -150,6 +149,11 @@ $endif$
 $if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$ }  $sep$ \and $endfor$}$endif$
 
 \date{}
+
+
+\usepackage{lscape}
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
