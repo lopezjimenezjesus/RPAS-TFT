@@ -10,6 +10,7 @@ bibliography:
 - ./internet.bib
 - ./master.bib
 output:
+  word_document: default
   pdf_document:
     fig_caption: yes
     keep_tex: yes
@@ -19,7 +20,6 @@ output:
     - classoption=onecolumn
     template: ./svm.latex.ms.tex
   html_document: default
-  word_document: default
 csl: ./taylor-and-francis-chicago-manual-of-style-author-date_with_note.csl
 documentclass: article
 keywords: RPAS, UAV, drones, natural protected areas, conservation, biodiversity
