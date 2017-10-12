@@ -3,14 +3,14 @@ title: 'Contribution of RPAS in research and conservation in protected areas: pr
   and future'
 author:
 - affiliation: University
-  name: Jesús Jiménez López
+  name: JesÃºs JimÃ©nez LÃ³pez
 - affiliation: University
-  name: Margarita Mulero-Pázmány
+  name: Margarita Mulero-PÃ¡zmÃ¡ny
 bibliography:
 - ./internet.bib
 - ./master.bib
 output:
-  word_document: default
+  html_document: default
   pdf_document:
     fig_caption: yes
     keep_tex: yes
@@ -19,7 +19,7 @@ output:
     - -V
     - classoption=onecolumn
     template: ./svm.latex.ms.tex
-  html_document: default
+  word_document: default
 csl: ./taylor-and-francis-chicago-manual-of-style-author-date_with_note.csl
 documentclass: article
 keywords: RPAS, UAV, drones, natural protected areas, conservation, biodiversity
