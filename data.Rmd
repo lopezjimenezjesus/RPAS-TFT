@@ -1,0 +1,70 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+First, read excel file.
+
+```{r}
+getwd()
+require(openxlsx)
+df <- read.xlsx("./tablas/prisma_review_methodology.xlsx",
+                      sheet=8)
+df$category <- as.factor(df$category)
+df$year <- as.factor(df$year)
+
+head(df)
+
+```
+```{r}
+require(ggplot2)
+
+ggplot(data=subset(df, !is.na(RPAS.type)), aes(x=RPAS.type)) + 
+  
+  geom_bar(aes(y = (..count..)/sum(..count..))) +
+  
+  scale_y_continuous(labels = scales::percent) +
+  
+  labs(title = "RPAS Categories (%)", y = "")
+```
+
+
+Plot percent of studies in each category
+
+```{r}
+
+
+ggplot(df, aes(x = category)) +  
+  
+  geom_bar(aes(y = (..count..)/sum(..count..))) + 
+   
+  coord_flip() +
+
+  scale_y_continuous(labels = scales::percent, limits = c(0,0.35)) +
+
+  geom_text(aes(y = ((..count..)/sum(..count..)), 
+          label = scales::percent((..count..)/sum(..count..))), 
+          stat = "count", hjust = -0.20,  size=3) + 
+
+  labs(title = "RPAS Categories (%)", y = "")
+        
+
+
+```
+
+How many publications per year?
+
+```{r}
+  
+  ggplot(data=subset(df, !is.na(year)), aes(x=year)) + 
+    geom_bar(aes(y = (..count..)/sum(..count..))) +
+    scale_y_continuous(labels = scales::percent)
+
+
+```
+
+
+
+
+
+
