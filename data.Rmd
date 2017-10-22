@@ -5,28 +5,95 @@ output: html_notebook
 
 First, read excel file.
 
-```{r}
+```{r, include=FALSE}
 getwd()
 require(openxlsx)
 df <- read.xlsx("./tablas/prisma_review_methodology.xlsx",
-                      sheet=8)
+                      sheet='preselection4')
 df$category <- as.factor(df$category)
 df$year <- as.factor(df$year)
 
-head(df)
-
 ```
+
+Check header
+
+```{r}
+head(df)
+```
+
+
+We subset those NO NA values:
+
+- Per category 
+- Per RPAS type
+- Per both
+
+```{r}
+library(dplyr)
+df2 <- df %>% 
+  subset(!is.na(category) & !is.na(RPAS.type))  %>%
+  group_by(category,RPAS.type) %>% 
+  summarise(count=n()) %>% 
+  mutate(perc=count/sum(count))
+  
+
+df3 <- df %>% 
+  subset(!is.na(RPAS.type))  %>%
+  group_by(RPAS.type)  %>% 
+  summarise(count=n()) %>% 
+  mutate(perc2=count/sum(count))
+
+df4 <- df %>% 
+  subset(!is.na(category))  %>%
+  group_by(category)  %>% 
+  summarise(count=n()) %>% 
+  mutate(perc3=count/sum(count))
+```
+
 ```{r}
 require(ggplot2)
 
-ggplot(data=subset(df, !is.na(RPAS.type)), aes(x=RPAS.type)) + 
+ggplot(data= df3, aes(x=reorder(RPAS.type, perc2*100), y = perc2*100)) + 
   
-  geom_bar(aes(y = (..count..)/sum(..count..))) +
+  geom_bar(stat="identity") + 
   
-  scale_y_continuous(labels = scales::percent) +
+  labs(title = "RPAS type", y = "") + 
   
-  labs(title = "RPAS Categories (%)", y = "")
+  theme_minimal()
+
+
+ggplot(data= df4, aes(x=reorder(category, perc3*100), y = perc3*100)) + 
+  
+  geom_bar(stat="identity") + 
+  
+  labs(title = "RPAS Category", y = "") + 
+  
+  theme_minimal()
+  
 ```
+
+
+
+```{r}
+
+ggplot(data=df2,aes(x=category, y = perc*100, fill=as.factor(RPAS.type))) + 
+    geom_bar(stat="identity") + 
+  #  coord_flip() +
+    labs(x = "Study category", y = "Percent", fill = "RPAS type") + 
+    theme_minimal(base_size = 14)
+```
+
+
+```{r}
+ggplot(data=df2, aes(x=RPAS.type, y=perc*100)) + 
+  geom_bar(stat="identity") +
+  labs(title = "RPAS Categories (%)", y = "") +
+  facet_grid(. ~category , scales = "free") +
+  
+   theme_minimal()
+  
+```
+
 
 
 Plot percent of studies in each category
@@ -46,7 +113,9 @@ ggplot(df, aes(x = category)) +
           label = scales::percent((..count..)/sum(..count..))), 
           stat = "count", hjust = -0.20,  size=3) + 
 
-  labs(title = "RPAS Categories (%)", y = "")
+  labs(title = "RPAS Categories (%)", y = "") +
+  
+   theme_minimal()
         
 
 
@@ -56,9 +125,16 @@ How many publications per year?
 
 ```{r}
   
-  ggplot(data=subset(df, !is.na(year)), aes(x=year)) + 
-    geom_bar(aes(y = (..count..)/sum(..count..))) +
-    scale_y_continuous(labels = scales::percent)
+df5 <- df %>%
+  mutate(higher_2010 = as.numeric(as.character(df$year)) >= 2010)  %>%
+  subset(!is.na(df$year) & higher_2010)
+
+droplevels(df5)$year
+  
+ggplot(data=df5, aes(x=year)) + 
+  geom_bar(aes(y = (..count..)/sum(..count..))) +
+  scale_y_continuous(labels = scales::percent) +
+  theme_minimal()
 
 
 ```
