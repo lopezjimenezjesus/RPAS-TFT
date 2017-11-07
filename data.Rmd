@@ -1,17 +1,24 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  html_notebook: default
+  html_document: default
 ---
+
+```{r set-options, echo=FALSE, cache=FALSE}
+options(width = 10000)
+```
 
 First, read excel file.
 
 ```{r, include=FALSE}
 getwd()
 require(openxlsx)
-df <- read.xlsx("./tablas/prisma_review_methodology.xlsx",
-                      sheet='preselection4')
+df <- read.xlsx("./tablas/dataset.xlsx",
+                      sheet='selection')
 df$category <- as.factor(df$category)
 df$year <- as.factor(df$year)
+df$RPAS.type <- as.factor(df$RPAS.type)
 
 ```
 
@@ -19,6 +26,8 @@ Check header
 
 ```{r}
 head(df)
+summary(df)
+which(df$category == "Ecotourism")
 ```
 
 
@@ -36,6 +45,11 @@ df2 <- df %>%
   summarise(count=n()) %>% 
   mutate(perc=count/sum(count))
   
+df.ecosystem <- df %>% 
+  subset(!is.na(category) & !is.na(ecosystem))  %>%
+  group_by(category,ecosystem) %>% 
+  summarise(count=n()) %>% 
+  mutate(perc=count/sum(count))
 
 df3 <- df %>% 
   subset(!is.na(RPAS.type))  %>%
@@ -50,14 +64,14 @@ df4 <- df %>%
   mutate(perc3=count/sum(count))
 ```
 
-```{r}
+```{r }
 require(ggplot2)
 
 ggplot(data= df3, aes(x=reorder(RPAS.type, perc2*100), y = perc2*100)) + 
   
   geom_bar(stat="identity") + 
   
-  labs(title = "RPAS type", y = "") + 
+  labs(title = "RPAS type", y = "", x="RPAS type") + 
   
   theme_minimal()
 
@@ -66,7 +80,7 @@ ggplot(data= df4, aes(x=reorder(category, perc3*100), y = perc3*100)) +
   
   geom_bar(stat="identity") + 
   
-  labs(title = "RPAS Category", y = "") + 
+  labs(title = "RPAS Category", y = "", x="Category") + 
   
   theme_minimal()
   
@@ -74,23 +88,40 @@ ggplot(data= df4, aes(x=reorder(category, perc3*100), y = perc3*100)) +
 
 
 
+```{r fig.width=16, fig.height=6}
+
+df22 <- subset(df2, category != 'Other' &  category != 'Ecotourism' )
+
+ggplot(data=df22,aes(x=category, y = perc*100, fill=as.factor(RPAS.type))) + 
+    geom_bar(stat="identity") + 
+    # coord_flip() +
+    labs(x = "Study category", y = "Percent", fill = "RPAS type") + 
+    theme_minimal(base_size = 14)
+```
+
+Ecosystems
+
 ```{r}
 
-ggplot(data=df2,aes(x=category, y = perc*100, fill=as.factor(RPAS.type))) + 
+ggplot(data=df.ecosystem,aes(x=category, y = perc*100, fill=as.factor(ecosystem))) + 
     geom_bar(stat="identity") + 
   #  coord_flip() +
-    labs(x = "Study category", y = "Percent", fill = "RPAS type") + 
+    labs(x = "Study category", y = "Percent", fill = "ecosystem") + 
+    
     theme_minimal(base_size = 14)
 ```
 
 
 ```{r}
-ggplot(data=df2, aes(x=RPAS.type, y=perc*100)) + 
+
+levels(df2$RPAS.type) <- c("FW", "RW", "FRW")
+
+ggplot(data=subset(df2,category !="Other" & category !="Ecotourism"), aes(x=RPAS.type, y=perc*100)) + 
   geom_bar(stat="identity") +
   labs(title = "RPAS Categories (%)", y = "") +
   facet_grid(. ~category , scales = "free") +
-  
-   theme_minimal()
+  labs(x = "RPAS type (RW=rotor-wing, FW=Fixed-wing, FRW=both)", y = "Percent of studies (%)") +
+  theme_minimal()
   
 ```
 
@@ -115,7 +146,7 @@ ggplot(df, aes(x = category)) +
 
   labs(title = "RPAS Categories (%)", y = "") +
   
-   theme_minimal()
+  theme_minimal()
         
 
 
@@ -133,8 +164,10 @@ droplevels(df5)$year
   
 ggplot(data=df5, aes(x=year)) + 
   geom_bar(aes(y = (..count..)/sum(..count..))) +
+  geom_text(aes(label = ..count.., y= (..count..)/sum(..count..)), stat= "count", vjust = -.5) +
   scale_y_continuous(labels = scales::percent) +
-  theme_minimal()
+  theme_minimal() + 
+  labs(title = "Percent of RPAS articles collected per year (2010 -2017)", x="year", y = "%")
 
 
 ```
@@ -142,5 +175,150 @@ ggplot(data=df5, aes(x=year)) +
 
 
 
+Word cloud
 
+```{r fig.width=16, fig.height=6}
+require(wordcloud)
+require(tm)
+keywords <- as.vector(subset(df$keywords, !is.na(df$keywords)))
+ecosystem <- as.vector(subset(df$ecosystem, !is.na(df$ecosystem)))
+
+
+keywords <- paste(keywords, collapse =",")
+ecosystem <- paste(ecosystem, collapse =",")
+
+
+wordcloud(keywords)
+wordcloud(ecosystem)
+
+```
+
+The 5 main steps to create word clouds in R
+
+## Step 1: Create a text file (txt)
+
+```{r}
+write.csv2(keywords, file= "export.txt")
+
+```
+
+
+## Step 2 : Install and load the required packages
+
+```{r}
+
+# http://www.sthda.com/english/wiki/text-mining-and-word-cloud-fundamentals-in-r-5-simple-steps-you-should-know
+
+# Install
+require("tm")  # for text mining
+require("SnowballC") # for text stemming
+require("wordcloud") # word-cloud generator 
+require("RColorBrewer") # color palettes
+
+```
+
+## Step 3 : Text mining
+
+load the text
+
+The text is loaded using Corpus() function from text mining (tm) package. Corpus is a list of a document (in our case, we only have one document).
+
+We start by importing the text file created in Step 1
+
+To import the file saved locally in your computer, type the following R code. You will be asked to choose the text file interactively.
+
+
+```{r}
+text <- readLines("export.txt")
+
+```
+
+Load the data as a corpus
+
+```{r}
+# Load the data as a corpus
+docs <- Corpus(VectorSource(text))
+```
+
+
+Inspect the content of the document
+
+```{r}
+inspect(docs)
+
+```
+Text transformation
+
+Transformation is performed using tm_map() function to replace, for example, special characters from the text.
+
+Replacing “/”, “@” and “|” with space:
+
+```{r}
+toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
+docs <- tm_map(docs, toSpace, "/")
+docs <- tm_map(docs, toSpace, "@")
+docs <- tm_map(docs, toSpace, "\\|")
+```
+
+Cleaning the text
+
+the tm_map() function is used to remove unnecessary white space, to convert the text to lower case, to remove common stopwords like ‘the’, “we”.
+
+The information value of ‘stopwords’ is near zero due to the fact that they are so common in a language. Removing this kind of words is useful before further analyses. For ‘stopwords’, supported languages are danish, dutch, english, finnish, french, german, hungarian, italian, norwegian, portuguese, russian, spanish and swedish. Language names are case sensitive.
+
+I’ll also show you how to make your own list of stopwords to remove from the text.
+
+You could also remove numbers and punctuation with removeNumbers and removePunctuation arguments.
+
+Another important preprocessing step is to make a text stemming which reduces words to their root form. In other words, this process removes suffixes from words to make it simple and to get the common origin. For example, a stemming process reduces the words “moving”, “moved” and “movement” to the root word, “move”.
+
+Note that, text stemming require the package ‘SnowballC’.
+
+The R code below can be used to clean your text :
+
+```{r}
+# Convert the text to lower case
+docs <- tm_map(docs, content_transformer(tolower))
+# Remove numbers
+docs <- tm_map(docs, removeNumbers)
+# Remove english common stopwords
+docs <- tm_map(docs, removeWords, stopwords("english"))
+# Remove your own stop word
+# specify your stopwords as a character vector
+docs <- tm_map(docs, removeWords, c("uav", "aerial", "unmanned", "drone", "vehicle", "vehicles", "systems", "system", "uas", "piloted", "vtol", "uavs", "aircraft", "rpas", "airborne", "drones", "use")) 
+# Remove punctuations
+docs <- tm_map(docs, removePunctuation)
+# Eliminate extra white spaces
+docs <- tm_map(docs, stripWhitespace)
+# Text stemming
+# docs <- tm_map(docs, stemDocument)
+```
+
+
+
+## Step 4 : Build a term-document matrix
+
+
+Document matrix is a table containing the frequency of the words. Column names are words and row names are documents. The function TermDocumentMatrix() from text mining package can be used as follow :
+
+```{r}
+dtm <- TermDocumentMatrix(docs)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+head(d, 10)
+```
+
+## Step 5 : Generate the Word cloud
+
+The importance of words can be illustrated as a word cloud as follow :
+
+```{r fig.width=16, fig.height=6}
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+          max.words=200, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+```
+
+The above word cloud clearly shows that “Will”, “freedom”, “dream”, “day” and “together” are the five most important words in the “I have a dream speech” from Martin Luther King.
 
